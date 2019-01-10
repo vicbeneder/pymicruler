@@ -1,0 +1,294 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Preprocessing &mdash; MICRuler  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Modules" href="modules.html" />
+    <link rel="prev" title="Quickstart" href="quickstart.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> MICRuler
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quickstart</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Preprocessing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#run-visual-basic-macro">Run visual basic macro</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#remove-strikethrough-text">Remove strikethrough text</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="modules.html">Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="manual_updates.html">Manual Updates</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dataprocessing.html">Data processing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="limitations.html">Limitations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">MICRuler</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Preprocessing</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/preprocessing.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="preprocessing">
+<span id="id1"></span><h1>Preprocessing<a class="headerlink" href="#preprocessing" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="run-visual-basic-macro">
+<h2>Run visual basic macro<a class="headerlink" href="#run-visual-basic-macro" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>Create a new macro with the name ‘PreProcessExcel’ in the respective Eucast Excel file.</li>
+<li>Copy the following text to the vba editor:</li>
+</ol>
+<p>Visual Basic Script:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">Sub</span> <span class="n">PreProcessExcel</span><span class="p">()</span>
+    <span class="n">Dim</span> <span class="n">Source</span> <span class="n">As</span> <span class="n">Workbook</span>
+    <span class="n">Dim</span> <span class="n">Target</span> <span class="n">As</span> <span class="n">Workbook</span>
+    <span class="n">Dim</span> <span class="n">currentSheet</span> <span class="n">As</span> <span class="n">Worksheet</span>
+    <span class="n">Dim</span> <span class="n">path</span> <span class="n">As</span> <span class="n">String</span>
+    <span class="n">Dim</span> <span class="n">out_file</span> <span class="n">As</span> <span class="n">String</span>
+    <span class="n">Dim</span> <span class="n">sheetIndex</span> <span class="n">As</span> <span class="n">Integer</span>
+    <span class="n">Dim</span> <span class="n">ws</span> <span class="n">As</span> <span class="n">Worksheet</span>
+    <span class="n">sheetIndex</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="n">Application</span><span class="o">.</span><span class="n">ScreenUpdating</span> <span class="o">=</span> <span class="kc">False</span>
+    <span class="n">Application</span><span class="o">.</span><span class="n">DisplayAlerts</span> <span class="o">=</span> <span class="kc">False</span>
+
+    <span class="n">path</span> <span class="o">=</span> <span class="n">ActiveWorkbook</span><span class="o">.</span><span class="n">path</span>
+    <span class="n">out_file</span> <span class="o">=</span> <span class="s2">&quot;preprocessed_&quot;</span> <span class="o">&amp;</span> <span class="n">Left</span><span class="p">(</span><span class="n">ActiveWorkbook</span><span class="o">.</span><span class="n">Name</span><span class="p">,</span> <span class="n">InStr</span><span class="p">(</span><span class="n">ActiveWorkbook</span><span class="o">.</span><span class="n">Name</span><span class="p">,</span> <span class="s2">&quot;.xls&quot;</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">&amp;</span> <span class="s2">&quot;.xlsx&quot;</span>
+
+    <span class="n">Set</span> <span class="n">Source</span> <span class="o">=</span> <span class="n">ActiveWorkbook</span>
+    <span class="n">Set</span> <span class="n">Target</span> <span class="o">=</span> <span class="n">Workbooks</span><span class="o">.</span><span class="n">Add</span>
+    <span class="n">For</span> <span class="n">Each</span> <span class="n">currentSheet</span> <span class="n">In</span> <span class="n">Source</span><span class="o">.</span><span class="n">Worksheets</span>
+        <span class="n">Set</span> <span class="n">ws</span> <span class="o">=</span> <span class="n">Target</span><span class="o">.</span><span class="n">Sheets</span><span class="o">.</span><span class="n">Add</span><span class="p">(</span><span class="n">After</span><span class="p">:</span><span class="o">=</span><span class="n">Target</span><span class="o">.</span><span class="n">Sheets</span><span class="p">(</span><span class="n">Target</span><span class="o">.</span><span class="n">Sheets</span><span class="o">.</span><span class="n">Count</span><span class="p">))</span>
+        <span class="n">ws</span><span class="o">.</span><span class="n">Name</span> <span class="o">=</span> <span class="n">currentSheet</span><span class="o">.</span><span class="n">Name</span>
+        <span class="n">currentSheet</span><span class="o">.</span><span class="n">Activate</span>
+        <span class="n">currentSheet</span><span class="o">.</span><span class="n">Cells</span><span class="o">.</span><span class="n">Select</span>
+        <span class="n">Selection</span><span class="o">.</span><span class="n">Copy</span>
+        <span class="n">ws</span><span class="o">.</span><span class="n">Activate</span>
+        <span class="n">ws</span><span class="o">.</span><span class="n">Cells</span><span class="o">.</span><span class="n">Select</span>
+        <span class="n">ws</span><span class="o">.</span><span class="n">Paste</span>
+        <span class="n">sheetIndex</span> <span class="o">=</span> <span class="n">sheetIndex</span> <span class="o">+</span> <span class="mi">1</span>
+
+        <span class="n">Dim</span> <span class="n">c</span> <span class="n">As</span> <span class="n">Range</span>
+        <span class="n">For</span> <span class="n">Each</span> <span class="n">c</span> <span class="n">In</span> <span class="n">ActiveSheet</span><span class="o">.</span><span class="n">UsedRange</span>
+            <span class="n">If</span> <span class="n">Len</span><span class="p">(</span><span class="n">c</span><span class="p">)</span> <span class="o">&lt;&gt;</span> <span class="mi">0</span> <span class="n">Then</span>
+                <span class="n">i</span> <span class="o">=</span> <span class="n">Len</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
+                <span class="n">If</span> <span class="n">c</span><span class="o">.</span><span class="n">Characters</span><span class="p">(</span><span class="n">i</span><span class="p">)</span><span class="o">.</span><span class="n">Font</span><span class="o">.</span><span class="n">Superscript</span> <span class="n">Then</span>
+                    <span class="n">While</span> <span class="n">c</span><span class="o">.</span><span class="n">Characters</span><span class="p">(</span><span class="n">i</span><span class="p">)</span><span class="o">.</span><span class="n">Font</span><span class="o">.</span><span class="n">Superscript</span>
+                        <span class="n">i</span> <span class="o">=</span> <span class="n">i</span> <span class="o">-</span> <span class="mi">1</span>
+                    <span class="n">Wend</span>
+                    <span class="n">c</span> <span class="o">=</span> <span class="n">Left</span><span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span> <span class="o">&amp;</span> <span class="s2">&quot;§&quot;</span> <span class="o">&amp;</span> <span class="n">Right</span><span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="n">Len</span><span class="p">(</span><span class="n">c</span><span class="p">)</span> <span class="o">-</span> <span class="n">i</span><span class="p">)</span>
+                <span class="n">End</span> <span class="n">If</span>
+            <span class="n">End</span> <span class="n">If</span>
+        <span class="n">Next</span> <span class="n">c</span>
+
+    <span class="n">Next</span> <span class="n">currentSheet</span>
+    <span class="n">Target</span><span class="o">.</span><span class="n">SaveAs</span> <span class="n">Filename</span><span class="p">:</span><span class="o">=</span><span class="n">path</span> <span class="o">&amp;</span> <span class="s2">&quot;/&quot;</span> <span class="o">&amp;</span> <span class="n">out_file</span>
+    <span class="n">Application</span><span class="o">.</span><span class="n">ScreenUpdating</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="n">End</span> <span class="n">Sub</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="3">
+<li>Run the macro.</li>
+</ol>
+<p>The new file will be called ‘preprocessed_&lt;name of the original file&gt;’ and is saved in the same folder as the preprocessed document.</p>
+</div>
+<div class="section" id="remove-strikethrough-text">
+<h2>Remove strikethrough text<a class="headerlink" href="#remove-strikethrough-text" title="Permalink to this headline">¶</a></h2>
+<p>Currently there is no automated removal for strikethrough text available. The user is asked to remove any text in the
+preprocessed breakpoint table manually before parsing the data.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="modules.html" class="btn btn-neutral float-right" title="Modules" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="quickstart.html" class="btn btn-neutral" title="Quickstart" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Victoria Beneder, Stephan Beisken, Peter Sykacek, Andreas Posch
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'./',
+              VERSION:'',
+              LANGUAGE:'None',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

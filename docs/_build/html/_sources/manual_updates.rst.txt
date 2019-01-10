@@ -1,0 +1,215 @@
+Manual Updates
+===============
+
+.. _clinical_breakpoint_tables:
+
+Updated Clinical Breakpoint Tables
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+If the overall structure of the updated Clinical Breakpoint Tables remains the same, the file may be parsed as described in the previous Sections.
+The most probable changes are then the addition of new comments, new entries and changes in the interpretive rules:
+
+New comments
+-------------
+
+**Console Classification**
+
+Further information to the questions:
+
+*'May this information relevant for further breakpoint classification? (y/n)'*
+
+Yes should be chosen in case the information should aid in the interpretation of the MICs, i.e.
+
+*'Tetracycline has been used to predict doxycycline susceptibility for the treatment of Yersinia enterocolitica infections (tetracycline MIC ≤4 mg/L for wild-type isolates).'*
+
+
+The information is not relevant if it only includes information on how to perform AST, i.e.
+
+*'Agar dilution is the reference method for fosfomycin. MICs must be determined in the presence of glucose-6-phosphate (25 mg/L in the medium). Follow the manufacturers' instructions for commercial systems.'*
+
+
+| If the comment is found to be relevant the next question aims at determining the content of the comment.
+| *'Does this comment*
+| *(a) contain any information about how to derive the resistance phenotype from other resistances or susceptibilities (interpretive rules)?*
+| *(b) explicitly say that the species can be considered resistant?*
+| *(c) contain any information about the route of administration?*
+| *(d) contain any information about the indication the agent should be used for?*
+| *(e) contain any information about a species that is excepted from the general rule?*
+| *(f) contain a complete breakpoint including information about species, compound and MIC?*
+| *(g) not add any information that can be directly encoded in the table?'*
+
+| *(a) Interpretive rules*
+| An interpretive rule provides information on how to derive resistance phenotypes across antimicrobial agents via a shared mechanism of action. One example would be:
+| *'For isolates susceptible to benzylpenicillin, susceptibility can be inferred from benzylpenicillin or ampicillin. '*
+| Based on this comment a rule has to be added to the rule engine (define where rule engine can be found). For a detailed guidance on that matter see paragraph below
+
+
+| *(b) Resistance*
+| Should be chosen if the comment specifically mentions that the organism is resistant to the agent, e.g.
+*'Enterococci are intrinsically resistant to aminoglycosides and aminoglycoside monotherapy is ineffective.'*
+
+
+| *(c) Route of administration*
+| Should be chosen if any route of admnistration is mentioned in the comment text, e.g.
+| *'The breakpoints are based on epidemiological cut-off values (ECOFFs) and apply to oral treatment of C. difficile infections with vancomycin.'*
+| In a further question the user is then asked to specify the mentioned route of administration. Options are:
+    - 'iv' (=intravenous)
+    - oral
+    - topical
+    - nasal
+
+
+| *(d) Indication*
+| Should be chosen if information about the disease that should be treated is given, e.g.
+*'Breakpoints relate to meningitis only.' or 'Breakpoints for penicillins other than benzylpenicillin relate only to non-meningitis isolates.'*
+In a further question the user is asked to specify the mentioned indication.
+In the first example the answer would be 'meningitis' as the breakpoint is only applicable to this indication.
+If the breakpoint is excepted for a specific indication as in the second example, 'NOT meningitis' would be the answer.
+
+
+| *(e) Exception*
+| Should be chosen if any species or genus is explicitly excluded from the applicability of the guideline, e.g.
+*'Breakpoints do not apply to Plesiomonas shigelloides since aminoglycosides have low intrinsic activity against this species.'*
+In the follow up question the mentioned species should, if possible, be specified with its full name, i.e. 'Escherichia coli' instead of 'E. coli'
+
+
+| *(f) Breakpoint*
+| Should be chosen if the comment contains a whole breakpoint specifying organism, compound and S- and R- concentrations.
+*'Azithromycin has been used in the treatment of infections with Salmonella Typhi (MIC ≤16 mg/L for wild type isolates) and Shigella spp.'*
+In the follow up question the breakpoint should then be specified as follows: 'Salmonella enterica subsp. enterica serovar Typhi; Azithromycin; 16'
+
+
+*(g) Not encodable*
+Should be chosen if none of the other options did match. In this case the information is relevant for the interpretation but it currently cannot be included in the analysis.
+In a future extension these comments will be displayed as warnings.
+
+
+**Altering the interpretation dictionary manually**
+
+If there are more than a hand full of comments and the classification system is clear to the user, editing the responsible dictionary directly might be more efficient.
+New notes will be saved in the file path_to_package/pymicruler/output/missing_notes.xlsx
+The note text has to be copied into the 'interpretation_dict_updated.xlsx' file in the same folder.
+Based on this note text the following columns have to be filled:
+
+- relevance: Might this information be relevant for MIC interpretation rather than lab (0/1)
+
+- no_resistance: Add description
+
+- interpretation: Does this comment contain an interpretive rule (Yes: '1', No: '').
+
+- rule: After implementation insert name of the function in the rule based engine that executes rule.
+
+- exception: Put any pathogens that are excepted from the general rule. Full name is preferred, e.g. 'Escherichia coli' instead of 'E. coli'
+
+- indication: Put any disease that is excepted from the rule or the only one that the rule applies to , e.g. 'NOT meningitis' or 'meningitis'
+
+- new_bp: If a whole breakpoint is mentioned in the comment enter it in the following format: species, agent, S, R.
+
+- not_encodable: Other information that cannot be put in any of the other categories.
+
+- resistance: '1' if the breakpoint explicitly mentions that the bacterium is resistant to the agent.
+
+- roa: Put the route of administration ('iv', 'oral', 'nasal', 'topical') if mentioned.
+
+The column relevance has to be filled with either 1 or 0 depending on whether the comment is found to be relevant for AST results interpretation.
+If the comment is found to be irrelevant (0) all other columns should stay empty.
+Otherwise there has to be information in at least one of the other columns.
+
+
+New entries
+-------------
+
+**The following organisms could not be matched against the NCBI Taxonomy: <names>.**
+
+Will be displayed in case of irregularities during the parsing or if organisms have been
+reclassified or renamed. In the latter case add the name of the organism to
+resources/species_renaming.xlsx. The entry that could not be matched should be pasted in the first
+column *query_term* and the full names as listed in the NCBI Taxonomy should be added in the
+second column *replacement*
+
+**A new organism name was found which could not be translated: <name>.**
+
+Will be displayed if any new short forms are detected. In this case the name
+should be copied and added to resources/species_renaming.xlsx.
+The new short forms should be pasted in the first column *query_term* and the
+full name as listed in the NCBI Taxonomy should be added in the second column *replacement*
+
+**The following compounds were not found in the compound dictionary: <names>**
+
+Will be displayed if there were irregularities during parsing.
+But the more probable reason is that Eucast publishes breakpoints for new
+agents. In this case the compound dictionary at resources/compound_classes
+.xlsx needs to be updated with the new compound. The information which
+compound class it belongs to can be derived from the Eucast Table itself.
+
+**A new type of information was found which could not be categorised <information>.**
+
+Will be displayed if there is new information written in parentheses next to
+the compound name.
+
+If the information is a new type of restriction to an indication the user is asked to manually
+add this information to the class*Info* list *IND* in the file utils/util.py.
+
+If the information is not relevant for further AST result interpretation the user is asked to
+manually add this information to the class *Info* list *IRR_PARR* in the file utils/util.py.
+
+If it is information about a restriction to a specific organism the pattern
+listed in the file utils/util.py in the class *CmpRegex* called *PAR* needs
+to be adjusted to match also these new cases.
+
+.. _int_rules_table:
+
+Changes regarding interpretive Rules
+-------------------------------------
+The library tracks any changes in the application of interpretive rules which were derived from the breakpoint table free text.
+The log is saved in the file 'interpretive_rule_changes.csv' in the output folder of the library.
+It is always a comparison to the last version that was analysed.
+In the first column of the document the note texts that have changed are listed. The second columns describe the breakpoints that have been affected and the third column how they changed.
+'added' indicates that the application of the interpretive rules needs to be extended for the mentioned species/compound combinations.
+'removed' means that these breakpoints have to be excepted from the application of the rule.
+All of these changes have to be done in the RuleBasedEngine.py file. Names of the rules that need to be changed can be looked up in the interpretation_dict_updated.xlsx
+as long as it is updated whenever a rule is added as recommended in the respective session.
+
+Changes in the table layout
+----------------------------
+In case of any addition or removal of columns in future publications the
+position of the information has to be updated in the file utils/util.py.
+Column indices (starting with 0) for the MIC headline, and R and S
+concentrations are specified and should be updated in case of changes.
+
+Changes in the headlines
+------------------------
+Some headlines of the breakpoint table are used as anchors for the processing of a new unit of information.
+If columns are not (only) rearranged but also renamed, the corresponding
+regex patterns have to be updated in the class *Regex* in the file utils/util
+
+
+
+.. _intrinsic_resistances:
+
+Updated Intrinsic Resistances Publication
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Currently the database works based on a manually curated table based on version 3.1 of the document.
+In case of a new publication EUCAST has usually provided a list of changes.
+The most simple way to update the table is to incorporate any changes manually into the file 'final_ires.csv'
+which can be found in the resources folder of the package.
+The columns that should be updated are the species_name, the cmp_name, and ideally the identifier.
+For the pathogen name the Taxon that is affected by the rule should be listed. The library does not support multiple listings in one entry.
+In the column 'cmp_name' the name of the agent should be entered. The S- and R- concentrations are per default -1 and 0.
+Finally the indicator maps the information back to the original publication.
+Ideally it should be changed whenever the document is updated.
+
+
+.. _interpretive_rules:
+
+Updated Interpretive Rules Publication
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The rules of the RBE are derived from the Eucast Interpretive Rule document as well as the breakpoint table.
+    Publication:
+        In case of an update in the Interpretive Rule publication new rules will have to be analysed manually.
+        The current naming scheme allows to connect the rule back to their listing in v3.1 of the Expert Rules and Intrinsic Resistances.
+        It might be best to compare the new rules to the then outdated publication to find the changed rule in the most efficient way.
+    Clinicial Breakpoint Table:
+        For changes related to Clinical Breakpoint Tables derived rules see :ref:`Changes regarding interpretive Rules<int_rules_table>`.
+

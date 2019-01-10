@@ -1,0 +1,409 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Manual Updates &mdash; MICRuler  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Data processing" href="dataprocessing.html" />
+    <link rel="prev" title="Modules" href="modules.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> MICRuler
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quickstart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="preprocessing.html">Preprocessing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modules.html">Modules</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Manual Updates</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#updated-clinical-breakpoint-tables">Updated Clinical Breakpoint Tables</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#new-comments">New comments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#new-entries">New entries</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#changes-regarding-interpretive-rules">Changes regarding interpretive Rules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#changes-in-the-table-layout">Changes in the table layout</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#changes-in-the-headlines">Changes in the headlines</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#updated-intrinsic-resistances-publication">Updated Intrinsic Resistances Publication</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#updated-interpretive-rules-publication">Updated Interpretive Rules Publication</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="dataprocessing.html">Data processing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="limitations.html">Limitations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">MICRuler</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Manual Updates</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/manual_updates.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="manual-updates">
+<h1>Manual Updates<a class="headerlink" href="#manual-updates" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="updated-clinical-breakpoint-tables">
+<span id="clinical-breakpoint-tables"></span><h2>Updated Clinical Breakpoint Tables<a class="headerlink" href="#updated-clinical-breakpoint-tables" title="Permalink to this headline">¶</a></h2>
+<p>If the overall structure of the updated Clinical Breakpoint Tables remains the same, the file may be parsed as described in the previous Sections.
+The most probable changes are then the addition of new comments, new entries and changes in the interpretive rules:</p>
+<div class="section" id="new-comments">
+<h3>New comments<a class="headerlink" href="#new-comments" title="Permalink to this headline">¶</a></h3>
+<p><strong>Console Classification</strong></p>
+<p>Further information to the questions:</p>
+<p><em>‘May this information relevant for further breakpoint classification? (y/n)’</em></p>
+<p>Yes should be chosen in case the information should aid in the interpretation of the MICs, i.e.</p>
+<p><em>‘Tetracycline has been used to predict doxycycline susceptibility for the treatment of Yersinia enterocolitica infections (tetracycline MIC ≤4 mg/L for wild-type isolates).’</em></p>
+<p>The information is not relevant if it only includes information on how to perform AST, i.e.</p>
+<p><em>‘Agar dilution is the reference method for fosfomycin. MICs must be determined in the presence of glucose-6-phosphate (25 mg/L in the medium). Follow the manufacturers’ instructions for commercial systems.’</em></p>
+<div class="line-block">
+<div class="line">If the comment is found to be relevant the next question aims at determining the content of the comment.</div>
+<div class="line"><em>‘Does this comment</em></div>
+<div class="line"><em>(a) contain any information about how to derive the resistance phenotype from other resistances or susceptibilities (interpretive rules)?</em></div>
+<div class="line"><em>(b) explicitly say that the species can be considered resistant?</em></div>
+<div class="line"><em>(c) contain any information about the route of administration?</em></div>
+<div class="line"><em>(d) contain any information about the indication the agent should be used for?</em></div>
+<div class="line"><em>(e) contain any information about a species that is excepted from the general rule?</em></div>
+<div class="line"><em>(f) contain a complete breakpoint including information about species, compound and MIC?</em></div>
+<div class="line"><em>(g) not add any information that can be directly encoded in the table?’</em></div>
+</div>
+<div class="line-block">
+<div class="line"><em>(a) Interpretive rules</em></div>
+<div class="line">An interpretive rule provides information on how to derive resistance phenotypes across antimicrobial agents via a shared mechanism of action. One example would be:</div>
+<div class="line"><em>‘For isolates susceptible to benzylpenicillin, susceptibility can be inferred from benzylpenicillin or ampicillin. ‘</em></div>
+<div class="line">Based on this comment a rule has to be added to the rule engine (define where rule engine can be found). For a detailed guidance on that matter see paragraph below</div>
+</div>
+<div class="line-block">
+<div class="line"><em>(b) Resistance</em></div>
+<div class="line">Should be chosen if the comment specifically mentions that the organism is resistant to the agent, e.g.</div>
+</div>
+<p><em>‘Enterococci are intrinsically resistant to aminoglycosides and aminoglycoside monotherapy is ineffective.’</em></p>
+<div class="line-block">
+<div class="line"><em>(c) Route of administration</em></div>
+<div class="line">Should be chosen if any route of admnistration is mentioned in the comment text, e.g.</div>
+<div class="line"><em>‘The breakpoints are based on epidemiological cut-off values (ECOFFs) and apply to oral treatment of C. difficile infections with vancomycin.’</em></div>
+<div class="line">In a further question the user is then asked to specify the mentioned route of administration. Options are:
+- ‘iv’ (=intravenous)
+- oral
+- topical
+- nasal</div>
+</div>
+<div class="line-block">
+<div class="line"><em>(d) Indication</em></div>
+<div class="line">Should be chosen if information about the disease that should be treated is given, e.g.</div>
+</div>
+<p><em>‘Breakpoints relate to meningitis only.’ or ‘Breakpoints for penicillins other than benzylpenicillin relate only to non-meningitis isolates.’</em>
+In a further question the user is asked to specify the mentioned indication.
+In the first example the answer would be ‘meningitis’ as the breakpoint is only applicable to this indication.
+If the breakpoint is excepted for a specific indication as in the second example, ‘NOT meningitis’ would be the answer.</p>
+<div class="line-block">
+<div class="line"><em>(e) Exception</em></div>
+<div class="line">Should be chosen if any species or genus is explicitly excluded from the applicability of the guideline, e.g.</div>
+</div>
+<p><em>‘Breakpoints do not apply to Plesiomonas shigelloides since aminoglycosides have low intrinsic activity against this species.’</em>
+In the follow up question the mentioned species should, if possible, be specified with its full name, i.e. ‘Escherichia coli’ instead of ‘E. coli’</p>
+<div class="line-block">
+<div class="line"><em>(f) Breakpoint</em></div>
+<div class="line">Should be chosen if the comment contains a whole breakpoint specifying organism, compound and S- and R- concentrations.</div>
+</div>
+<p><em>‘Azithromycin has been used in the treatment of infections with Salmonella Typhi (MIC ≤16 mg/L for wild type isolates) and Shigella spp.’</em>
+In the follow up question the breakpoint should then be specified as follows: ‘Salmonella enterica subsp. enterica serovar Typhi; Azithromycin; 16’</p>
+<p><em>(g) Not encodable</em>
+Should be chosen if none of the other options did match. In this case the information is relevant for the interpretation but it currently cannot be included in the analysis.
+In a future extension these comments will be displayed as warnings.</p>
+<p><strong>Altering the interpretation dictionary manually</strong></p>
+<p>If there are more than a hand full of comments and the classification system is clear to the user, editing the responsible dictionary directly might be more efficient.
+New notes will be saved in the file path_to_package/pymicruler/output/missing_notes.xlsx
+The note text has to be copied into the ‘interpretation_dict_updated.xlsx’ file in the same folder.
+Based on this note text the following columns have to be filled:</p>
+<ul class="simple">
+<li>relevance: Might this information be relevant for MIC interpretation rather than lab (0/1)</li>
+<li>no_resistance: Add description</li>
+<li>interpretation: Does this comment contain an interpretive rule (Yes: ‘1’, No: ‘’).</li>
+<li>rule: After implementation insert name of the function in the rule based engine that executes rule.</li>
+<li>exception: Put any pathogens that are excepted from the general rule. Full name is preferred, e.g. ‘Escherichia coli’ instead of ‘E. coli’</li>
+<li>indication: Put any disease that is excepted from the rule or the only one that the rule applies to , e.g. ‘NOT meningitis’ or ‘meningitis’</li>
+<li>new_bp: If a whole breakpoint is mentioned in the comment enter it in the following format: species, agent, S, R.</li>
+<li>not_encodable: Other information that cannot be put in any of the other categories.</li>
+<li>resistance: ‘1’ if the breakpoint explicitly mentions that the bacterium is resistant to the agent.</li>
+<li>roa: Put the route of administration (‘iv’, ‘oral’, ‘nasal’, ‘topical’) if mentioned.</li>
+</ul>
+<p>The column relevance has to be filled with either 1 or 0 depending on whether the comment is found to be relevant for AST results interpretation.
+If the comment is found to be irrelevant (0) all other columns should stay empty.
+Otherwise there has to be information in at least one of the other columns.</p>
+</div>
+<div class="section" id="new-entries">
+<h3>New entries<a class="headerlink" href="#new-entries" title="Permalink to this headline">¶</a></h3>
+<p><strong>The following organisms could not be matched against the NCBI Taxonomy: &lt;names&gt;.</strong></p>
+<p>Will be displayed in case of irregularities during the parsing or if organisms have been
+reclassified or renamed. In the latter case add the name of the organism to
+resources/species_renaming.xlsx. The entry that could not be matched should be pasted in the first
+column <em>query_term</em> and the full names as listed in the NCBI Taxonomy should be added in the
+second column <em>replacement</em></p>
+<p><strong>A new organism name was found which could not be translated: &lt;name&gt;.</strong></p>
+<p>Will be displayed if any new short forms are detected. In this case the name
+should be copied and added to resources/species_renaming.xlsx.
+The new short forms should be pasted in the first column <em>query_term</em> and the
+full name as listed in the NCBI Taxonomy should be added in the second column <em>replacement</em></p>
+<p><strong>The following compounds were not found in the compound dictionary: &lt;names&gt;</strong></p>
+<p>Will be displayed if there were irregularities during parsing.
+But the more probable reason is that Eucast publishes breakpoints for new
+agents. In this case the compound dictionary at resources/compound_classes
+.xlsx needs to be updated with the new compound. The information which
+compound class it belongs to can be derived from the Eucast Table itself.</p>
+<p><strong>A new type of information was found which could not be categorised &lt;information&gt;.</strong></p>
+<p>Will be displayed if there is new information written in parentheses next to
+the compound name.</p>
+<p>If the information is a new type of restriction to an indication the user is asked to manually
+add this information to the class*Info* list <em>IND</em> in the file utils/util.py.</p>
+<p>If the information is not relevant for further AST result interpretation the user is asked to
+manually add this information to the class <em>Info</em> list <em>IRR_PARR</em> in the file utils/util.py.</p>
+<p>If it is information about a restriction to a specific organism the pattern
+listed in the file utils/util.py in the class <em>CmpRegex</em> called <em>PAR</em> needs
+to be adjusted to match also these new cases.</p>
+</div>
+<div class="section" id="changes-regarding-interpretive-rules">
+<span id="int-rules-table"></span><h3>Changes regarding interpretive Rules<a class="headerlink" href="#changes-regarding-interpretive-rules" title="Permalink to this headline">¶</a></h3>
+<p>The library tracks any changes in the application of interpretive rules which were derived from the breakpoint table free text.
+The log is saved in the file ‘interpretive_rule_changes.csv’ in the output folder of the library.
+It is always a comparison to the last version that was analysed.
+In the first column of the document the note texts that have changed are listed. The second columns describe the breakpoints that have been affected and the third column how they changed.
+‘added’ indicates that the application of the interpretive rules needs to be extended for the mentioned species/compound combinations.
+‘removed’ means that these breakpoints have to be excepted from the application of the rule.
+All of these changes have to be done in the RuleBasedEngine.py file. Names of the rules that need to be changed can be looked up in the interpretation_dict_updated.xlsx
+as long as it is updated whenever a rule is added as recommended in the respective session.</p>
+</div>
+<div class="section" id="changes-in-the-table-layout">
+<h3>Changes in the table layout<a class="headerlink" href="#changes-in-the-table-layout" title="Permalink to this headline">¶</a></h3>
+<p>In case of any addition or removal of columns in future publications the
+position of the information has to be updated in the file utils/util.py.
+Column indices (starting with 0) for the MIC headline, and R and S
+concentrations are specified and should be updated in case of changes.</p>
+</div>
+<div class="section" id="changes-in-the-headlines">
+<h3>Changes in the headlines<a class="headerlink" href="#changes-in-the-headlines" title="Permalink to this headline">¶</a></h3>
+<p>Some headlines of the breakpoint table are used as anchors for the processing of a new unit of information.
+If columns are not (only) rearranged but also renamed, the corresponding
+regex patterns have to be updated in the class <em>Regex</em> in the file utils/util</p>
+</div>
+</div>
+<div class="section" id="updated-intrinsic-resistances-publication">
+<span id="intrinsic-resistances"></span><h2>Updated Intrinsic Resistances Publication<a class="headerlink" href="#updated-intrinsic-resistances-publication" title="Permalink to this headline">¶</a></h2>
+<p>Currently the database works based on a manually curated table based on version 3.1 of the document.
+In case of a new publication EUCAST has usually provided a list of changes.
+The most simple way to update the table is to incorporate any changes manually into the file ‘final_ires.csv’
+which can be found in the resources folder of the package.
+The columns that should be updated are the species_name, the cmp_name, and ideally the identifier.
+For the pathogen name the Taxon that is affected by the rule should be listed. The library does not support multiple listings in one entry.
+In the column ‘cmp_name’ the name of the agent should be entered. The S- and R- concentrations are per default -1 and 0.
+Finally the indicator maps the information back to the original publication.
+Ideally it should be changed whenever the document is updated.</p>
+</div>
+<div class="section" id="updated-interpretive-rules-publication">
+<span id="interpretive-rules"></span><h2>Updated Interpretive Rules Publication<a class="headerlink" href="#updated-interpretive-rules-publication" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt>The rules of the RBE are derived from the Eucast Interpretive Rule document as well as the breakpoint table.</dt>
+<dd><dl class="first last docutils">
+<dt>Publication:</dt>
+<dd>In case of an update in the Interpretive Rule publication new rules will have to be analysed manually.
+The current naming scheme allows to connect the rule back to their listing in v3.1 of the Expert Rules and Intrinsic Resistances.
+It might be best to compare the new rules to the then outdated publication to find the changed rule in the most efficient way.</dd>
+<dt>Clinicial Breakpoint Table:</dt>
+<dd>For changes related to Clinical Breakpoint Tables derived rules see <a class="reference internal" href="#int-rules-table"><span class="std std-ref">Changes regarding interpretive Rules</span></a>.</dd>
+</dl>
+</dd>
+</dl>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="dataprocessing.html" class="btn btn-neutral float-right" title="Data processing" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="modules.html" class="btn btn-neutral" title="Modules" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Victoria Beneder, Stephan Beisken, Peter Sykacek, Andreas Posch
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'./',
+              VERSION:'',
+              LANGUAGE:'None',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

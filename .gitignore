@@ -1,0 +1,9 @@
+venv
+migrations
+.idea
+__pycache__
+*.egg-info
+*.egg
+alembic
+docs/build
+*.pyc

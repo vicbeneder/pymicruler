@@ -1,0 +1,224 @@
+pymicruler
+---------
+
+Package for processing EUCAST breakpoint table Excel files and automatic resistance phenotype determination
+of samples based on measured minimum inhibitory concentration.
+
+Installation
+++++++++++++
+
+Installation:
+  # clone the pymicruler package from CodeCommit
+    git clone https://git-codecommit.eu-central-1.amazonaws.com/v1/repos/pymicruler
+
+  # clone the pygeardb ORM from CodeCommit and activate as source
+    git clone https://git-codecommit.eu-central-1.amazonaws.com/v1/repos/pygeardb
+
+
+Preparation for Parsing
+++++++++++++
+Preparing the Eucast datatable automatically:
+To use the module 'preprocess_excel' the settings in the Eucast breakpoints table (.xlsx) have to be changed as follows:
+ - Under 'File - Options - Trust Center - Settings for the trust center - Macro settings'
+   the option "activate all macros" should be chosen.
+ - The Excel file should then be saved as Excel macro enabled Workbook (.xlsm) and closed.
+
+Once the use of external macros is possible the preprocessing can be started.
+A demo script with comments on how to use the package can be found in demo/demo_script.py
+
+Preparing the Eucast datatable manually:
+- Create a new macro with the name 'PreProcessExcel' in the respective Eucast Excel file.
+- Open ss_mactro.txt in pymicruler/resources/ss_macro.txt and copy the text to the vba editor.
+- Run the macro.
+The new file will be called 'preprocessed_<name of the original file>' and is saved automatically.
+
+
+Functions
+++++++++++++
+The package allows the user to execute the following processes:
+    - Processing a new Eucast resource:
+        + preprocess_excel.run_preprocess_eucast(path_to_infile)
+            Will enable the automatic preprocessing of an Eucast breakpoint table.
+            The path to the resulting preprocessed file is returned and can be used as an argument of:
+
+        + BpParser.process_eucast(path_to_preprocessed_infile)
+            Will parse the breakpoint data from the preprocessed (see above) Eucast breakpoint table
+            (from version 7.1 on) and return a pandas dataframe containing all parsed data.
+
+        + BpParser.compile_ires_with_current_bp(path_to_parser_outfile)
+            Will check whether there is more than one information for all species-compound combinations (e.g. intrinsic resistance and breakpoint)
+            and remove breakpoints that are specific for an indication or route of administration if more general ones are available.
+            Returns the dataframe for subsequent upload.
+
+        + BpParser.update_database(compiled_table, version)
+            Takes the compiled dataframe and the version of the table which was parsed and checks whether breakpoint entries are already in the database.
+            if not, they are uploaded and a new resource is created in the resource table of the pygeardb
+
+    - Breakpoint Lookup:
+        + BpRuler.get_bp_for_df(query_df)
+            Takes a pandas dataframe containing the columns 'species_name' and 'cmp_name' and returns
+            a table with the corresponding breakpoints. If none are found the reason is specified in the column 'type'
+        + BpRuler.run_single_bp_query(species_name, cmp_name)
+            Takes species and compound and returns a dictionary containing the breakpoint.
+
+    - Resistance Phenotype Classification (Label Generation)
+        + get_resistance_label(s_conc, r_conc, measured_mic)
+            Classification based on single breakpoint (s_conc and r_conc) and the measured MIC. Returns resistance labels 'R', 'S' or 'I'.
+        + BpRuler.get_labels_for_df(query_df)
+            Takes a dataframe containing the columns 'species_name', 'cmp_name', 'value' (=MIC), 'project_sample_id',
+            looks up breakpoints, classifies samples based on their MIC, and tries to find labels for species-compound-combinations
+            where no breakpoint could be found
+        + BpRuler.run_interpretive_ruler_for_df(out_table_bp, 'full')
+            takes a table containing 'species_name', 'cmp_name', 'value' (=MIC), 'project_sample_id' and 'label'
+            and runs the interpretive ruler returning all resistance labels that could be derived,
+            not only tested ones.
+
+
+In case of Changes
+++++++++++++
+    Troubleshooting for changes in future publications:
+        + Organisms:
+            Species or groups which do not map against the NCBI database will be listed in the file 'missing_species.xlsx' in the resource folder.
+            Either the species can be added to the NcbiTaxon table of the pygeardb or, more likely, the name of the species is not correct
+            or it is not the full name (e.g. E.coli). In this case the name should be listed in the first column of the file 'species_renaming.xlsx'
+            in the resource folder. If the parser is restarted the name will then be replaced with the correct name that should be entered in the second column.
+        + Compounds:
+            The same applies to mismatching Compounds, they can be added to the Compound table of the pygeardb if they are indeed new, or translated via the
+            'missing_compounds.xlsx' file in the resource folder.
+        + Phenotypically defined groups:
+            If there are new phenotypically defined groups a new sheet has to be added to the file 'phenotypic_groups.xlsx' in the resource folder.
+            The names of the species that are member of these phenotypically defined group are then added as entries in the first column of the sheet.
+            In case the member species of an existing phenotypically defined group should be revised, the member list of the corresponding sheet can be changed.
+        + Notes:
+            See Section below
+
+Manual curation of the Rule Based Engine (RBE)
+++++++++++++
+    The rules of the RBE are derived from the Eucast Interpretive Rule document as well as the breakpoint table.
+        Publication:
+            In case of an update in the Interpretive Rule publication new rules will have to be analysed manually.
+            The current naming scheme allows to connect the rule back to their listing in v3.1 of the Expert Rules and Intrinsic Resistances.
+            It might be best to compare the new rules to then outdated publication to find the changed rule in the most efficient way.
+        Note text of breakpoint table:
+            The note text of the breakpoint table is analysed automatically based on a reference that is given in the 'interpretation_dict_basic.xlsx'
+            file which can be found in the resource folder. For each note that was found during the Parsing steps an entry is created.
+            In the subsequent columns information about how to handle this note is saved.
+            In all future parsing steps the note text will always be compared to this document and the note text will be handled accordingly.
+            Only notes which cannot be mapped directly will be gathered and either saved in the 'missing_notes.xlsx' file in the resource folder
+            or can be categorized automatically via the console. If the manual classification is chosen the notes have to be copied into the
+            'interpretation_dict_upated.xlsx' manually, otherwise the new dictionary will be created and saved automatically.
+            This file can then be screened for correct classification and used as reference for the next publications.
+            Columns of the reference dictionary:
+                - note_text: Full note as parsed from the Eucast breakpoint table
+                - relevance: decides whether the note is considered relevant for the further analysis. Entries that do have a dash or simply 'note'
+                                instead of a concentration as breakpoints are classified as resistant only if they do not have any relevant note attached to them.
+                                So in case of doubt relevance is only 0 if the note text doesn't say anything against classifying the species-compound combination
+                                as resistant.
+                - no_resistance: Set 1 if the comment was just kept to avoid the breakpoint to be considered resistant
+                - interpretation: marks interpretive rules - these comments are then tracked about where exactly they occur so any changes in the application
+                                    of interpretive rules can be gathered for manual curation of the rules.
+                - other_information: needs to be set 1 if it is neither an interpretive rule not just relevant to prevent the classification as resistant,
+                                        it will start the more detailed analysis of the content
+                - rule: specifies where the interpretive rule is encoded in the RBE. n.e. means that there currently is no rule for this note text.
+                - exception: contains any species which are excepted from the general rule. Here the only names that can be mapped against the NcbiTaxon table
+                                should be used
+                - indication: conains any restrictions in the application for specific sicknesses
+                - new_bp: in case the note contains a full breakpoint it can be entered in the following format:
+                            'species; compound; s_conc; r_conc' in case only one concentration is given the r_conc may also be omitted.
+                - not_encodable: Set 1 if the comment cannot be put in any of the other categories.
+                - resistance: Set 1 if the breakpoint explicitly says that the species is resistant to that breakpoint.
+                - roa: contains the route of administration, e.g. 'iv', 'oral', 'topical' or 'nasal'.
+
+
+
+Limitations
+++++++++++++
+- Preprocessing:
+    Currently, the automatic preprocessing via the function is very sensitive to any changes.
+    Generally the macro should be deleted from the excel file again after every run otherwise it will try to import it again
+    and save the old and new version under different names that cannot be detected by the script.
+
+- Strikethrough text cannot be differentiated from normal text by the parser and will therefore be transcribed with the rest of the
+    text if it is not removed manually.
+
+- Backward compatibility:
+    Only breakpoint tables up until version 7.1 can be parsed correctly. In case of version 6.0 and older problems with the package openpyxl
+    occur.
+
+- Information loss:
+    Route of Administration and Indication:
+        In the database only the taxon, compound, r breakpoint, s breakpoint and resource are saved.
+        Information on the route of administration and particular indications are therefore not uploaded.
+        This information is, however, processed and saved during the parsing and can be accessed manually if needed.
+        In case there are two entries for a given taxon, compound combination,
+        the breakpoint related to intravenous administration is chosen over the oral administration,
+        and general breakpoints are chosen over particular indications.
+    (hypothetically) Species Exceptions:
+        At the moment there is no information loss due to the missing column species exception,
+        as these species usually have their own breakpoint entries then.
+        If this is not the case at some point there is the possibility of misclassification.
+
+- Intrinsic resistances:
+    While the breakpoint table can be updated easily by parsing it again via the provided functions in this package,
+    the intrinsic resistance table was developed manually as the information is provided in a pdf file only.
+
+- Interpretive rules:
+    MANUAL CURATION:
+    The rules of the rule based engine were transcribed manually based on the
+    Expert Rules and Intrinsic Resistances version 3.1 document. If newer versions are published they have to be updated.
+    Currently rules are named with their respective number based on:
+        - the sheet, block and note number in case the interpretive rule was derived from the note text of the breakpoint table
+            e.g. exec_rule_bp_t_enterobacterales_carbapenems_1 was derived from the breakpoint table, sheet enterobacterales,
+            compound family Carbapenems note one.
+        - the identifier used in the interpretive rule table if the rules are explicitly listed as such in the
+            Expert Rules and Intrinsic Resistances version 3.1 document.
+
+    OTHER ATTRIBUTES (BETA LACTAMASE):
+    Some of the rules rely on additional information regarding the sample, such as whether Beta-Lactamase is present.
+    At this moment there is no sensible way to add this information in the mic label detemination workflow.
+    Consequently, these rules are never executed.
+
+
+
+Design Decisions
+++++++++++++
+
+-  Currently some species-compound combinations have associated breakpoints although they are listed as intrinsic resistant,
+    in these cases the intrinsic resistance is ignored and the breakpoints are applied
+
+- Interpretation of breakpoints without compound concentrations:
+    '-': a dash means that susceptibility testing is not recommended and that the species can be considered resistant.
+         The respective concentrations are then changed to S <= -1 and R > 0 mg/L
+    'IP': 'in preparation'. These entries are currently dropped due to uncertainty regarding
+         the classification.
+    'IE': 'insufficient evidence that the organism or group is a good target for therapy with the agent'.
+        These entries are currently dropped due to uncertainty regarding the classification.
+    'NA': Not applicable. Used for screen breakpoints to differentiate between isolates with and without resistance mechanism.
+        These entries are dropped.
+
+- Phenotypically defined groups:
+    The members of the following phenotypically defined groups were defined within the Eucast Excel sheet itself (version 8.0):
+        - Viridans group streptococci,
+        - Gram-positive anaerobes
+        - Gram-negative anaerobes
+        - Non-fermentative gram-negative
+    Phenotypic groups whose member species were not enumerated in official Eucast documents are:
+        - Streptococcus groups A, B, C and
+        - Gram negative bacteria
+        - Gram positive bacteria
+    Sources for the information on these member species can be found in the resources folder.
+
+To Do
+++++++++++++
+- Repair or delete console classification
+- Write unit tests
+
+
+Data
+++++++++++++
+This package was developed based on the structure of the following files:
+
+- Breakpoints Tables version 8.0 and version 8.1:
+http://www.eucast.org/fileadmin/src/media/PDFs/EUCAST_files/Breakpoint_tables/v_8.0_Breakpoint_Tables.pdf
+- Expert Rules and Intrinsic Resistances version 3.1
+http://www.eucast.org/fileadmin/src/media/PDFs/EUCAST_files/Expert_Rules/Expert_rules_intrinsic_exceptional_V3.1.pdf
