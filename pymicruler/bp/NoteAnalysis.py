@@ -70,7 +70,7 @@ class NoteAnalysis:
         Writes out any missing notes for manual classification.
         """
         pd.DataFrame(self.unknown_note_list, columns=['note_text']) \
-            .to_excel(util.Path.MISSING_NOTES.value)
+            .to_excel(util.Path.MISSING_NOTES.value, index=False)
 
     def get_note_information(self, text, organism, cmp_name):
         """

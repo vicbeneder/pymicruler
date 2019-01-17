@@ -295,11 +295,10 @@ class BpRuler:
         """
         self.sample.loc[pd.isna(self.sample.matched_organism),
                         'matched_organism'] = 'Breakpoint not found'
-
         output_table = self.sample.drop(util.Cols.RULER_DROP_ELSE.value, axis=1)
 
         if ana_type == 'classify' and 'incmplt' in list(output_table):
-            output_table = self.sample.drop('incmplt', axis=1)
+            output_table = output_table.drop('incmplt', axis=1)
 
         if len(self.unknown_entries) > 0:
             output_table = pd.concat((output_table, self.unknown_entries), sort=False)
