@@ -54,10 +54,17 @@ class BlockInterpreter:
         mask = self.table.apply(lambda x: self._check_if_convertable(x), axis=1)
         [self._convert_to_resistant(x) for x in mask.index]
 
-    def _check_if_convertable(self, x):
-        dashed = x.r_value == '-' and x.s_value == '-'
-        all_ss = pd.isna(x.all_ss)
-        all_relevant_ss = pd.isna(x.r_ss) and pd.isna(x.s_ss) and pd.isna(x.cmp_ss)
+    def _check_if_convertable(self, row):
+        """
+        Filters all entries that can be converted to resistant
+        :param row: one row of the breakpoint table
+        :type: Pandas Series
+        :return: Boolean if row can be converted to resistant
+        :rtype: Boolean
+        """
+        dashed = row.r_value == '-' and row.s_value == '-'
+        all_ss = pd.isna(row.all_ss)
+        all_relevant_ss = pd.isna(row.r_ss) and pd.isna(row.s_ss) and pd.isna(row.cmp_ss)
         return dashed and (all_ss or all_relevant_ss)
 
     def _process_restrictions(self):
@@ -271,14 +278,42 @@ class BlockInterpreter:
         Detects phenotypically defined groups and duplicates entries for all member species.
         """
         for key in self.phen_groups.keys():
-            mask = self.table.apply(lambda x: x.organism.lower() == key.lower(), axis=1)
+            mask = self.table.organism.str.contains(key, flags=re.IGNORECASE, regex=True)
             phen = self.table[mask]
-            self.table = self.table[~mask]
-            species_list = self.phen_groups[key].copy()
-            for idx, row in phen.iterrows():
-                curr_species_list = self._reduce_list_by_existing_breakpoints(
-                    idx, phen, species_list)
-                self._duplicate_rows(idx, phen, curr_species_list)
+            if len(phen) > 0:
+                self.table = self.table[~mask]
+                species_list = self.phen_groups[key].copy().tolist()
+                existing_bps = self._find_existing_breakpoints(phen, species_list)
+                if existing_bps is not None:
+                    cmp_groups = existing_bps.groupby('cmp_name')
+                    for name, group in cmp_groups:
+                        organisms = group.organism.unique()
+                        updated_list = species_list.copy()
+                        [updated_list.remove(x) for x in organisms]
+                        row_idx = phen[phen.cmp_name == name].index[0]
+                        self._duplicate_rows(row_idx, phen, updated_list)
+                        phen = phen[phen.cmp_name != name]
+                for idx, row in phen.iterrows():
+                    self._duplicate_rows(idx, phen, species_list)
+
+    def _find_existing_breakpoints(self, df, phen_list):
+        """
+        Checks if any of the member species has an own entry in the table already.
+
+        :param df: All breakpoints that need to be duplicated for a specific
+         phenotypically defined group.
+        :type: Pandas DataFrame
+        :param phen_list: A list of member species that make up the phenotypically defined group.
+        :type: List
+        :return: Existing entries or None
+        :type: Pandas DataFrame
+        """
+        compounds = df.cmp_name.unique()
+        mask = self.table.organism.isin(phen_list) & self.table.cmp_name.isin(compounds)
+        if sum(mask) == 0:
+            return None
+        else:
+            return self.table[mask]
 
     def _translate_streptococcus(self, idx, entry, table):
         """
@@ -294,13 +329,6 @@ class BlockInterpreter:
         match = re.findall(util.Regex.STREP.value, entry)
         org_list = ['Group ' + x for x in match]
         self._duplicate_rows(idx, table, org_list)
-
-    def _reduce_list_by_existing_breakpoints(self, idx, data, phen_list):
-        cmp_name, roa, indication = data.loc[idx, ['cmp_name', 'roa', 'indication']]
-        for l_idx, organism in phen_list.iteritems():
-            if self._check_if_row_exists(organism, cmp_name, roa, indication):
-                phen_list = phen_list.drop(l_idx)
-        return phen_list
 
     def _split_orgs(self):
         """
@@ -359,20 +387,3 @@ class BlockInterpreter:
                     'replacement'].iloc[0]
                 self.table.loc[self.table.organism == element,
                                'organism'] = translated
-
-    def _check_if_row_exists(self, organism, cmp_name, roa, indication):
-        """
-        Analyses whether the entry already exists in the dataframe.
-
-        :param organism: name of organism the breakpoint is applciable to
-        :param cmp_name: name of compound the breakpoint is applicable to
-        :param roa: route of administration the breakpoint is applicable to.
-        :param indication: indication the breakpoint is applicable to.
-        :return: True/False if breakpoint exists in the table already
-        :type: Boolean
-        """
-        mask = self.table.apply(lambda x: x.organism == organism and x.cmp_name == cmp_name
-                                          and (pd.isna([x.roa, roa]).all() or x.roa == roa)
-                                          and (pd.isna([x.indication, indication]).all()
-                                               or x.indication == indication), axis=1)
-        return sum(mask) > 0
