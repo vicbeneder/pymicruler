@@ -87,8 +87,73 @@ In a future extension these comments will be displayed as warnings.
 **Altering the interpretation dictionary manually**
 
 If there are more than a hand full of comments and the classification system is clear to the user, editing the responsible dictionary directly might be more efficient.
-New notes will be saved in the file path_to_package/pymicruler/output/missing_notes.xlsx
-The note text has to be copied into the 'interpretation_dict_updated.xlsx' file in the same folder.
+New notes will be saved in the file path_to_package/pymicruler/output/missing_notes.xlsx.
+The note text has to be copied into the 'interpretation_dict_updated.xlsx' file in the same folder:
+
+.. list-table:: Interpretation Dictionary
+   :header-rows: 1
+
+   * - note_text
+     - relevance
+     - no_resistance
+     - interpretation
+     - rule
+     - exception
+     - indication
+     - new_bp
+     - not_encodable
+     - resistance
+     - roa
+     - other_information
+   * - Agar dilution is the reference method for mecillinam MIC determination.
+     - 0
+     -
+     -
+     -
+     -
+     -
+     -
+     -
+     -
+     -
+     -
+   * - Always test for beta-lactamase. If positive, report resistant to benzylpenicillin, ampicillin and amoxicillin. Tests based on a chromogenic cephalosporin can be used to detect the beta-lactamase. The susceptibility of beta-lactamase negative isolates to ampicillin and amoxicillin can be inferred from benzylpenicillin.
+     - 1
+     -
+     - 1
+     - rule_10_4; n_gonorrhoeae_penicillin_1
+     -
+     -
+     -
+     -
+     -
+     -
+     -
+   * - Azithromycin has been used in the treatment of infections with Salmonella Typhi (MIC ≤16 mg/L for wild type isolates) and Shigella spp.
+     - 1
+     -
+     -
+     -
+     - Shigella
+     -
+     - Salmonella enterica subsp. enterica serovar Typhi; Azithromycin; 16
+     -
+     -
+     -
+     -
+   * - Breakpoints for penicillins other than benzylpenicillin relate only to non-meningitis isolates.
+     - 1
+     -
+     -
+     -
+     -
+     - NOT meningitis
+     -
+     -
+     -
+     -
+     -
+
 Based on this note text the following columns have to be filled:
 
 - relevance: Might this information be relevant for MIC interpretation rather than lab (0/1)
@@ -123,7 +188,11 @@ New entries
 
 Will be displayed in case of irregularities during the parsing or if organisms have been
 reclassified or renamed. In the latter case add the name of the organism to
-resources/species_renaming.xlsx. The entry that could not be matched should be pasted in the first
+resources/species_renaming.xlsx.
+
+
+
+The entry that could not be matched should be pasted in the first
 column *query_term* and the full names as listed in the NCBI Taxonomy should be added in the
 second column *replacement*
 
@@ -131,6 +200,20 @@ second column *replacement*
 
 Will be displayed if any new short forms are detected. In this case the name
 should be copied and added to resources/species_renaming.xlsx.
+
+.. list-table:: Interpretation Dictionary
+   :header-rows: 1
+
+   * - query_term
+     - replacement
+   * - P. mirabilis
+     - Proteus mirabilis
+   * - Clostridium difficile
+     - Clostridioides difficile
+   * - Enterobacter aerogenes
+     - Klebsiella aerogenes
+
+
 The new short forms should be pasted in the first column *query_term* and the
 full name as listed in the NCBI Taxonomy should be added in the second column *replacement*
 
@@ -138,8 +221,8 @@ full name as listed in the NCBI Taxonomy should be added in the second column *r
 
 Will be displayed if there were irregularities during parsing.
 But the more probable reason is that Eucast publishes breakpoints for new
-agents. In this case the compound dictionary at resources/compound_classes
-.xlsx needs to be updated with the new compound. The information which
+agents. In this case the compound dictionary at resources/compound_classes.xlsx
+needs to be updated with the new compound. The information which
 compound class it belongs to can be derived from the Eucast Table itself.
 
 **A new type of information was found which could not be categorised <information>.**
@@ -148,7 +231,7 @@ Will be displayed if there is new information written in parentheses next to
 the compound name.
 
 If the information is a new type of restriction to an indication the user is asked to manually
-add this information to the class*Info* list *IND* in the file utils/util.py.
+add this information to the class *Info* list *IND* in the file utils/util.py.
 
 If the information is not relevant for further AST result interpretation the user is asked to
 manually add this information to the class *Info* list *IRR_PARR* in the file utils/util.py.
@@ -159,7 +242,7 @@ to be adjusted to match also these new cases.
 
 .. _int_rules_table:
 
-Changes regarding interpretive Rules
+Changes in the interpretive rules
 -------------------------------------
 The library tracks any changes in the application of interpretive rules which were derived from the breakpoint table free text.
 The log is saved in the file 'interpretive_rule_changes.csv' in the output folder of the library.
@@ -167,8 +250,75 @@ It is always a comparison to the last version that was analysed.
 In the first column of the document the note texts that have changed are listed. The second columns describe the breakpoints that have been affected and the third column how they changed.
 'added' indicates that the application of the interpretive rules needs to be extended for the mentioned species/compound combinations.
 'removed' means that these breakpoints have to be excepted from the application of the rule.
-All of these changes have to be done in the RuleBasedEngine.py file. Names of the rules that need to be changed can be looked up in the interpretation_dict_updated.xlsx
-as long as it is updated whenever a rule is added as recommended in the respective session.
+All of these changes have to be done in the RuleBasedEngine.py file. Names of the rules that need
+to be changed can be looked up in the interpretation_dict_updated.xlsx document in the column 'rule' for the respective comment.
+
+One example for such an interpretive rule derived from the comments would be:
+
+*Ampicillin susceptible S. saprophyticus are mecA-negative and susceptible to ampicillin, amoxicillin and piperacillin (without or with a beta-lactamase inhibitor).*
+
+The corresponding rule formulated with the Python package 'pyknow* would look as follows
+::
+    @Rule(AND(Organism(name='Staphylococcus saprophyticus'),
+              Susceptibility(cmp_name='Ampicillin')))
+    def exec_rule_bp_t_staphylococcus_penicillins_3(self):
+        cmp_list = ('Ampicillin', 'Amoxicillin', 'Amoxycillin-clavulanic acid',
+                    'Ampicillin-sulbactam', 'Piperacillin', 'Piperacillin-tazobactam')
+        self.declare(Mec(present='False'))
+        self.declare_cmp_list(cmp_list, 'S')
+
+Rules consist of a pattern matching part and an executing part. In this case the rule will be
+executed if the analysed pathogen is Staphylococcus saprophyticus and it is considered susceptible
+to Ampicillin based on the AST results.
+
+If the pattern is matched the corresponding function (exec_rule_bp_t_staphylococcus_penicillins_3) is executed.
+In this case the information that the pathogen will also be susceptible to  Ampicillin-sulbactam,
+Amoxicillin, Amoxycillin-clavulanic acid, Piperacillin and Piperacillin-tazobactam is derived from
+this rule and added to the known resistance phenotypes of the sample.
+
+If the applicability for the rule should be changed (e.g. extend to Staphylococcus aureus)
+the matching condition has to be adapted to:
+::
+     @Rule(AND(Organism(name=anyof('Staphylococcus saprophyticus', 'Staphylococcus aureus'),
+              Susceptibility(cmp_name='Ampicillin')))
+
+If more than one susceptibility have to be present e.g. also to Amoxicillin the matching condition would be updated as follows:
+::
+     @Rule(AND(Organism(name=anyof('Staphylococcus saprophyticus', 'Staphylococcus aureus'),
+              AND(Susceptibility(cmp_name='Ampicillin'),
+              Susceptibility(cmp_name='Amoxicillin'))
+
+
+In the executing part of the function all phenotypes that can be derived should be declared.
+This can be done for each compound individually:
+::
+    self.declare(Resistance(cmp_name='Benzylpenicillin'))
+    self.declare(Susceptibility(cmp_name='Ciprofloxacin'))
+    self.declare(Intermediate(cmp_name='Tetracycline'))
+
+For a whole compound family, e.g. resistance to all aminoglycosides:
+::
+    self.declare_cmp_family('Aminoglycosides', 'R')
+
+Or, for a list of compounds if all compounds have to be declared for the same phenotype, e.g. susceptible:
+::
+    cmp_list = ['Benzylpenicillin', 'Ciprofloxacin', 'Tetracycline']
+    self.declare_cmp_list(cmp_list, 'S)
+
+
+If a completely new interpretive rule was found a new *pyknow* rule has to be developed as described above and appended to the script.
+The order of the rules does not change the result of he analysis so they can be inserted at any point within the class *BacterialResistance*.
+For any question regarding the syntax of *pyknow* please consult the readthedocs of the package.
+
+The name of the function that is executed can be changed deliberately as it will only be called
+as a consequence of a match with the rule. To ensure traceability of the source of the information
+the suggested naming scheme explained at the example mentioned above is the following:
+
+All functions start with the term `exec_rule_` then the EUCAST document is specified.
+If the rule is derived from the breakpoint table the short form would be `bp_t_`.
+Then, the sheet `staphylococcus` and compound family `penicillins` are mentioned and finally the
+number of the comment `3` is appended.
+
 
 Changes in the table layout
 ----------------------------
@@ -205,11 +355,11 @@ Ideally it should be changed whenever the document is updated.
 Updated Interpretive Rules Publication
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The rules of the RBE are derived from the Eucast Interpretive Rule document as well as the breakpoint table.
+The rules of the RuleBasedEngine are derived from the Eucast Interpretive Rule document as well as the breakpoint table.
     Publication:
         In case of an update in the Interpretive Rule publication new rules will have to be analysed manually.
         The current naming scheme allows to connect the rule back to their listing in v3.1 of the Expert Rules and Intrinsic Resistances.
         It might be best to compare the new rules to the then outdated publication to find the changed rule in the most efficient way.
     Clinicial Breakpoint Table:
-        For changes related to Clinical Breakpoint Tables derived rules see :ref:`Changes regarding interpretive Rules<int_rules_table>`.
+        For changes related to Clinical Breakpoint Tables derived rules see :ref:`Changes in interpretive rules<int_rules_table>`.
 

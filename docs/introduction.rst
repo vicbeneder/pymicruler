@@ -5,9 +5,9 @@ Introduction
 Installation
 ^^^^^^^^^^^^^
 
-clone the pymicruler package from CodeCommit:
+Clone the pymicruler package from CodeCommit:
 ::
-    git clone https://git-codecommit.eu-central-1.amazonaws.com/v1/repos/pymicruler
+    git clone https://github.com/vicbeneder/pymicruler.git
 
 
 Change to the path of the library and execute the following command:
@@ -16,10 +16,10 @@ Change to the path of the library and execute the following command:
 
 
 
-Data
-^^^^
+Input
+^^^^^^
 
-This package was developed based on the structure of the following files:
+This package was developed and tested based on the following EUCAST guidelines:
 
 - `Breakpoints Tables version 7.1 until version 9.0 <http://www.eucast.org/clinical_breakpoints/>`_.
 
