@@ -1,5 +1,5 @@
-pymicruler
----------
+# pymicruler
+
 
 Package for processing EUCAST breakpoint table Excel files and automatic resistance phenotype determination
 of samples based on measured minimum inhibitory concentration.
