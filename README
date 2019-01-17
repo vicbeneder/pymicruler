@@ -1,7 +1,6 @@
-# pymicruler
+pymicruler
+===========
 
+Package for processing EUCAST guidelines for bacteria including convenience function for resistance phenotype determination based on minimum inhibitory concentrations.
 
-Package for processing EUCAST breakpoint table Excel files and automatic resistance phenotype determination
-of samples based on measured minimum inhibitory concentration.
-
-Please consult the readthedocs (https://pymicruler.readthedocs.io) for further information on installation and usage.
+Please consult the [documentation](https://pymicruler.readthedocs.io) for further information on installation and usage.
