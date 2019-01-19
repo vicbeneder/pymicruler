@@ -28,7 +28,7 @@
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Preprocessing" href="preprocessing.html" />
+    <link rel="next" title="Pre-processing" href="preprocessing.html" />
     <link rel="prev" title="Introduction" href="introduction.html" /> 
 
   
@@ -81,7 +81,7 @@
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Quickstart</a></li>
-<li class="toctree-l1"><a class="reference internal" href="preprocessing.html">Preprocessing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="preprocessing.html">Pre-processing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="modules.html">Modules</a></li>
 <li class="toctree-l1"><a class="reference internal" href="manual_updates.html">Manual Updates</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dataprocessing.html">Data processing</a></li>
@@ -151,22 +151,37 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="quickstart">
-<h1>Quickstart<a class="headerlink" href="#quickstart" title="Permalink to this headline">¶</a></h1>
-<p>After <a class="reference internal" href="introduction.html#id1"><span class="std std-ref">Installation</span></a> of the package the analysis can be started by executing the demo scripts included in the package.</p>
-<p>The most recent version 9.0 of the Eucast Breakpoints Table which is valid from 1.1.2019 has been pre-processed and is stored in /demo/demo_resources/preprocessed_v_9.0_Breakpoint_Tables.xlsx.</p>
-<p>If any other versions should be used, download the respective file and follow the steps for <a class="reference internal" href="preprocessing.html#preprocessing"><span class="std std-ref">Preprocessing</span></a>.</p>
-<p>To parse the preprocessed Clinical Breakpoint Table execute the method <a class="reference internal" href="modules.html#eucastparser-run-eucast-parser"><span class="std std-ref">EucastParser.run_eucast_parser()</span></a>:</p>
+  <div class="section" id="id1">
+<h1>Quickstart<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>After <a class="reference internal" href="introduction.html#id1"><span class="std std-ref">Installation</span></a> of the package, the analysis can be started immediately by running the following commands from the directory <em>demo/</em>.</p>
+<p>The most recent version 9.0 of the EUCAST Breakpoint Tables, which is valid from 1.1.2019, has already been pre-processed for convenience and is included in the package under <em>demo/demo_resources/preprocessed_v_9.0_Breakpoint_Tables.xlsx</em>.</p>
+<p>Other versions can also be downloaded and used. Please see <a class="reference internal" href="preprocessing.html#preprocessing"><span class="std std-ref">Pre-processing</span></a>.</p>
+<p>The pre-processed EUCAST Breakpoint Tables can be parsed into a dataframe of organism-compound breakpoints using the following command <a class="reference internal" href="modules.html#eucastparser-run-eucast-parser"><span class="std std-ref">EucastParser.run_eucast_parser()</span></a>.</p>
+<p><strong>Preparation for Parsing:</strong></p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">pymicruler.bp.EucastParser</span> <span class="k">import</span> <span class="n">EucastParser</span>
+<span class="kn">import</span> <span class="nn">os</span>
 
-<span class="n">ep</span> <span class="o">=</span> <span class="n">EucastParser</span><span class="p">()</span>
-<span class="n">eucast</span> <span class="o">=</span> <span class="n">ep</span><span class="o">.</span><span class="n">run_eucast_parser</span><span class="p">(</span><span class="n">path_to_preprocessed_infile</span><span class="p">)</span>
+<span class="n">path_to_preprocessed_infile</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s1">&#39;demo_resources&#39;</span><span class="p">,</span> <span class="s1">&#39;preprocessed_v_9.0_Breakpoint_Tables.xlsx&#39;</span><span class="p">)</span>
 
-<span class="n">eucast</span><span class="o">.</span><span class="n">to_excel</span><span class="p">(</span><span class="n">path_to_guidelines</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">path_to_parser_outfile</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s1">&#39;demo_results&#39;</span><span class="p">,</span> <span class="s1">&#39;processed_v_9.0_Breakpoint_Tables.xlsx&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
-<table border="1" class="docutils" id="id1">
-<caption><span class="caption-text">Parsed EUCAST Breakpoint Table</span><a class="headerlink" href="#id1" title="Permalink to this table">¶</a></caption>
+<p><strong>Parsing:</strong></p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># instantiate EUCAST parser object</span>
+<span class="n">ep</span> <span class="o">=</span> <span class="n">EucastParser</span><span class="p">()</span>
+
+<span class="c1"># parse preprocessed EUCAST table; returns Pandas DataFrame</span>
+<span class="n">eucast_9_0</span> <span class="o">=</span> <span class="n">ep</span><span class="o">.</span><span class="n">run_eucast_parser</span><span class="p">(</span><span class="n">path_to_preprocessed_infile</span><span class="p">)</span>
+
+<span class="c1"># write PandasDataFrame to Excel</span>
+<span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="s1">&#39;demo_results&#39;</span><span class="p">):</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="s1">&#39;demo_results&#39;</span><span class="p">)</span>
+
+<span class="n">eucast_9_0</span><span class="o">.</span><span class="n">to_excel</span><span class="p">(</span><span class="n">path_to_parser_outfile</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><strong>Parsed EUCAST Breakpoint Table:</strong></p>
+<table border="1" class="docutils">
 <colgroup>
 <col width="10%" />
 <col width="10%" />
@@ -239,16 +254,24 @@
 </tr>
 </tbody>
 </table>
-<p>Breakpoints can be looked up by executing the method <a class="reference internal" href="modules.html#bpruler-run-breakpoint-query"><span class="std std-ref">BpRuler.run_breakpoint_query()</span></a>:</p>
+<p><strong>Preparation for MIC Analysis</strong></p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">pymicruler.bp.BpRuler</span> <span class="k">import</span> <span class="n">BpRuler</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 
-<span class="n">bp</span> <span class="o">=</span> <span class="n">BpRuler</span><span class="p">()</span>
-<span class="n">bp_table</span> <span class="o">=</span> <span class="n">bp</span><span class="o">.</span><span class="n">run_breakpoint_query</span><span class="p">(</span><span class="n">path_to_guidelines</span><span class="p">,</span> <span class="n">test_bp_data_small</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">bp_table</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
+<span class="n">path_to_mics</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s1">&#39;demp_resources&#39;</span><span class="p">,</span> <span class="s1">&#39;mic_demo_table.xlsx&#39;</span><span class="p">)</span>
+<span class="n">mics_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="n">path_to_mics</span><span class="p">)</span>
 </pre></div>
 </div>
-<table border="1" class="docutils" id="id2">
-<caption><span class="caption-text">Results of Breakpoint Query</span><a class="headerlink" href="#id2" title="Permalink to this table">¶</a></caption>
+<p><strong>Breakpoint Query</strong></p>
+<p>Breakpoints for organism-compound combinations can subsequently be looked up using the following method <a class="reference internal" href="modules.html#bpruler-run-breakpoint-query"><span class="std std-ref">BpRuler.run_breakpoint_query()</span></a>.
+This method takes the lineage of the target organisms in account.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">bp</span> <span class="o">=</span> <span class="n">BpRuler</span><span class="p">()</span>
+<span class="n">bp_table</span> <span class="o">=</span> <span class="n">bp</span><span class="o">.</span><span class="n">run_breakpoint_query</span><span class="p">(</span><span class="n">path_to_parser_outfile</span><span class="p">,</span> <span class="n">mics_df</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">bp_table</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
+</pre></div>
+</div>
+<p><strong>Results of Breakpoint Query:</strong></p>
+<table border="1" class="docutils">
 <colgroup>
 <col width="13%" />
 <col width="13%" />
@@ -327,112 +350,15 @@
 </tr>
 </tbody>
 </table>
-<p>AST results can be translated into resistance phenotypes (R, S, I) by executing the method <a class="reference internal" href="modules.html#bpruler-run-sample-classification"><span class="std std-ref">BpRuler.run_sample_classification()</span></a>:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">pymicruler.bp.BpRuler</span> <span class="k">import</span> <span class="n">BpRuler</span>
-
-<span class="n">bp</span> <span class="o">=</span> <span class="n">BpRuler</span><span class="p">()</span>
-<span class="n">label_table</span> <span class="o">=</span> <span class="n">bp</span><span class="o">.</span><span class="n">run_sample_classification</span><span class="p">(</span><span class="n">path_to_resource</span><span class="p">,</span> <span class="n">test_bp_data_small</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">label_table</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
+<p><strong>MIC Classificaion</strong></p>
+<p>Individual AST results can be classified into phenotypes (R, S, I) via the following command <a class="reference internal" href="modules.html#bpruler-run-sample-classification"><span class="std std-ref">BpRuler.run_sample_classification()</span></a>:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">bp</span> <span class="o">=</span> <span class="n">BpRuler</span><span class="p">()</span>
+<span class="n">label_table</span> <span class="o">=</span> <span class="n">bp</span><span class="o">.</span><span class="n">run_sample_classification</span><span class="p">(</span><span class="n">path_to_parser_outfile</span><span class="p">,</span> <span class="n">mics_df</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">label_table</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
 </pre></div>
 </div>
-<table border="1" class="docutils" id="id3">
-<caption><span class="caption-text">Results of MIC classification</span><a class="headerlink" href="#id3" title="Permalink to this table">¶</a></caption>
-<colgroup>
-<col width="11%" />
-<col width="11%" />
-<col width="11%" />
-<col width="11%" />
-<col width="11%" />
-<col width="11%" />
-<col width="11%" />
-<col width="11%" />
-<col width="11%" />
-</colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head">sample_id</th>
-<th class="head">organism</th>
-<th class="head">cmp_name</th>
-<th class="head">MIC</th>
-<th class="head">s_value</th>
-<th class="head">r_value</th>
-<th class="head">matched_organism</th>
-<th class="head">matched_cmp_name</th>
-<th class="head">label</th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr class="row-even"><td>4710</td>
-<td>Stenotrophomonas maltophilia</td>
-<td>Ampicillin-sulbactam</td>
-<td>128</td>
-<td>-1</td>
-<td>0</td>
-<td>Stenotrophomonas maltophilia</td>
-<td>Ampicillin-sulbactam</td>
-<td>R</td>
-</tr>
-<tr class="row-odd"><td>4710</td>
-<td>Stenotrophomonas maltophilia</td>
-<td>Ampicillin</td>
-<td>256</td>
-<td>-1</td>
-<td>0</td>
-<td>Stenotrophomonas maltophilia</td>
-<td>Ampicillin</td>
-<td>R</td>
-</tr>
-<tr class="row-even"><td>…</td>
-<td>…</td>
-<td>…</td>
-<td>…</td>
-<td>…</td>
-<td>…</td>
-<td>…</td>
-<td>…</td>
-<td>…</td>
-</tr>
-<tr class="row-odd"><td>4710</td>
-<td>Stenotrophomonas maltophilia</td>
-<td>Levofloxacin</td>
-<td>4</td>
-<td>&#160;</td>
-<td>&#160;</td>
-<td>Breakpoint not found</td>
-<td>&#160;</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-even"><td>…</td>
-<td>…</td>
-<td>…</td>
-<td>…</td>
-<td>…</td>
-<td>…</td>
-<td>…</td>
-<td>…</td>
-<td>…</td>
-</tr>
-<tr class="row-odd"><td>4710</td>
-<td>Stenotrophomonas maltophilia</td>
-<td>Trimethoprim-sulfamethoxazole</td>
-<td>0.25</td>
-<td>4</td>
-<td>4</td>
-<td>Stenotrophomonas maltophilia</td>
-<td>Trimethoprim-sulfamethoxazole</td>
-<td>S</td>
-</tr>
-</tbody>
-</table>
-<p>Resistance phenotypes for tested components and beyond can be derived from AST data by executing the method <a class="reference internal" href="modules.html#bpruler-get-whole-resistance-phenotype"><span class="std std-ref">BpRuler.get_whole_resistance_phenotype()</span></a>:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">pymicruler.bp.BpRuler</span> <span class="k">import</span> <span class="n">BpRuler</span>
-
-<span class="n">bp</span> <span class="o">=</span> <span class="n">BpRuler</span><span class="p">()</span>
-<span class="n">full_table</span> <span class="o">=</span> <span class="n">bp</span><span class="o">.</span><span class="n">get_whole_resistance_phenotype</span><span class="p">(</span><span class="n">path_to_resource</span><span class="p">,</span> <span class="n">test_bp_data_small</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">full_table</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
-</pre></div>
-</div>
-<table border="1" class="docutils" id="id4">
-<caption><span class="caption-text">Results of whole resistance phenotype determination</span><a class="headerlink" href="#id4" title="Permalink to this table">¶</a></caption>
+<p><strong>Results of MIC Classification:</strong></p>
+<table border="1" class="docutils">
 <colgroup>
 <col width="11%" />
 <col width="11%" />
@@ -519,6 +445,102 @@
 </tr>
 </tbody>
 </table>
+<p><strong>Whole resistance phenotype determination</strong></p>
+<p>EUCAST’s interpretive rules - that additionally infer phenotypes for compounds that were not tested - can be applied for the classification of phenotypes from AST data by the following method <a class="reference internal" href="modules.html#bpruler-get-whole-resistance-phenotype"><span class="std std-ref">BpRuler.get_whole_resistance_phenotype()</span></a>:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">bp</span> <span class="o">=</span> <span class="n">BpRuler</span><span class="p">()</span>
+<span class="n">full_table</span> <span class="o">=</span> <span class="n">bp</span><span class="o">.</span><span class="n">get_whole_resistance_phenotype</span><span class="p">(</span><span class="n">path_to_parser_outfile</span><span class="p">,</span> <span class="n">mics_df</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">full_table</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
+</pre></div>
+</div>
+<p><strong>Results of whole resistance phenotype determination:</strong></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="11%" />
+<col width="11%" />
+<col width="11%" />
+<col width="11%" />
+<col width="11%" />
+<col width="11%" />
+<col width="11%" />
+<col width="11%" />
+<col width="11%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">sample_id</th>
+<th class="head">organism</th>
+<th class="head">cmp_name</th>
+<th class="head">MIC</th>
+<th class="head">s_value</th>
+<th class="head">r_value</th>
+<th class="head">matched_organism</th>
+<th class="head">matched_cmp_name</th>
+<th class="head">label</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>4710</td>
+<td>Stenotrophomonas maltophilia</td>
+<td>Ampicillin-sulbactam</td>
+<td>128</td>
+<td>-1</td>
+<td>0</td>
+<td>Stenotrophomonas maltophilia</td>
+<td>Ampicillin-sulbactam</td>
+<td>R</td>
+</tr>
+<tr class="row-odd"><td>4710</td>
+<td>Stenotrophomonas maltophilia</td>
+<td>Ampicillin</td>
+<td>256</td>
+<td>-1</td>
+<td>0</td>
+<td>Stenotrophomonas maltophilia</td>
+<td>Ampicillin</td>
+<td>R</td>
+</tr>
+<tr class="row-even"><td>…</td>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+</tr>
+<tr class="row-odd"><td>4710</td>
+<td>Stenotrophomonas maltophilia</td>
+<td>Levofloxacin</td>
+<td>4</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>Breakpoint not found</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>…</td>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+</tr>
+<tr class="row-odd"><td>4710</td>
+<td>Stenotrophomonas maltophilia</td>
+<td>Trimethoprim-sulfamethoxazole</td>
+<td>0.25</td>
+<td>4</td>
+<td>4</td>
+<td>Stenotrophomonas maltophilia</td>
+<td>Trimethoprim-sulfamethoxazole</td>
+<td>S</td>
+</tr>
+</tbody>
+</table>
+<p>For the convenience of the user a couple of demo scripts which allow to get an overview of the described functionalities are provided in the folder <em>demo/</em>.</p>
 </div>
 
 
@@ -529,7 +551,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="preprocessing.html" class="btn btn-neutral float-right" title="Preprocessing" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="preprocessing.html" class="btn btn-neutral float-right" title="Pre-processing" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="introduction.html" class="btn btn-neutral" title="Introduction" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
@@ -541,7 +563,7 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2018, Victoria Beneder, Stephan Beisken, Peter Sykacek, Andreas Posch
+        &copy; Copyright 2018, Victoria Beneder
 
     </p>
   </div>

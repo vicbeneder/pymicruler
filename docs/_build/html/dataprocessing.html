@@ -81,11 +81,11 @@
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quickstart</a></li>
-<li class="toctree-l1"><a class="reference internal" href="preprocessing.html">Preprocessing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="preprocessing.html">Pre-processing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="modules.html">Modules</a></li>
 <li class="toctree-l1"><a class="reference internal" href="manual_updates.html">Manual Updates</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Data processing</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#alternative-breakpoint-information">Alternative breakpoint information</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#non-numerical-breakpoint-information">Non-numerical breakpoint information</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#phenotypically-defined-groups">Phenotypically defined groups</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#preference-of-general-breakpoint-over-specific-entry">Preference of general breakpoint over specific entry</a></li>
 </ul>
@@ -158,16 +158,15 @@
             
   <div class="section" id="data-processing">
 <h1>Data processing<a class="headerlink" href="#data-processing" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="alternative-breakpoint-information">
-<h2>Alternative breakpoint information<a class="headerlink" href="#alternative-breakpoint-information" title="Permalink to this headline">¶</a></h2>
-<p>Some breakpoints do not contain concentrations to classify test result as there is too little evidence that therapy will be successful.
-Following the interpretation EUCAST provides in the table directly we converted and filtered these entries as follows:</p>
+<div class="section" id="non-numerical-breakpoint-information">
+<h2>Non-numerical breakpoint information<a class="headerlink" href="#non-numerical-breakpoint-information" title="Permalink to this headline">¶</a></h2>
+<p>Some breakpoints are not based on concentrations to classify test result as there is too little evidence that therapy will be successful.
+Following the interpretation EUCAST provides in the Clinical Breakpoint Tables v. 9.0, we converted and filtered these entries as follows:</p>
 <blockquote>
 <div><dl class="docutils">
 <dt>‘-‘: a dash means that susceptibility testing is not recommended and that the species can be considered resistant.</dt>
-<dd>The respective concentrations are then changed to S &lt;= -1 and R &gt; 0
-mg/L unless any notes associated to the rule contain contradictory
-information</dd>
+<dd>The respective concentrations are changed to S &lt;= -1 and R &gt; 0 mg/L unless any notes
+associated to the rule contain contradictory information</dd>
 <dt>‘IP’: ‘in preparation’. These entries are currently dropped due to uncertainty regarding</dt>
 <dd>the classification.</dd>
 <dt>‘IE’: ‘insufficient evidence’ that the organism or group is a good target for therapy with the agent’.</dt>
@@ -179,10 +178,10 @@ information</dd>
 </div>
 <div class="section" id="phenotypically-defined-groups">
 <h2>Phenotypically defined groups<a class="headerlink" href="#phenotypically-defined-groups" title="Permalink to this headline">¶</a></h2>
-<dl class="docutils">
-<dt>To map all organisms mentioned in the publications back to the NCBI taxonomy we had to resolve phenotypically defined groups into the the individual species that show this phenotype.</dt>
-<dd><dl class="first last docutils">
-<dt>Groups that were defined within the Eucast Breakpoint table:</dt>
+<p>To map all organisms mentioned in the publications back to the NCBI taxonomy we had to resolve phenotypically defined groups into the the individual species that show this phenotype.</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>Groups that were defined within the EUCAST Clinical Breakpoint Tables:</dt>
 <dd><ul class="first last simple">
 <li>Viridans group streptococci,</li>
 <li>Gram-positive anaerobes</li>
@@ -198,9 +197,8 @@ information</dd>
 </ul>
 </dd>
 </dl>
-</dd>
-</dl>
-<p>All phenotypically defined group members can be updated by changing the Excel stored in pymicruler/resources/phenotypic_groups.xlsx.</p>
+</div></blockquote>
+<p>All phenotypically defined group members can be updated by changing the Excel document stored in <em>pymicruler/resources/phenotypic_groups.xlsx</em>.</p>
 </div>
 <div class="section" id="preference-of-general-breakpoint-over-specific-entry">
 <h2>Preference of general breakpoint over specific entry<a class="headerlink" href="#preference-of-general-breakpoint-over-specific-entry" title="Permalink to this headline">¶</a></h2>
@@ -230,7 +228,7 @@ We therefore filtered out more specific breakpoints (e.g. only in case of treatm
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2018, Victoria Beneder, Stephan Beisken, Peter Sykacek, Andreas Posch
+        &copy; Copyright 2018, Victoria Beneder
 
     </p>
   </div>

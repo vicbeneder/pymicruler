@@ -46,8 +46,8 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'MICRuler'
-copyright = '2018, Victoria Beneder, Stephan Beisken, Peter Sykacek, Andreas Posch'
-author = 'Victoria Beneder, Stephan Beisken, Peter Sykacek, Andreas Posch'
+copyright = '2018, Victoria Beneder'
+author = 'Victoria Beneder'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the

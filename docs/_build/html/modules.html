@@ -29,7 +29,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Manual Updates" href="manual_updates.html" />
-    <link rel="prev" title="Preprocessing" href="preprocessing.html" /> 
+    <link rel="prev" title="Pre-processing" href="preprocessing.html" /> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -81,7 +81,7 @@
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quickstart</a></li>
-<li class="toctree-l1"><a class="reference internal" href="preprocessing.html">Preprocessing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="preprocessing.html">Pre-processing</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Modules</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#eucastparser">EucastParser</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#bpruler">BpRuler</a></li>
@@ -162,15 +162,15 @@
 <h2>EucastParser<a class="headerlink" href="#eucastparser" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><dl class="first docutils">
-<dt>Parse Eucast Clinical Breakpoint Table</dt>
+<dt>Parse EUCAST Clinical Breakpoint Tables</dt>
 <dd><ul class="first last">
 <li><dl class="first docutils">
 <dt>EucastParser.run_eucast_parser(path)</dt>
 <dd><dl class="first last docutils">
 <dt>Arguments:</dt>
-<dd>‘path’: Path to preprocessed Eucast Clinical Breakpoint Table</dd>
+<dd>‘path’: Path to preprocessed EUCAST Clinical Breakpoint Tables</dd>
 <dt>Returns:</dt>
-<dd>Pandas DataFrame of parsed guidelines</dd>
+<dd>Pandas DataFrame with parsed guidelines</dd>
 </dl>
 </dd>
 </dl>
@@ -185,14 +185,14 @@
 <h2>BpRuler<a class="headerlink" href="#bpruler" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><dl class="first docutils">
-<dt>Search breakpoints based on organism and compound combinations:</dt>
+<dt>Search breakpoints based on organism-compound combinations</dt>
 <dd><ul class="first last">
 <li><dl class="first docutils">
-<dt>BpRuler.run_breakpoint_query(path_to_resource, query_df)</dt>
+<dt>BpRuler.run_breakpoint_query(path_to_resource, mic_result_df)</dt>
 <dd><dl class="first last docutils">
 <dt>Arguments:</dt>
-<dd>‘path_to_resource’: Path to parsed Clinical Breakpoint Table
-‘query_df’: Pandas DataFrame containing organism-compound combinations to look up. Has to contain column names ‘organism’ and ‘cmp_name’.</dd>
+<dd>‘path_to_resource’: Path to parsed EUCAST Clinical Breakpoint Tables
+‘mic_result_df’: Pandas DataFrame containing organism-compound combinations to look up. Has to contain column names ‘organism’ and ‘cmp_name’.</dd>
 <dt>Returns:</dt>
 <dd><dl class="first last docutils">
 <dt>Pandas DataFrame of parsed guidelines containing the following additional columns:</dt>
@@ -219,11 +219,11 @@
 <dt>Derive resistance phenotypes from Minimum inhibitory concentrations (MIC).</dt>
 <dd><ul class="first last">
 <li><dl class="first docutils">
-<dt>BpRuler.run_sample_classification(resource, query_df)</dt>
+<dt>BpRuler.run_sample_classification(‘path_to_resource’, mic_result_df)</dt>
 <dd><dl class="first last docutils">
 <dt>Arguments:</dt>
-<dd><p class="first">‘path_to_resource’: Path to parsed Clinical Breakpoint Table
-‘query_df’: Pandas DataFrame containing organism-compound combinations to look up.
+<dd><p class="first">‘path_to_resource’: Path to parsed EUCAST Clinical Breakpoint Table
+‘mic_result_df’: Pandas DataFrame containing organism-compound combinations to look up.
 Has to contain column names ‘organism’, ‘cmp_name’ and ‘MIC’.</p>
 <p class="last">If a column ‘sample_id’ is added interpretive rules are applied to the provided sample information to find information about any organism-compound information for which no breakpoint was found.</p>
 </dd>
@@ -254,11 +254,11 @@ Has to contain column names ‘organism’, ‘cmp_name’ and ‘MIC’.</p>
 <dt>Derive resistance phenotypes based on AST results and beyond that via interpretive rule.</dt>
 <dd><ul class="first last">
 <li><dl class="first docutils">
-<dt>BpRuler.get_whole_resistance_phenotype(resource, query_df)</dt>
+<dt>BpRuler.get_whole_resistance_phenotype(‘path_to_resource’, mic_result_df)</dt>
 <dd><dl class="first last docutils">
 <dt>Arguments:</dt>
-<dd>‘path_to_resource’: Path to parsed Clinical Breakpoint Table
-‘query_df’: Pandas DataFrame containing organism-compound combinations to look up.
+<dd>‘path_to_resource’: Path to parsed EUCAST Clinical Breakpoint Table
+‘mic_result_df’: Pandas DataFrame containing organism-compound combinations to look up.
 Has to contain column names ‘organism’, ‘cmp_name’, ‘MIC’ and ‘sample_id’.</dd>
 <dt>Returns:</dt>
 <dd><dl class="first last docutils">
@@ -296,7 +296,7 @@ Has to contain column names ‘organism’, ‘cmp_name’, ‘MIC’ and ‘sam
         <a href="manual_updates.html" class="btn btn-neutral float-right" title="Manual Updates" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="preprocessing.html" class="btn btn-neutral" title="Preprocessing" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="preprocessing.html" class="btn btn-neutral" title="Pre-processing" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -305,7 +305,7 @@ Has to contain column names ‘organism’, ‘cmp_name’, ‘MIC’ and ‘sam
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2018, Victoria Beneder, Stephan Beisken, Peter Sykacek, Andreas Posch
+        &copy; Copyright 2018, Victoria Beneder
 
     </p>
   </div>

@@ -5,14 +5,15 @@ Introduction
 Installation
 ^^^^^^^^^^^^^
 
-Clone the pymicruler package from CodeCommit:
+Clone the *pymicruler* package from CodeCommit:
 ::
     git clone https://github.com/vicbeneder/pymicruler.git
 
 
 Change to the path of the library and execute the following command:
 ::
-    python setup.py install
+    cd pymicruler
+    pip install .
 
 
 

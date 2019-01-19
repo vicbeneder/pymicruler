@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Preprocessing &mdash; MICRuler  documentation</title>
+  <title>Pre-processing &mdash; MICRuler  documentation</title>
   
 
   
@@ -81,9 +81,9 @@
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quickstart</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Preprocessing</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#run-visual-basic-macro">Run visual basic macro</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#remove-strikethrough-text">Remove strikethrough text</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Pre-processing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#breakpoint-table-encoding">Breakpoint Table encoding</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#removing-obsolete-entries">Removing obsolete entries</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="modules.html">Modules</a></li>
@@ -136,7 +136,7 @@
     
       <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>Preprocessing</li>
+      <li>Pre-processing</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -155,13 +155,14 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="preprocessing">
-<span id="id1"></span><h1>Preprocessing<a class="headerlink" href="#preprocessing" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="run-visual-basic-macro">
-<h2>Run visual basic macro<a class="headerlink" href="#run-visual-basic-macro" title="Permalink to this headline">¶</a></h2>
+  <div class="section" id="pre-processing">
+<span id="preprocessing"></span><h1>Pre-processing<a class="headerlink" href="#pre-processing" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="breakpoint-table-encoding">
+<h2>Breakpoint Table encoding<a class="headerlink" href="#breakpoint-table-encoding" title="Permalink to this headline">¶</a></h2>
+<p>A visual basic macro is provided to encode text formatting in a machine readable way, e.g. superscript.</p>
 <ol class="arabic simple">
-<li>Create a new macro with the name ‘PreProcessExcel’ in the respective Eucast Excel file.</li>
-<li>Copy the following text to the vba editor:</li>
+<li>Create a new macro with the name ‘PreProcessExcel’ in the respective EUCAST Excel file.</li>
+<li>Copy the following text to the vba editor and execute.</li>
 </ol>
 <p>Visual Basic Script:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">Sub</span> <span class="n">PreProcessExcel</span><span class="p">()</span>
@@ -211,15 +212,11 @@
 <span class="n">End</span> <span class="n">Sub</span>
 </pre></div>
 </div>
-<ol class="arabic simple" start="3">
-<li>Run the macro.</li>
-</ol>
-<p>The new file will be called ‘preprocessed_&lt;name of the original file&gt;’ and is saved in the same folder as the preprocessed document.</p>
+<p>The new file will be called <em>‘preprocessed_&lt;name of the original file&gt;’</em> and is saved in the same folder as the preprocessed document.</p>
 </div>
-<div class="section" id="remove-strikethrough-text">
-<h2>Remove strikethrough text<a class="headerlink" href="#remove-strikethrough-text" title="Permalink to this headline">¶</a></h2>
-<p>Currently there is no automated removal for strikethrough text available. The user is asked to remove any text in the
-preprocessed breakpoint table manually before parsing the data.</p>
+<div class="section" id="removing-obsolete-entries">
+<h2>Removing obsolete entries<a class="headerlink" href="#removing-obsolete-entries" title="Permalink to this headline">¶</a></h2>
+<p>Obsolete entries are currently encoded as strikethrough text. To exclude these entries the user has to remove this text from the pre-processed EUCAST Breakpoint Tables manually.</p>
 </div>
 </div>
 
@@ -243,7 +240,7 @@ preprocessed breakpoint table manually before parsing the data.</p>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2018, Victoria Beneder, Stephan Beisken, Peter Sykacek, Andreas Posch
+        &copy; Copyright 2018, Victoria Beneder
 
     </p>
   </div>

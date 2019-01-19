@@ -81,11 +81,11 @@
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quickstart</a></li>
-<li class="toctree-l1"><a class="reference internal" href="preprocessing.html">Preprocessing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="preprocessing.html">Pre-processing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="modules.html">Modules</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Manual Updates</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#updated-clinical-breakpoint-tables">Updated Clinical Breakpoint Tables</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#new-comments">New comments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#new-notes">New notes</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#new-entries">New entries</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#changes-in-the-interpretive-rules">Changes in the interpretive rules</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#changes-in-the-table-layout">Changes in the table layout</a></li>
@@ -167,21 +167,39 @@
 <h1>Manual Updates<a class="headerlink" href="#manual-updates" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="updated-clinical-breakpoint-tables">
 <span id="clinical-breakpoint-tables"></span><h2>Updated Clinical Breakpoint Tables<a class="headerlink" href="#updated-clinical-breakpoint-tables" title="Permalink to this headline">¶</a></h2>
-<p>If the overall structure of the updated Clinical Breakpoint Tables remains the same, the file may be parsed as described in the previous Sections.
-The most probable changes are then the addition of new comments, new entries and changes in the interpretive rules:</p>
-<div class="section" id="new-comments">
-<h3>New comments<a class="headerlink" href="#new-comments" title="Permalink to this headline">¶</a></h3>
-<p><strong>Console Classification</strong></p>
-<p>Further information to the questions:</p>
+<p>If the overall table structure of the updated Clinical Breakpoint Tables
+remains the same, the file may be parsed as described in the section <a class="reference internal" href="quickstart.html#id1"><span class="std std-ref">Quickstart</span></a>.
+The most probable changes are the addition of new notes, new entries and
+changes in the interpretive rules:</p>
+<div class="section" id="new-notes">
+<h3>New notes<a class="headerlink" href="#new-notes" title="Permalink to this headline">¶</a></h3>
+<p>The most frequent differences between versions of the Clinical Breakpoint Tables
+are changes in the wording of the notes which provide further information to
+specific breakpoints.</p>
+<p>All notes which have been published within EUCAST Clinical Breakpoint Tables 7.1 to 9.0 have been saved and analysed
+manually and will be interpreted automatically by the parser.
+In case of any new or altered notes the user is asked to update this classification
+either in a guided way directly via the <a class="reference internal" href="#console-class"><span class="std std-ref">console</span></a> or by saving all new comments in the Excel file <em>pymicruler/output/missing_notes.xlsx</em> for subsequent <a class="reference internal" href="#manual-inc"><span class="std std-ref">manual incorporation</span></a>.</p>
+<p id="console-class"><strong>A. Console Classification</strong></p>
+<p>In case the user decides to classify the new notes via the console, he will be asked to answer a set of questions about the content of the note.</p>
+<p><strong>1) Relevance</strong></p>
+<p>Initially notes which are irrelevant for the AST interpretation, e.g. information about how to perform the AST itself, should be filtered out via the following question:</p>
 <p><em>‘May this information relevant for further breakpoint classification? (y/n)’</em></p>
-<p>Yes should be chosen in case the information should aid in the interpretation of the MICs, i.e.</p>
-<p><em>‘Tetracycline has been used to predict doxycycline susceptibility for the treatment of Yersinia enterocolitica infections (tetracycline MIC ≤4 mg/L for wild-type isolates).’</em></p>
-<p>The information is not relevant if it only includes information on how to perform AST, i.e.</p>
+<p>No (<em>‘n’</em>) should be chosen only if no information for the interpretation of AST result is given, i.e.</p>
 <p><em>‘Agar dilution is the reference method for fosfomycin. MICs must be determined in the presence of glucose-6-phosphate (25 mg/L in the medium). Follow the manufacturers’ instructions for commercial systems.’</em></p>
+<p>In any other cases, also in case of uncertainty, it is best to classify the information as relevant by choosing (<em>‘y’</em>)
+An example for a relevant comment would be:</p>
+<p><em>‘Tetracycline has been used to predict doxycycline susceptibility for
+the treatment of Yersinia enterocolitica infections (tetracycline MIC ≤4
+mg/L for wild-type isolates).’</em></p>
+<p><strong>2) Content</strong></p>
+<p>If the comment is found to be relevant the next question aims at
+determining the content of the note. For this purpose the user has to
+classify the note into one of six types of information or a ‘back-up’ option if it
+does not match any of the other options.</p>
 <div class="line-block">
-<div class="line">If the comment is found to be relevant the next question aims at determining the content of the comment.</div>
 <div class="line"><em>‘Does this comment</em></div>
-<div class="line"><em>(a) contain any information about how to derive the resistance phenotype from other resistances or susceptibilities (interpretive rules)?</em></div>
+<div class="line"><em>(a) contain any information about how to derive the resistance phenotype from            other resistances or susceptibilities (interpretive rules)?</em></div>
 <div class="line"><em>(b) explicitly say that the species can be considered resistant?</em></div>
 <div class="line"><em>(c) contain any information about the route of administration?</em></div>
 <div class="line"><em>(d) contain any information about the indication the agent should be used for?</em></div>
@@ -189,74 +207,76 @@ The most probable changes are then the addition of new comments, new entries and
 <div class="line"><em>(f) contain a complete breakpoint including information about species, compound and MIC?</em></div>
 <div class="line"><em>(g) not add any information that can be directly encoded in the table?’</em></div>
 </div>
-<div class="line-block">
-<div class="line"><em>(a) Interpretive rules</em></div>
-<div class="line">An interpretive rule provides information on how to derive resistance phenotypes across antimicrobial agents via a shared mechanism of action. One example would be:</div>
-<div class="line"><em>‘For isolates susceptible to benzylpenicillin, susceptibility can be inferred from benzylpenicillin or ampicillin. ‘</em></div>
-<div class="line">Based on this comment a rule has to be added to the rule engine (define where rule engine can be found). For a detailed guidance on that matter see paragraph below</div>
-</div>
-<div class="line-block">
-<div class="line"><em>(b) Resistance</em></div>
-<div class="line">Should be chosen if the comment specifically mentions that the organism is resistant to the agent, e.g.</div>
-</div>
-<p><em>‘Enterococci are intrinsically resistant to aminoglycosides and aminoglycoside monotherapy is ineffective.’</em></p>
-<div class="line-block">
-<div class="line"><em>(c) Route of administration</em></div>
-<div class="line">Should be chosen if any route of admnistration is mentioned in the comment text, e.g.</div>
-<div class="line"><em>‘The breakpoints are based on epidemiological cut-off values (ECOFFs) and apply to oral treatment of C. difficile infections with vancomycin.’</em></div>
-<div class="line">In a further question the user is then asked to specify the mentioned route of administration. Options are:
-- ‘iv’ (=intravenous)
-- oral
-- topical
-- nasal</div>
-</div>
-<div class="line-block">
-<div class="line"><em>(d) Indication</em></div>
-<div class="line">Should be chosen if information about the disease that should be treated is given, e.g.</div>
-</div>
-<p><em>‘Breakpoints relate to meningitis only.’ or ‘Breakpoints for penicillins other than benzylpenicillin relate only to non-meningitis isolates.’</em>
-In a further question the user is asked to specify the mentioned indication.
-In the first example the answer would be ‘meningitis’ as the breakpoint is only applicable to this indication.
-If the breakpoint is excepted for a specific indication as in the second example, ‘NOT meningitis’ would be the answer.</p>
-<div class="line-block">
-<div class="line"><em>(e) Exception</em></div>
-<div class="line">Should be chosen if any species or genus is explicitly excluded from the applicability of the guideline, e.g.</div>
-</div>
-<p><em>‘Breakpoints do not apply to Plesiomonas shigelloides since aminoglycosides have low intrinsic activity against this species.’</em>
-In the follow up question the mentioned species should, if possible, be specified with its full name, i.e. ‘Escherichia coli’ instead of ‘E. coli’</p>
-<div class="line-block">
-<div class="line"><em>(f) Breakpoint</em></div>
-<div class="line">Should be chosen if the comment contains a whole breakpoint specifying organism, compound and S- and R- concentrations.</div>
-</div>
-<p><em>‘Azithromycin has been used in the treatment of infections with Salmonella Typhi (MIC ≤16 mg/L for wild type isolates) and Shigella spp.’</em>
-In the follow up question the breakpoint should then be specified as follows: ‘Salmonella enterica subsp. enterica serovar Typhi; Azithromycin; 16’</p>
-<p><em>(g) Not encodable</em>
-Should be chosen if none of the other options did match. In this case the information is relevant for the interpretation but it currently cannot be included in the analysis.
-In a future extension these comments will be displayed as warnings.</p>
-<p><strong>Altering the interpretation dictionary manually</strong></p>
+<p><strong>3) Further information about choices</strong></p>
+<dl class="docutils">
+<dt><strong>a. Interpretive rules</strong></dt>
+<dd><p class="first">An interpretive rule provides information on how to derive resistance phenotypes across antimicrobial agents via a shared mechanism of action. One example would be:</p>
+<p><em>‘For isolates susceptible to benzylpenicillin, susceptibility can be inferred from benzylpenicillin or ampicillin. ‘</em></p>
+<p class="last">All new rules will have to be added to the rule as described in Section <a class="reference internal" href="#int-rules-table"><span class="std std-ref">Changes in the interpretive rules</span></a></p>
+</dd>
+<dt><strong>b. Resistance</strong></dt>
+<dd><p class="first">Should be chosen if the comment specifically mentions that the organism is resistant to the agent, e.g.</p>
+<p class="last"><em>‘Enterococci are intrinsically resistant to aminoglycosides and aminoglycoside monotherapy is ineffective.’</em></p>
+</dd>
+<dt><strong>c. Route of administration</strong></dt>
+<dd><p class="first">Should be chosen if any route of admnistration is mentioned in the comment text, e.g.</p>
+<p><em>‘The breakpoints are based on epidemiological cut-off values (ECOFFs) and apply to oral treatment of C. difficile infections with vancomycin.’</em></p>
+<p>In a further question the user is then asked to specify the mentioned route of administration.</p>
+<dl class="last docutils">
+<dt>Options are:</dt>
+<dd><ul class="first last simple">
+<li>iv (=intravenous)</li>
+<li>oral</li>
+<li>topical</li>
+<li>nasal</li>
+</ul>
+</dd>
+</dl>
+</dd>
+<dt><strong>d. Indication</strong></dt>
+<dd><p class="first">Should be chosen if information about the disease that should be treated is given, e.g.</p>
+<p><em>‘Breakpoints relate to meningitis only.’ or ‘Breakpoints for penicillins other than benzylpenicillin relate only to non-meningitis isolates.’</em></p>
+<p>In a further question the user is asked to specify the mentioned indication.
+In the first example the answer would be ‘meningitis’ as the breakpoint is only applicable to this indication.</p>
+<p class="last">If the breakpoint is excepted for a specific indication as in the second example, ‘NOT meningitis’ would be the answer.</p>
+</dd>
+<dt><strong>e. Exception</strong></dt>
+<dd><p class="first">Should be chosen if any species or genus is explicitly excluded from the applicability of the guideline, e.g.</p>
+<p><em>‘Breakpoints do not apply to Plesiomonas shigelloides since aminoglycosides have low intrinsic activity against this species.’</em></p>
+<p class="last">In the follow up question the mentioned species should, if possible, be specified with its full name, i.e. <em>‘Escherichia coli’</em> instead of <em>‘E. coli’</em></p>
+</dd>
+<dt><strong>f. Breakpoint</strong></dt>
+<dd><p class="first">Should be chosen if the comment contains a whole breakpoint specifying organism, compound and S- and R- concentrations.</p>
+<p><em>‘Azithromycin has been used in the treatment of infections with Salmonella Typhi (MIC ≤16 mg/L for wild type isolates) and Shigella spp.’</em></p>
+<p>In the follow up question the breakpoint should then be specified as follows:</p>
+<p class="last"><em>‘Salmonella enterica subsp. enterica serovar Typhi; Azithromycin; 16’</em></p>
+</dd>
+<dt><strong>g. Not encodable</strong></dt>
+<dd>Should be chosen if none of the other options did match. In this case the information is relevant for the interpretation but it currently cannot be included in the analysis.
+Future developments of the package may include displaying this additional information when a breakpoint is looked up.</dd>
+</dl>
+<p id="manual-inc"><strong>B. Altering the interpretation dictionary manually</strong></p>
 <p>If there are more than a hand full of comments and the classification system is clear to the user, editing the responsible dictionary directly might be more efficient.
-New notes will be saved in the file path_to_package/pymicruler/output/missing_notes.xlsx.
-The note text has to be copied into the ‘interpretation_dict_updated.xlsx’ file in the same folder:</p>
+New notes will be saved in the file <em>pymicruler/output/missing_notes.xlsx</em>.</p>
+<p>The note text has to be copied into the ‘interpretation_dict_updated.xlsx’ file in the same folder:</p>
 <table border="1" class="docutils" id="id1">
 <caption><span class="caption-text">Interpretation Dictionary</span><a class="headerlink" href="#id1" title="Permalink to this table">¶</a></caption>
 <colgroup>
-<col width="8%" />
-<col width="8%" />
-<col width="8%" />
-<col width="8%" />
-<col width="8%" />
-<col width="8%" />
-<col width="8%" />
-<col width="8%" />
-<col width="8%" />
-<col width="8%" />
-<col width="8%" />
-<col width="8%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
+<col width="9%" />
 </colgroup>
 <thead valign="bottom">
 <tr class="row-odd"><th class="head">note_text</th>
 <th class="head">relevance</th>
-<th class="head">no_resistance</th>
 <th class="head">interpretation</th>
 <th class="head">rule</th>
 <th class="head">exception</th>
@@ -280,11 +300,9 @@ The note text has to be copied into the ‘interpretation_dict_updated.xlsx’ f
 <td>&#160;</td>
 <td>&#160;</td>
 <td>&#160;</td>
-<td>&#160;</td>
 </tr>
 <tr class="row-odd"><td>Always test for beta-lactamase. If positive, report resistant to benzylpenicillin, ampicillin and amoxicillin. Tests based on a chromogenic cephalosporin can be used to detect the beta-lactamase. The susceptibility of beta-lactamase negative isolates to ampicillin and amoxicillin can be inferred from benzylpenicillin.</td>
 <td>1</td>
-<td>&#160;</td>
 <td>1</td>
 <td>rule_10_4; n_gonorrhoeae_penicillin_1</td>
 <td>&#160;</td>
@@ -299,7 +317,6 @@ The note text has to be copied into the ‘interpretation_dict_updated.xlsx’ f
 <td>1</td>
 <td>&#160;</td>
 <td>&#160;</td>
-<td>&#160;</td>
 <td>Shigella</td>
 <td>&#160;</td>
 <td>Salmonella enterica subsp. enterica serovar Typhi; Azithromycin; 16</td>
@@ -308,9 +325,8 @@ The note text has to be copied into the ‘interpretation_dict_updated.xlsx’ f
 <td>&#160;</td>
 <td>&#160;</td>
 </tr>
-<tr class="row-odd"><td>Breakpoints for penicillins other than benzylpenicillin relate only to non-meningitis isolates.</td>
+<tr class="row-odd"><td>Breakpoints for penicillins other than benzylpenicillin relate only to non meningitis isolates.</td>
 <td>1</td>
-<td>&#160;</td>
 <td>&#160;</td>
 <td>&#160;</td>
 <td>&#160;</td>
@@ -324,36 +340,58 @@ The note text has to be copied into the ‘interpretation_dict_updated.xlsx’ f
 </tbody>
 </table>
 <p>Based on this note text the following columns have to be filled:</p>
-<ul class="simple">
-<li>relevance: Might this information be relevant for MIC interpretation rather than lab (0/1)</li>
-<li>no_resistance: Add description</li>
-<li>interpretation: Does this comment contain an interpretive rule (Yes: ‘1’, No: ‘’).</li>
-<li>rule: After implementation insert name of the function in the rule based engine that executes rule.</li>
-<li>exception: Put any pathogens that are excepted from the general rule. Full name is preferred, e.g. ‘Escherichia coli’ instead of ‘E. coli’</li>
-<li>indication: Put any disease that is excepted from the rule or the only one that the rule applies to , e.g. ‘NOT meningitis’ or ‘meningitis’</li>
-<li>new_bp: If a whole breakpoint is mentioned in the comment enter it in the following format: species, agent, S, R.</li>
-<li>not_encodable: Other information that cannot be put in any of the other categories.</li>
-<li>resistance: ‘1’ if the breakpoint explicitly mentions that the bacterium is resistant to the agent.</li>
-<li>roa: Put the route of administration (‘iv’, ‘oral’, ‘nasal’, ‘topical’) if mentioned.</li>
-</ul>
-<p>The column relevance has to be filled with either 1 or 0 depending on whether the comment is found to be relevant for AST results interpretation.
-If the comment is found to be irrelevant (0) all other columns should stay empty.
-Otherwise there has to be information in at least one of the other columns.</p>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">relevance:</th><td class="field-body">has to be filled with ‘1’ if the comment is found to be relevant for AST results interpretation, otherwise with ‘0’. In the latter case all other columns should stay empty.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">interpretation:</th><td class="field-body">Does this comment contain an interpretive rule (Yes: ‘1’, No: ‘’).</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">rule:</th><td class="field-body">After implementation of the interpretation rule in the rule based engine, insert the name of the function representing the rule.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">exception:</th><td class="field-body">Put name of any organisms that are excepted from the general rule. Full name is preferred, e.g. ‘Escherichia coli’ instead of ‘E. coli’</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">indication:</th><td class="field-body">Put any disease that is excepted from the rule or the only one that the rule applies to , e.g. ‘NOT meningitis’ or ‘meningitis’</td>
+</tr>
+<tr class="field-even field"><th class="field-name">new_bp:</th><td class="field-body">If a whole breakpoint is mentioned in the comment enter it in the following format: species; agent; S; R.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">not_encodable:</th><td class="field-body">Other information that cannot be put in any of the other categories.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">resistance:</th><td class="field-body">‘1’ if the breakpoint explicitly mentions that the bacterium is resistant to the agent.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">roa:</th><td class="field-body">Put the route of administration (‘iv’, ‘oral’, ‘nasal’, ‘topical’) if mentioned.</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
 </div>
 <div class="section" id="new-entries">
 <h3>New entries<a class="headerlink" href="#new-entries" title="Permalink to this headline">¶</a></h3>
-<p><strong>The following organisms could not be matched against the NCBI Taxonomy: &lt;names&gt;.</strong></p>
-<p>Will be displayed in case of irregularities during the parsing or if organisms have been
-reclassified or renamed. In the latter case add the name of the organism to
-resources/species_renaming.xlsx.</p>
-<p>The entry that could not be matched should be pasted in the first
-column <em>query_term</em> and the full names as listed in the NCBI Taxonomy should be added in the
-second column <em>replacement</em></p>
-<p><strong>A new organism name was found which could not be translated: &lt;name&gt;.</strong></p>
-<p>Will be displayed if any new short forms are detected. In this case the name
-should be copied and added to resources/species_renaming.xlsx.</p>
-<table border="1" class="docutils" id="id2">
-<caption><span class="caption-text">Interpretation Dictionary</span><a class="headerlink" href="#id2" title="Permalink to this table">¶</a></caption>
+<p><strong>A. Organisms</strong></p>
+<p>To correctly connect rules along the taxonomic lineage, organisms need to be mapped against the
+NCBI Taxonomy. Already during the parsing process a quality check is performed to ensure all
+organisms mentioned in the guidelines can be mapped. If any of the entries does not pass this
+test, the parser will print the following message:</p>
+<p><em>The following organisms could not be matched against the NCBI Taxonomy: &lt;names&gt;.</em></p>
+<p>There are different reasons why organisms cannot be mapped:</p>
+<blockquote>
+<div><p><strong>1. Phenotypically defined groups</strong></p>
+<blockquote>
+<div><p>Many antibiotics work only on bacteria which show a specific phenotype, e.g. gram-negative bacteria or coagulase-negative staphylococci. As these groups are not defined by the NCBI Taxonomy they are resolved into their member species.</p>
+<p>For new phenotypically defined groups to be interpreted correctly they have to be added to the file <em>pymicruler/resources/phenotypic_groups.xlsx</em>.</p>
+<p>Each group is defined on a separate sheet. The header of the first column is the name of the phenotypically defined group as written in the EUCAST Breakpoint Tables and the organisms that show the phenotype are appended to the column.</p>
+</div></blockquote>
+</div></blockquote>
+<blockquote id="reclass">
+<div><p><strong>2. Organism has been reclassified</strong></p>
+<blockquote>
+<div><p>Especially if older versions of the EUCAST Breakpoint Tables are parsed it is possible that organisms have been reclassified and can thus not be mapped via the name mentioned in the table.</p>
+<p>These outdated name can be added to the file <em>pymicruler/resources/species_renaming.xlsx</em> containing a list of terms which are automatically translated during the processing.</p>
+<p>The entry that cannot be matched should be pasted in the first column <em>‘query_term’</em> and the full names as listed in the current version of the NCBI Taxonomy should be added in the second column <em>‘replacement’</em></p>
+<p><strong>Species Renaming Document</strong></p>
+<table border="1" class="docutils">
 <colgroup>
 <col width="50%" />
 <col width="50%" />
@@ -378,66 +416,124 @@ should be copied and added to resources/species_renaming.xlsx.</p>
 </tr>
 </tbody>
 </table>
-<p>The new short forms should be pasted in the first column <em>query_term</em> and the
-full name as listed in the NCBI Taxonomy should be added in the second column <em>replacement</em></p>
-<p><strong>The following compounds were not found in the compound dictionary: &lt;names&gt;</strong></p>
-<p>Will be displayed if there were irregularities during parsing.
-But the more probable reason is that Eucast publishes breakpoints for new
-agents. In this case the compound dictionary at resources/compound_classes.xlsx
-needs to be updated with the new compound. The information which
-compound class it belongs to can be derived from the Eucast Table itself.</p>
+</div></blockquote>
+<p><strong>3. Short forms are used</strong></p>
+<blockquote>
+<div><p>Finally, abbreviations of species names, i.e. <em>E. coli</em> are commonly used in comments, exceptions and restrictions but cannot be mapped to the NCBI Taxonomy either. They are, however, detected separately and lead to the following error message:</p>
+<p><em>A new organism name was found which could not be translated: &lt;name&gt;.</em></p>
+<p>To ensure proper interpretation the user is asked to add any new abbreviations to the document <em>species_renaming.xlsx</em> as described in Section <a class="reference internal" href="#reclass"><span class="std std-ref">2. Organism has been reclassified</span></a> above.</p>
+</div></blockquote>
+</div></blockquote>
+<p><strong>B. Compounds</strong></p>
+<p>Similar to the taxonomy in case of the organism, although certainly less sophisticated, compounds are grouped into compound classes, i.e. penicillins or aminoglycosides and sub-classes such as the aminopenicillins.</p>
+<p>In case the parser cannot derive information about the compound class of an antimicrobial compound automatically, e.g. if EUCAST published breakpoints for a new compound, it will display the following error message:</p>
+<p><em>The following compounds were not found in the compound dictionary: &lt;names&gt;</em></p>
+<p>The user is asked to add any new compounds to the respective compound class in the file <em>pymicruler/resources/compound_classes.xlsx</em>. The information which class the compound belongs to can be derived from the EUCAST Table itself.</p>
+<p><strong>C. Other information</strong></p>
+<p>If there are any keywords written within the breakpoint entry, e.g. information in parentheses which do not match any of the known information the following message will be displayed:</p>
 <p><strong>A new type of information was found which could not be categorised &lt;information&gt;.</strong></p>
-<p>Will be displayed if there is new information written in parentheses next to
-the compound name.</p>
-<p>If the information is a new type of restriction to an indication the user is asked to manually
-add this information to the class <em>Info</em> list <em>IND</em> in the file utils/util.py.</p>
-<p>If the information is not relevant for further AST result interpretation the user is asked to
-manually add this information to the class <em>Info</em> list <em>IRR_PARR</em> in the file utils/util.py.</p>
-<p>If it is information about a restriction to a specific organism the pattern
-listed in the file utils/util.py in the class <em>CmpRegex</em> called <em>PAR</em> needs
-to be adjusted to match also these new cases.</p>
+<p>Based on previous publication these keywords refer to one of three types of information:</p>
+<dl class="docutils">
+<dt><strong>1. Indication</strong></dt>
+<dd>If the information which could not be categorizes is a disease, the user is asked to manually append this information to the script to the class <em>Info</em>, list <em>IND</em> in the file utils/util.py.</dd>
+<dt><strong>2. Irrelevant information for AST</strong></dt>
+<dd>If the information is not relevant for further AST result interpretation, the user is asked to manually add this information to the class <em>Info</em>, list <em>IRR_PARR</em> in the file utils/util.py.</dd>
+</dl>
+<p><strong>3. Organism</strong></p>
+<blockquote>
+<div><p>If the information about a restriction to a specific organism the user is asked to adapt the pattern called <em>PAR</em>, listed in the script <em>utils/util.py</em> in the class <em>CmpRegex</em>.</p>
+<p>Currently all parenthesis entries starting with <em>‘except’</em> restrictions to specific organisms which are dealt with in subsequent steps of the analysis. This pattern needs to be extended to match also other cases of information about organisms.</p>
+</div></blockquote>
 </div>
 <div class="section" id="changes-in-the-interpretive-rules">
 <span id="int-rules-table"></span><h3>Changes in the interpretive rules<a class="headerlink" href="#changes-in-the-interpretive-rules" title="Permalink to this headline">¶</a></h3>
-<p>The library tracks any changes in the application of interpretive rules which were derived from the breakpoint table free text.
-The log is saved in the file ‘interpretive_rule_changes.csv’ in the output folder of the library.
-It is always a comparison to the last version that was analysed.
-In the first column of the document the note texts that have changed are listed. The second columns describe the breakpoints that have been affected and the third column how they changed.
-‘added’ indicates that the application of the interpretive rules needs to be extended for the mentioned species/compound combinations.
-‘removed’ means that these breakpoints have to be excepted from the application of the rule.
-All of these changes have to be done in the RuleBasedEngine.py file. Names of the rules that need
-to be changed can be looked up in the interpretation_dict_updated.xlsx document in the column ‘rule’ for the respective comment.</p>
-<p>One example for such an interpretive rule derived from the comments would be:</p>
+<p>While a big share of the interpretive rules are published in an separate document, some of the rules
+are only mentioned within the note text of the EUCAST Clinical Breakpoint Tables. As these notes
+may change with every new publication and rules need to be translated manually, the user may have to adapt the rule based engine encoded in
+<em>pymicruler/bp/RuleBasedEngine.py</em> in case of a new publication.</p>
+<p><strong>A. Tracking changes</strong></p>
+<p>During the manual classification of new notes the user also defines whether notes do contain any interpretive rules. The library will then treat these notes differently throughout the analysis, tracking all breakpoints they are applicable to. Eventually it is assessed whether the occurrence of these interpretive rules have changed from the last version. After the analysis is completed this log of all changes is saved in <em>pymicruler/output/interpretive_rule_changes.csv</em>. It can be expected to look as follows:</p>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="27%" />
+<col width="18%" />
+<col width="55%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Note_text</th>
+<th class="head">associated_to</th>
+<th class="head">type_of_change</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>The aztreonam breakpoints for Enterobacteriaceae will detect clinically important resistance mechanisms (including ESBL).</td>
+<td>(‘Enterobacterales’, ‘Aztreonam’)</td>
+<td>removed all</td>
+</tr>
+<tr class="row-odd"><td>Susceptibility of staphylococci to cephalosporins is inferred from the cefoxitin susceptibility except for cefixime, ceftazidime, ceftazidime-avibactam, ceftibuten and ceftolozane-tazobactam, which do not have breakpoints and should not be used for staphylococcal infections.</td>
+<td>(‘Staphylococcus spp.’, ‘Cefaclor’), (‘Staphylococcus spp.’, ‘Cefadroxil’)</td>
+<td>removed all</td>
+</tr>
+<tr class="row-even"><td>Isolates susceptible to linezolid can be reported susceptible to tedizolid.</td>
+<td>(‘Staphylococcus spp.’, ‘Tedizolid’)</td>
+<td>added</td>
+</tr>
+<tr class="row-odd"><td>Erythromycin can be used to determine susceptibility to azithromycin, clarithromycin and roxithromycin.</td>
+<td>(‘Staphylococcus spp.’, ‘Azithromycin’), (‘Staphylococcus spp.’, ‘Clarithromycin’)</td>
+<td>added all</td>
+</tr>
+</tbody>
+</table>
+<p>In the first column of the document the texts of the notes with changed occurrences are listed. The second column describes the breakpoints that have been affected and the third column how they changed, i.e. <em>‘added’</em> or <em>‘removed’</em>.</p>
+<p>In this context <strong>‘added’</strong> indicates that the application of the interpretive rules needs to be extended for the mentioned species/compound combinations and
+<strong>‘removed’</strong> means that these breakpoints have to be excepted from the application of the rule.
+If the keyword ‘all’ is appended as in <em>‘added_all’</em> and <em>‘removed_all’</em> the rule has to be established or can be removed as a whole.</p>
+<p>These changes then have to be implemented in the rule based engine in the script <em>pymicruler/bp/RuleBasedEngine.py</em> manually. Names of the rules that need to be changed can be looked up in the corresponding entry for the note in the document <em>pymicruler/output/interpretation_dict_updated.xlsx</em>. The information is stored in the in the column <em>‘rule’</em>.</p>
+<p id="pyknow-rules"><strong>B. Pyknow Rules</strong></p>
+<p>To better understand how these rules need to be edited, the parts of such <em>pyknow</em> rules which make up the rule based engine will be explained shortly. For more detailed information regarding the syntax and function of <em>pyknow</em> rules, please consult the <a class="reference external" href="https://pyknow.readthedocs.io/en/stable/">documentation of the package</a>.</p>
+<p>One example for a EUCAST note describing an interpretive rule is:</p>
 <p><em>Ampicillin susceptible S. saprophyticus are mecA-negative and susceptible to ampicillin, amoxicillin and piperacillin (without or with a beta-lactamase inhibitor).</em></p>
-<p>The corresponding rule formulated with the Python package ‘pyknow* would look as follows</p>
+<p>Translated to a <em>pyknow</em> rule it would look as follows:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="nd">@Rule</span><span class="p">(</span><span class="n">AND</span><span class="p">(</span><span class="n">Organism</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Staphylococcus saprophyticus&#39;</span><span class="p">),</span>
-          <span class="n">Susceptibility</span><span class="p">(</span><span class="n">cmp_name</span><span class="o">=</span><span class="s1">&#39;Ampicillin&#39;</span><span class="p">)))</span>
-<span class="k">def</span> <span class="nf">exec_rule_bp_t_staphylococcus_penicillins_3</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-    <span class="n">cmp_list</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;Ampicillin&#39;</span><span class="p">,</span> <span class="s1">&#39;Amoxicillin&#39;</span><span class="p">,</span> <span class="s1">&#39;Amoxycillin-clavulanic acid&#39;</span><span class="p">,</span>
-                <span class="s1">&#39;Ampicillin-sulbactam&#39;</span><span class="p">,</span> <span class="s1">&#39;Piperacillin&#39;</span><span class="p">,</span> <span class="s1">&#39;Piperacillin-tazobactam&#39;</span><span class="p">)</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">declare</span><span class="p">(</span><span class="n">Mec</span><span class="p">(</span><span class="n">present</span><span class="o">=</span><span class="s1">&#39;False&#39;</span><span class="p">))</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">declare_cmp_list</span><span class="p">(</span><span class="n">cmp_list</span><span class="p">,</span> <span class="s1">&#39;S&#39;</span><span class="p">)</span>
+           <span class="n">Susceptibility</span><span class="p">(</span><span class="n">cmp_name</span><span class="o">=</span><span class="s1">&#39;Ampicillin&#39;</span><span class="p">)))</span>
+ <span class="k">def</span> <span class="nf">exec_rule_bp_t_staphylococcus_penicillins_3</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+     <span class="n">cmp_list</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;Ampicillin&#39;</span><span class="p">,</span> <span class="s1">&#39;Amoxicillin&#39;</span><span class="p">,</span> <span class="s1">&#39;Amoxycillin-clavulanic acid&#39;</span><span class="p">,</span>
+                 <span class="s1">&#39;Ampicillin-sulbactam&#39;</span><span class="p">,</span> <span class="s1">&#39;Piperacillin&#39;</span><span class="p">,</span> <span class="s1">&#39;Piperacillin-tazobactam&#39;</span><span class="p">)</span>
+     <span class="bp">self</span><span class="o">.</span><span class="n">declare</span><span class="p">(</span><span class="n">Mec</span><span class="p">(</span><span class="n">present</span><span class="o">=</span><span class="s1">&#39;False&#39;</span><span class="p">))</span>
+     <span class="bp">self</span><span class="o">.</span><span class="n">declare_cmp_list</span><span class="p">(</span><span class="n">cmp_list</span><span class="p">,</span> <span class="s1">&#39;S&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Rules consist of a pattern matching part and an executing part. In this case the rule will be
-executed if the analysed pathogen is Staphylococcus saprophyticus and it is considered susceptible
-to Ampicillin based on the AST results.</p>
-<p>If the pattern is matched the corresponding function (exec_rule_bp_t_staphylococcus_penicillins_3) is executed.
-In this case the information that the pathogen will also be susceptible to  Ampicillin-sulbactam,
-Amoxicillin, Amoxycillin-clavulanic acid, Piperacillin and Piperacillin-tazobactam is derived from
-this rule and added to the known resistance phenotypes of the sample.</p>
-<p>If the applicability for the rule should be changed (e.g. extend to Staphylococcus aureus)
-the matching condition has to be adapted to:</p>
+<p>Rules generally consist of a pattern matching part and an executing part. In this case the pattern matching part is:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="nd">@Rule</span><span class="p">(</span><span class="n">AND</span><span class="p">(</span><span class="n">Organism</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Staphylococcus saprophyticus&#39;</span><span class="p">),</span>
+           <span class="n">Susceptibility</span><span class="p">(</span><span class="n">cmp_name</span><span class="o">=</span><span class="s1">&#39;Ampicillin&#39;</span><span class="p">)))</span>
+</pre></div>
+</div>
+<p>If the analysed organism is <em>Staphylococcus saprophyticus</em> and it is classified as susceptible to Ampicillin based on the AST results the
+corresponding function is executed:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">exec_rule_bp_t_staphylococcus_penicillins_3</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+     <span class="n">cmp_list</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;Ampicillin&#39;</span><span class="p">,</span> <span class="s1">&#39;Amoxicillin&#39;</span><span class="p">,</span> <span class="s1">&#39;Amoxycillin-clavulanic acid&#39;</span><span class="p">,</span>
+                 <span class="s1">&#39;Ampicillin-sulbactam&#39;</span><span class="p">,</span> <span class="s1">&#39;Piperacillin&#39;</span><span class="p">,</span> <span class="s1">&#39;Piperacillin-tazobactam&#39;</span><span class="p">)</span>
+     <span class="bp">self</span><span class="o">.</span><span class="n">declare</span><span class="p">(</span><span class="n">Mec</span><span class="p">(</span><span class="n">present</span><span class="o">=</span><span class="s1">&#39;False&#39;</span><span class="p">))</span>
+     <span class="bp">self</span><span class="o">.</span><span class="n">declare_cmp_list</span><span class="p">(</span><span class="n">cmp_list</span><span class="p">,</span> <span class="s1">&#39;S&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The function then adds the derived phenotypes (susceptible to Ampicillin-sulbactam, Amoxicillin,
+Amoxycillin-clavulanic acid, Piperacillin and Piperacillin-tazobactam) to the set of known
+resistance phenotypes of the sample.</p>
+<p><strong>C. Adapting rules</strong></p>
+<p><strong>1. Adapt matching condition</strong></p>
+<p>If the applicability for the rule should be changed (e.g. extend to Staphylococcus aureus) the matching condition has to be altered to:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="nd">@Rule</span><span class="p">(</span><span class="n">AND</span><span class="p">(</span><span class="n">Organism</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="n">anyof</span><span class="p">(</span><span class="s1">&#39;Staphylococcus saprophyticus&#39;</span><span class="p">,</span> <span class="s1">&#39;Staphylococcus aureus&#39;</span><span class="p">),</span>
-         <span class="n">Susceptibility</span><span class="p">(</span><span class="n">cmp_name</span><span class="o">=</span><span class="s1">&#39;Ampicillin&#39;</span><span class="p">)))</span>
+           <span class="n">Susceptibility</span><span class="p">(</span><span class="n">cmp_name</span><span class="o">=</span><span class="s1">&#39;Ampicillin&#39;</span><span class="p">)))</span>
 </pre></div>
 </div>
-<p>If more than one susceptibility have to be present e.g. also to Amoxicillin the matching condition would be updated as follows:</p>
+<p>If more than one susceptibility have to be present e.g. susceptible to Ampicillin and to Amoxicillin, the matching condition would be updated as follows:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="nd">@Rule</span><span class="p">(</span><span class="n">AND</span><span class="p">(</span><span class="n">Organism</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="n">anyof</span><span class="p">(</span><span class="s1">&#39;Staphylococcus saprophyticus&#39;</span><span class="p">,</span> <span class="s1">&#39;Staphylococcus aureus&#39;</span><span class="p">),</span>
-         <span class="n">AND</span><span class="p">(</span><span class="n">Susceptibility</span><span class="p">(</span><span class="n">cmp_name</span><span class="o">=</span><span class="s1">&#39;Ampicillin&#39;</span><span class="p">),</span>
-         <span class="n">Susceptibility</span><span class="p">(</span><span class="n">cmp_name</span><span class="o">=</span><span class="s1">&#39;Amoxicillin&#39;</span><span class="p">))</span>
+           <span class="n">AND</span><span class="p">(</span><span class="n">Susceptibility</span><span class="p">(</span><span class="n">cmp_name</span><span class="o">=</span><span class="s1">&#39;Ampicillin&#39;</span><span class="p">),</span>
+           <span class="n">Susceptibility</span><span class="p">(</span><span class="n">cmp_name</span><span class="o">=</span><span class="s1">&#39;Amoxicillin&#39;</span><span class="p">))</span>
 </pre></div>
 </div>
+<p><strong>2. Adapt executing function</strong></p>
 <p>In the executing part of the function all phenotypes that can be derived should be declared.
 This can be done for each compound individually:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="bp">self</span><span class="o">.</span><span class="n">declare</span><span class="p">(</span><span class="n">Resistance</span><span class="p">(</span><span class="n">cmp_name</span><span class="o">=</span><span class="s1">&#39;Benzylpenicillin&#39;</span><span class="p">))</span>
@@ -454,57 +550,103 @@ This can be done for each compound individually:</p>
 <span class="bp">self</span><span class="o">.</span><span class="n">declare_cmp_list</span><span class="p">(</span><span class="n">cmp_list</span><span class="p">,</span> <span class="s1">&#39;S)</span>
 </pre></div>
 </div>
-<p>If a completely new interpretive rule was found a new <em>pyknow</em> rule has to be developed as described above and appended to the script.
-The order of the rules does not change the result of he analysis so they can be inserted at any point within the class <em>BacterialResistance</em>.
-For any question regarding the syntax of <em>pyknow</em> please consult the readthedocs of the package.</p>
+<p><strong>3. Creating new rules</strong></p>
+<p>If completely new interpretive rule are found, new <em>pyknow</em> rule have to be developed by taking the example described in the <a class="reference internal" href="#pyknow-rules"><span class="std std-ref">last section</span></a> as a reference.
+The order of the rules does not change the result of he analysis so rules can simply be appended to the class <em>BacterialResistance</em> of the script <em>pymicruler/bp/RuleBasedEngine.py</em>.</p>
 <p>The name of the function that is executed can be changed deliberately as it will only be called
-as a consequence of a match with the rule. To ensure traceability of the source of the information
-the suggested naming scheme explained at the example mentioned above is the following:</p>
-<p>All functions start with the term <cite>exec_rule_</cite> then the EUCAST document is specified.
-If the rule is derived from the breakpoint table the short form would be <cite>bp_t_</cite>.
-Then, the sheet <cite>staphylococcus</cite> and compound family <cite>penicillins</cite> are mentioned and finally the
-number of the comment <cite>3</cite> is appended.</p>
+after matching the corresponding rule. To ensure traceability of the source of the information
+the suggested naming scheme is the following:</p>
+<p>All functions start with the term ‘<cite>exec_rule_</cite>’ then the EUCAST document is specified.
+If the rule is derived from the breakpoint table the abbreviation is ‘<cite>bp_t_</cite>’.
+Then, for the example mentioned above, the sheet <cite>staphylococcus</cite> and compound family ‘<cite>penicillins</cite>’ are added and finally the number of the comment ‘<cite>3</cite>’ is appended.</p>
 </div>
 <div class="section" id="changes-in-the-table-layout">
 <h3>Changes in the table layout<a class="headerlink" href="#changes-in-the-table-layout" title="Permalink to this headline">¶</a></h3>
-<p>In case of any addition or removal of columns in future publications the
-position of the information has to be updated in the file utils/util.py.
-Column indices (starting with 0) for the MIC headline, and R and S
-concentrations are specified and should be updated in case of changes.</p>
+<p>If the content of the column remains the same but only their position within the table changes the
+user is asked to update the new column indices(starting with 0) for the block headers ‘MIC’, ‘R &gt;’ and ‘S &lt;=’ the file <em>utils/util.py</em>.</p>
 </div>
 <div class="section" id="changes-in-the-headlines">
 <h3>Changes in the headlines<a class="headerlink" href="#changes-in-the-headlines" title="Permalink to this headline">¶</a></h3>
-<p>Some headlines of the breakpoint table are used as anchors for the processing of a new unit of information.
-If columns are not (only) rearranged but also renamed, the corresponding
-regex patterns have to be updated in the class <em>Regex</em> in the file utils/util</p>
+<p>As different sheets have slightly varying column structures even within one publication, some headlines are used as anchors for the processing of a new unit of information.
+If headlines have been renamed, the corresponding regular expression patterns have to be updated in the class <em>Regex</em> in the file <em>utils/util.py</em></p>
 </div>
 </div>
 <div class="section" id="updated-intrinsic-resistances-publication">
 <span id="intrinsic-resistances"></span><h2>Updated Intrinsic Resistances Publication<a class="headerlink" href="#updated-intrinsic-resistances-publication" title="Permalink to this headline">¶</a></h2>
-<p>Currently the database works based on a manually curated table based on version 3.1 of the document.
-In case of a new publication EUCAST has usually provided a list of changes.
-The most simple way to update the table is to incorporate any changes manually into the file ‘final_ires.csv’
-which can be found in the resources folder of the package.
-The columns that should be updated are the species_name, the cmp_name, and ideally the identifier.
-For the pathogen name the Taxon that is affected by the rule should be listed. The library does not support multiple listings in one entry.
-In the column ‘cmp_name’ the name of the agent should be entered. The S- and R- concentrations are per default -1 and 0.
-Finally the indicator maps the information back to the original publication.
-Ideally it should be changed whenever the document is updated.</p>
+<p>Currently all information about intrinsic resistances is stored in the file <em>resources/final_ires.csv</em>, which is based on version 3.1 of the EUCAST intrinsic resistance document.
+As this table was transcribed manually, the user is asked to incorporate any changes in the table directly.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="13%" />
+<col width="13%" />
+<col width="13%" />
+<col width="13%" />
+<col width="13%" />
+<col width="13%" />
+<col width="13%" />
+<col width="13%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">organism</th>
+<th class="head">cmp_name</th>
+<th class="head">s_value</th>
+<th class="head">r_value</th>
+<th class="head">exception</th>
+<th class="head">roa</th>
+<th class="head">indication</th>
+<th class="head">identifier</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Burkholderia cepacia complex</td>
+<td>Amikacin</td>
+<td>-1</td>
+<td>0</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>2_3</td>
+</tr>
+<tr class="row-odd"><td>Stenotrophomonas maltophilia</td>
+<td>Amikacin</td>
+<td>-1</td>
+<td>0</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>2_7</td>
+</tr>
+<tr class="row-even"><td>Streptococcus</td>
+<td>Amikacin</td>
+<td>-1</td>
+<td>0</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>4_6</td>
+</tr>
+<tr class="row-odd"><td>Enterococcus faecalis</td>
+<td>Amikacin</td>
+<td>-1</td>
+<td>0</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>4_7</td>
+</tr>
+</tbody>
+</table>
+<p>The name of the pathogen and compound have to be added to the columns <em>‘organism’</em> and
+<em>‘cmp_name’</em> respectively and the S- and R- concentrations are per default -1 and 0.
+The information in the column column ‘indicator’ maps the information back to the original numbering in the publication.
+Ideally it should be updated whenever the document is updated.</p>
 </div>
 <div class="section" id="updated-interpretive-rules-publication">
 <span id="interpretive-rules"></span><h2>Updated Interpretive Rules Publication<a class="headerlink" href="#updated-interpretive-rules-publication" title="Permalink to this headline">¶</a></h2>
-<dl class="docutils">
-<dt>The rules of the RuleBasedEngine are derived from the Eucast Interpretive Rule document as well as the breakpoint table.</dt>
-<dd><dl class="first last docutils">
-<dt>Publication:</dt>
-<dd>In case of an update in the Interpretive Rule publication new rules will have to be analysed manually.
+<p>In case of an update in the Interpretive Rule publication the user is asked to edit the rule based engine manually.
 The current naming scheme allows to connect the rule back to their listing in v3.1 of the Expert Rules and Intrinsic Resistances.
-It might be best to compare the new rules to the then outdated publication to find the changed rule in the most efficient way.</dd>
-<dt>Clinicial Breakpoint Table:</dt>
-<dd>For changes related to Clinical Breakpoint Tables derived rules see <a class="reference internal" href="#int-rules-table"><span class="std std-ref">Changes in interpretive rules</span></a>.</dd>
-</dl>
-</dd>
-</dl>
+It might be best to compare the new rules to the then outdated publication to find the changed rule in the most efficient way.
+For further information on how to adapt old rules or create new rules, see <a class="reference internal" href="#int-rules-table"><span class="std std-ref">Changes in interpretive rules</span></a>.</p>
 </div>
 </div>
 
@@ -528,7 +670,7 @@ It might be best to compare the new rules to the then outdated publication to fi
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2018, Victoria Beneder, Stephan Beisken, Peter Sykacek, Andreas Posch
+        &copy; Copyright 2018, Victoria Beneder
 
     </p>
   </div>

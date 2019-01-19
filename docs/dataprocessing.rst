@@ -1,14 +1,13 @@
 Data processing
 ================
 
-Alternative breakpoint information
+Non-numerical breakpoint information
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Some breakpoints do not contain concentrations to classify test result as there is too little evidence that therapy will be successful.
-Following the interpretation EUCAST provides in the table directly we converted and filtered these entries as follows:
+Some breakpoints are not based on concentrations to classify test result as there is too little evidence that therapy will be successful.
+Following the interpretation EUCAST provides in the Clinical Breakpoint Tables v. 9.0, we converted and filtered these entries as follows:
     '-': a dash means that susceptibility testing is not recommended and that the species can be considered resistant.
-         The respective concentrations are then changed to S <= -1 and R > 0
-         mg/L unless any notes associated to the rule contain contradictory
-         information
+         The respective concentrations are changed to S <= -1 and R > 0 mg/L unless any notes
+         associated to the rule contain contradictory information
     'IP': 'in preparation'. These entries are currently dropped due to uncertainty regarding
          the classification.
     'IE': 'insufficient evidence' that the organism or group is a good target for therapy with the agent'.
@@ -19,7 +18,8 @@ Following the interpretation EUCAST provides in the table directly we converted 
 Phenotypically defined groups
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 To map all organisms mentioned in the publications back to the NCBI taxonomy we had to resolve phenotypically defined groups into the the individual species that show this phenotype.
-    Groups that were defined within the Eucast Breakpoint table:
+
+    Groups that were defined within the EUCAST Clinical Breakpoint Tables:
         - Viridans group streptococci,
         - Gram-positive anaerobes
         - Gram-negative anaerobes
@@ -30,8 +30,7 @@ To map all organisms mentioned in the publications back to the NCBI taxonomy we 
         - Gram negative bacteria
         - Gram positive bacteria
 
-All phenotypically defined group members can be updated by changing the Excel stored in pymicruler/resources/phenotypic_groups.xlsx.
-
+All phenotypically defined group members can be updated by changing the Excel document stored in *pymicruler/resources/phenotypic_groups.xlsx*.
 
 Preference of general breakpoint over specific entry
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

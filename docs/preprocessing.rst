@@ -1,13 +1,14 @@
 .. _preprocessing:
 
-Preprocessing
-=============
+Pre-processing
+===============
 
-Run visual basic macro
-^^^^^^^^^^^^^^^^^^^^^^^^
+Breakpoint Table encoding
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+A visual basic macro is provided to encode text formatting in a machine readable way, e.g. superscript.
 
-1. Create a new macro with the name 'PreProcessExcel' in the respective Eucast Excel file.
-2. Copy the following text to the vba editor:
+1. Create a new macro with the name 'PreProcessExcel' in the respective EUCAST Excel file.
+2. Copy the following text to the vba editor and execute.
 
 Visual Basic Script:
 ::
@@ -57,13 +58,11 @@ Visual Basic Script:
         Application.ScreenUpdating = True
     End Sub
 
-
-3. Run the macro.
-
-The new file will be called 'preprocessed_<name of the original file>' and is saved in the same folder as the preprocessed document.
+The new file will be called *'preprocessed_<name of the original file>'* and is saved in the same folder as the preprocessed document.
 
 
-Remove strikethrough text
+Removing obsolete entries
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
-Currently there is no automated removal for strikethrough text available. The user is asked to remove any text in the
-preprocessed breakpoint table manually before parsing the data.
+Obsolete entries are currently encoded as strikethrough text. To exclude these entries the user has to remove this text from the pre-processed EUCAST Breakpoint Tables manually.
+
+
