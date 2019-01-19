@@ -215,22 +215,22 @@ class OutText(Enum):
     YON = 'Please answer only with "y" or "n". ' \
           'The comment was now considered relevant'
     N_ABB = 'Warning: A new organism name was found which could not be translated:' \
-            ' {0}. Please consult the readthedocs on how to add it to the ' \
+            ' {0}. Please consult the online documentation (https://pymicruler.readthedocs.io/en/latest/) on how to add it to the ' \
             'respective document.'
     N_WARN = 'Warning: Note block was not found in sheet "{}, line {}".'
     B_WARN = 'First block was not found in sheet "{}".'
     STR_WARN = 'Warning: Table "{}" seems to have changes in the ' \
                'column structure. Headline "{}" was not found in column {}.'
     M_CMP = 'Warning: The following compounds were not found in the compound ' \
-            'dictionary: {}. Please consult the readthedocs for further ' \
+            'dictionary: {}. Please consult the online documentation (https://pymicruler.readthedocs.io/en/latest/) for further ' \
             'information.'
     M_TAX = 'Warning: The following organisms could not be matched against the NCBI ' \
-            'taxonomy:\n {}.\nPlease consult the readthedocs for further ' \
+            'taxonomy:\n {}.\nPlease consult the online documentation (https://pymicruler.readthedocs.io/en/latest/) for further ' \
             'information.'
     NA_ORG = 'A problem occurred during parsing: Some breakpoints are not ' \
              'applicable to any organisms. '
     N_INF = 'A new type of information was found which could not be ' \
-            'categorised : "{0}"\nPlease consult the readthedocs for more information.'
+            'categorised : "{0}"\nPlease consult the online documentation (https://pymicruler.readthedocs.io/en/latest/) for more information.'
     ANA_TYPE = 'The analsys type "{}" is unknown. The table will be returned' \
                ' in a standard format.'
     INCOMPATIBLE = 'Error: The engine came to incompatible results ({}/{}) for "{}" regarding {}.'
@@ -238,7 +238,7 @@ class OutText(Enum):
                 'for "{}" regarding "{}".'
     DUP = 'Warning: {} duplicated entries were found: {}'
     INT_CHANGES = 'There have been changes in the applicability of the interpretive rules' \
-                  ' since the last version. Please consult the readthedocs on how to implement ' \
+                  ' since the last version. Please consult the online documentation (https://pymicruler.readthedocs.io/en/latest/) on how to implement ' \
                   'them manually.'
     NAN = 'Error: Some of the organisms or compounds in the query table are NaN.'
 

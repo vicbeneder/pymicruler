@@ -376,7 +376,7 @@ class BlockInterpreter:
 
     def _check_for_renamed_species(self):
         """
-        Searches all entries for names which are either short forms or have recently been
+        Searches all entries for names which are either abbreviations or have recently been
         renamed and renames them according to the NCBI Taxonomy.
         """
         all_orgs = self.table.organism.unique()
