@@ -1,1073 +1,1073 @@
-organism,cmp_family,cmp_name,s_value,r_value,exception,roa,indication,note,identifier
-Burkholderia cepacia complex,,Amikacin,-1,0,,,,,2_3
-Stenotrophomonas maltophilia,,Amikacin,-1,0,,,,,2_7
-Streptococcus,,Amikacin,-1,0,,,,,4_6
-Enterococcus faecalis,,Amikacin,-1,0,,,,,4_7
-Enterococcus gallinarum,,Amikacin,-1,0,,,,,4_8
-Enterococcus casseliflavus,,Amikacin,-1,0,,,,,4_8
-Enterococcus faecium,,Amikacin,-1,0,,,,,4_9
-Citrobacter freundii,,Amoxicillin-clavulanic acid,-1,0,,,,,1_2
-Citrobacter braakii,,Amoxicillin-clavulanic acid,-1,0,,,,,1_2
-Citrobacter murliniae,,Amoxicillin-clavulanic acid,-1,0,,,,,1_2
-Citrobacter werkmanii,,Amoxicillin-clavulanic acid,-1,0,,,,,1_2
-Citrobacter youngae,,Amoxicillin-clavulanic acid,-1,0,,,,,1_2
-Enterobacter cloacae complex,,Amoxicillin-clavulanic acid,-1,0,,,,,1_3
-Klebsiella aerogenes,,Amoxicillin-clavulanic acid,-1,0,,,,,1_4
-Hafnia alvei,,Amoxicillin-clavulanic acid,-1,0,,,,,1_6
-Morganella morganii,,Amoxicillin-clavulanic acid,-1,0,,,,,1_9
-Providencia rettgeri,,Amoxicillin-clavulanic acid,-1,0,,,,,1_13
-Providencia stuartii,,Amoxicillin-clavulanic acid,-1,0,,,,,1_14
-Serratia marcescens,,Amoxicillin-clavulanic acid,-1,0,,,,,1_16
-Yersinia enterocolitica,,Amoxicillin-clavulanic acid,-1,0,,,,,1_17
-Acinetobacter baumannii,,Amoxicillin-clavulanic acid,-1,0,,,,,2_1
-Acinetobacter pittii,,Amoxicillin-clavulanic acid,-1,0,,,,,2_1
-Acinetobacter nosocomialis,,Amoxicillin-clavulanic acid,-1,0,,,,,2_1
-Acinetobacter calcoaceticus,,Amoxicillin-clavulanic acid,-1,0,,,,,2_1
-Burkholderia cepacia complex,,Amoxicillin-clavulanic acid,-1,0,,,,,2_3
-Elizabethkingia meningoseptica,,Amoxicillin-clavulanic acid,-1,0,,,,,2_4
-Ochrobactrum anthropi,,Amoxicillin-clavulanic acid,-1,0,,,,,2_5
-Pseudomonas aeruginosa,,Amoxicillin-clavulanic acid,-1,0,,,,,2_6
-Stenotrophomonas maltophilia,,Amoxicillin-clavulanic acid,-1,0,,,,,2_7
-Citrobacter koseri,,Ampicillin,-1,0,,,,,1_1
-Citrobacter amalonaticus,,Ampicillin,-1,0,,,,,1_1
-Citrobacter sedlakii,,Ampicillin,-1,0,,,,,1_1
-Citrobacter farmeri,,Ampicillin,-1,0,,,,,1_1
-Citrobacter rodentium,,Ampicillin,-1,0,,,,,1_1
-Citrobacter freundii,,Ampicillin,-1,0,,,,,1_2
-Citrobacter braakii,,Ampicillin,-1,0,,,,,1_2
-Citrobacter murliniae,,Ampicillin,-1,0,,,,,1_2
-Citrobacter werkmanii,,Ampicillin,-1,0,,,,,1_2
-Citrobacter youngae,,Ampicillin,-1,0,,,,,1_2
-Enterobacter cloacae complex,,Ampicillin,-1,0,,,,,1_3
-Klebsiella aerogenes,,Ampicillin,-1,0,,,,,1_4
-Hafnia alvei,,Ampicillin,-1,0,,,,,1_6
-Atlantibacter hermannii,,Ampicillin,-1,0,,,,,1_5
-Klebsiella pneumoniae,,Ampicillin,-1,0,,,,,1_7
-Klebsiella oxytoca,,Ampicillin,-1,0,,,,,1_8
-Morganella morganii,,Ampicillin,-1,0,,,,,1_9
-Proteus penneri,,Ampicillin,-1,0,,,,,1_11
-Proteus vulgaris,,Ampicillin,-1,0,,,,,1_12
-Providencia rettgeri,,Ampicillin,-1,0,,,,,1_13
-Providencia stuartii,,Ampicillin,-1,0,,,,,1_14
-Raoultella,,Ampicillin,-1,0,,,,,1_15
-Serratia marcescens,,Ampicillin,-1,0,,,,,1_16
-Yersinia enterocolitica,,Ampicillin,-1,0,,,,,1_17
-Acinetobacter baumannii,,Ampicillin,-1,0,,,,,2_1
-Acinetobacter pittii,,Ampicillin,-1,0,,,,,2_1
-Acinetobacter nosocomialis,,Ampicillin,-1,0,,,,,2_1
-Acinetobacter calcoaceticus,,Ampicillin,-1,0,,,,,2_1
-Achromobacter xylosoxidans,,Ampicillin,-1,0,,,,,2_2
-Burkholderia cepacia complex,,Ampicillin,-1,0,,,,,2_3
-Elizabethkingia meningoseptica,,Ampicillin,-1,0,,,,,2_4
-Ochrobactrum anthropi,,Ampicillin,-1,0,,,,,2_5
-Pseudomonas aeruginosa,,Ampicillin,-1,0,,,,,2_6
-Stenotrophomonas maltophilia,,Ampicillin,-1,0,,,,,2_7
-Citrobacter freundii,,Ampicillin-sulbactam,-1,0,,,,,1_2
-Citrobacter braakii,,Ampicillin-sulbactam,-1,0,,,,,1_2
-Citrobacter murliniae,,Ampicillin-sulbactam,-1,0,,,,,1_2
-Citrobacter werkmanii,,Ampicillin-sulbactam,-1,0,,,,,1_2
-Citrobacter youngae,,Ampicillin-sulbactam,-1,0,,,,,1_2
-Enterobacter cloacae complex,,Ampicillin-sulbactam,-1,0,,,,,1_3
-Klebsiella aerogenes,,Ampicillin-sulbactam,-1,0,,,,,1_4
-Hafnia alvei,,Ampicillin-sulbactam,-1,0,,,,,1_6
-Morganella morganii,,Ampicillin-sulbactam,-1,0,,,,,1_9
-Providencia rettgeri,,Ampicillin-sulbactam,-1,0,,,,,1_13
-Providencia stuartii,,Ampicillin-sulbactam,-1,0,,,,,1_14
-Serratia marcescens,,Ampicillin-sulbactam,-1,0,,,,,1_16
-Yersinia enterocolitica,,Ampicillin-sulbactam,-1,0,,,,,1_17
-Acinetobacter pittii,,Ampicillin-sulbactam,-1,0,,,,,2_1
-Acinetobacter nosocomialis,,Ampicillin-sulbactam,-1,0,,,,,2_1
-Acinetobacter calcoaceticus,,Ampicillin-sulbactam,-1,0,,,,,2_1
-Burkholderia cepacia complex,,Ampicillin-sulbactam,-1,0,,,,,2_3
-Elizabethkingia meningoseptica,,Ampicillin-sulbactam,-1,0,,,,,2_4
-Ochrobactrum anthropi,,Ampicillin-sulbactam,-1,0,,,,,2_5
-Pseudomonas aeruginosa,,Ampicillin-sulbactam,-1,0,,,,,2_6
-Stenotrophomonas maltophilia,,Ampicillin-sulbactam,-1,0,,,,,2_7
-Acinetobacter,,Azithromycin,-1,0,,,,,2_0
-Bordetella,,Azithromycin,-1,0,,,,,2_0
-Burkholderia,,Azithromycin,-1,0,,,,,2_0
-Legionella,,Azithromycin,-1,0,,,,,2_0
-Moraxella,,Azithromycin,-1,0,,,,,2_0
-Pseudomonas,,Azithromycin,-1,0,,,,,2_0
-Stenotrophomonas,,Azithromycin,-1,0,,,,,2_0
-Enterococcus faecalis,,Azithromycin,-1,0,,,,,4_7
-Enterococcus gallinarum,,Azithromycin,-1,0,,,,,4_8
-Enterococcus casseliflavus,,Azithromycin,-1,0,,,,,4_8
-Enterococcus faecium,,Azithromycin,-1,0,,,,,4_9
-Acinetobacter baumannii,,Aztreonam,-1,0,,,,,2_1
-Acinetobacter pittii,,Aztreonam,-1,0,,,,,2_1
-Acinetobacter nosocomialis,,Aztreonam,-1,0,,,,,2_1
-Acinetobacter calcoaceticus,,Aztreonam,-1,0,,,,,2_1
-Burkholderia cepacia complex,,Aztreonam,-1,0,,,,,2_3
-Elizabethkingia meningoseptica,,Aztreonam,-1,0,,,,,2_4
-Ochrobactrum anthropi,,Aztreonam,-1,0,,,,,2_5
-Stenotrophomonas maltophilia,,Aztreonam,-1,0,,,,,2_7
-Actinomyces,,Aztreonam,-1,0,,,,,4_0
-Arthrobacter,,Aztreonam,-1,0,,,,,4_0
-Bifidobacterium,,Aztreonam,-1,0,,,,,4_0
-Corynebacterium,,Aztreonam,-1,0,,,,,4_0
-Frankia,,Aztreonam,-1,0,,,,,4_0
-Micrococcus,,Aztreonam,-1,0,,,,,4_0
-Micromonospora,,Aztreonam,-1,0,,,,,4_0
-Mycobacterium,,Aztreonam,-1,0,,,,,4_0
-Nocardia,,Aztreonam,-1,0,,,,,4_0
-Propionibacterium,,Aztreonam,-1,0,,,,,4_0
-Streptomyces,,Aztreonam,-1,0,,,,,4_0
-Bacillus,,Aztreonam,-1,0,,,,,4_0
-Listeria,,Aztreonam,-1,0,,,,,4_0
-Staphylococcus,,Aztreonam,-1,0,,,,,4_0
-Enterococcus,,Aztreonam,-1,0,,,,,4_0
-Lactobacillus,,Aztreonam,-1,0,,,,,4_0
-Lactococcus,,Aztreonam,-1,0,,,,,4_0
-Leuconostoc,,Aztreonam,-1,0,,,,,4_0
-Pediococcus,,Aztreonam,-1,0,,,,,4_0
-Streptococcus,,Aztreonam,-1,0,,,,,4_0
-Acetobacterium,,Aztreonam,-1,0,,,,,4_0
-Clostridium,,Aztreonam,-1,0,,,,,4_0
-Eubacterium,,Aztreonam,-1,0,,,,,4_0
-Heliobacterium,,Aztreonam,-1,0,,,,,4_0
-Megasphaera,,Aztreonam,-1,0,,,,,4_0
-Pectinatus,,Aztreonam,-1,0,,,,,4_0
-Selenomonas,,Aztreonam,-1,0,,,,,4_0
-Propionispira,,Aztreonam,-1,0,,,,,4_0
-Sporomusa,,Aztreonam,-1,0,,,,,4_0
-Mollicutes,,Aztreonam,-1,0,,,,,4_0
-Mycoplasma,,Aztreonam,-1,0,,,,,4_0
-Spiroplasma,,Aztreonam,-1,0,,,,,4_0
-Ureaplasma,,Aztreonam,-1,0,,,,,4_0
-Erysipelothrix,,Aztreonam,-1,0,,,,,4_0
-Bacillales,,Aztreonam,-1,0,,,,,4_0
-Enterobacterales,,Benzylpenicillin,-1,0,,,,,1_0
-Acinetobacter,,Benzylpenicillin,-1,0,,,,,2_0
-Bordetella,,Benzylpenicillin,-1,0,,,,,2_0
-Burkholderia,,Benzylpenicillin,-1,0,,,,,2_0
-Legionella,,Benzylpenicillin,-1,0,,,,,2_0
-Moraxella,,Benzylpenicillin,-1,0,,,,,2_0
-Pseudomonas,,Benzylpenicillin,-1,0,,,,,2_0
-Stenotrophomonas,,Benzylpenicillin,-1,0,,,,,2_0
-Acinetobacter,,Cefaclor,-1,0,,,,,2_0
-Bordetella,,Cefaclor,-1,0,,,,,2_0
-Burkholderia,,Cefaclor,-1,0,,,,,2_0
-Legionella,,Cefaclor,-1,0,,,,,2_0
-Moraxella,,Cefaclor,-1,0,,,,,2_0
-Pseudomonas,,Cefaclor,-1,0,,,,,2_0
-Stenotrophomonas,,Cefaclor,-1,0,,,,,2_0
-Enterococcus faecalis,,Cefaclor,-1,0,,,,,
-Enterococcus gallinarum,,Cefaclor,-1,0,,,,,
-Enterococcus casseliflavus,,Cefaclor,-1,0,,,,,
-Enterococcus faecium,,Cefaclor,-1,0,,,,,
-Listeria monocytogenes,,Cefaclor,-1,0,,,,,4_11
-Citrobacter freundii,,Cefadroxil,-1,0,,,,,1_2
-Citrobacter braakii,,Cefadroxil,-1,0,,,,,1_2
-Citrobacter murliniae,,Cefadroxil,-1,0,,,,,1_2
-Citrobacter werkmanii,,Cefadroxil,-1,0,,,,,1_2
-Citrobacter youngae,,Cefadroxil,-1,0,,,,,1_2
-Enterobacter cloacae complex,,Cefadroxil,-1,0,,,,,1_3
-Klebsiella aerogenes,,Cefadroxil,-1,0,,,,,1_4
-Hafnia alvei,,Cefadroxil,-1,0,,,,,1_6
-Morganella morganii,,Cefadroxil,-1,0,,,,,1_9
-Proteus penneri,,Cefadroxil,-1,0,,,,,1_11
-Proteus vulgaris,,Cefadroxil,-1,0,,,,,1_12
-Providencia rettgeri,,Cefadroxil,-1,0,,,,,1_13
-Providencia stuartii,,Cefadroxil,-1,0,,,,,1_14
-Serratia marcescens,,Cefadroxil,-1,0,,,,,1_16
-Yersinia enterocolitica,,Cefadroxil,-1,0,,,,,1_17
-Acinetobacter baumannii,,Cefadroxil,-1,0,,,,,2_1
-Acinetobacter pittii,,Cefadroxil,-1,0,,,,,2_1
-Acinetobacter nosocomialis,,Cefadroxil,-1,0,,,,,2_1
-Acinetobacter calcoaceticus,,Cefadroxil,-1,0,,,,,2_1
-Achromobacter xylosoxidans,,Cefadroxil,-1,0,,,,,2_2
-Burkholderia cepacia complex,,Cefadroxil,-1,0,,,,,2_3
-Elizabethkingia meningoseptica,,Cefadroxil,-1,0,,,,,2_4
-Ochrobactrum anthropi,,Cefadroxil,-1,0,,,,,2_5
-Pseudomonas aeruginosa,,Cefadroxil,-1,0,,,,,2_6
-Stenotrophomonas maltophilia,,Cefadroxil,-1,0,,,,,2_7
-Acinetobacter,,Cefadroxil,-1,0,,,,,2_0
-Bordetella,,Cefadroxil,-1,0,,,,,2_0
-Burkholderia,,Cefadroxil,-1,0,,,,,2_0
-Legionella,,Cefadroxil,-1,0,,,,,2_0
-Moraxella,,Cefadroxil,-1,0,,,,,2_0
-Pseudomonas,,Cefadroxil,-1,0,,,,,2_0
-Stenotrophomonas,,Cefadroxil,-1,0,,,,,2_0
-Enterococcus faecalis,,Cefadroxil,-1,0,,,,,
-Enterococcus gallinarum,,Cefadroxil,-1,0,,,,,
-Enterococcus casseliflavus,,Cefadroxil,-1,0,,,,,
-Enterococcus faecium,,Cefadroxil,-1,0,,,,,
-Listeria monocytogenes,,Cefadroxil,-1,0,,,,,4_11
-Acinetobacter,,Cefamandole,-1,0,,,,,2_0
-Bordetella,,Cefamandole,-1,0,,,,,2_0
-Burkholderia,,Cefamandole,-1,0,,,,,2_0
-Legionella,,Cefamandole,-1,0,,,,,2_0
-Moraxella,,Cefamandole,-1,0,,,,,2_0
-Pseudomonas,,Cefamandole,-1,0,,,,,2_0
-Stenotrophomonas,,Cefamandole,-1,0,,,,,2_0
-Enterococcus faecalis,,Cefamandole,-1,0,,,,,
-Enterococcus gallinarum,,Cefamandole,-1,0,,,,,
-Enterococcus casseliflavus,,Cefamandole,-1,0,,,,,
-Enterococcus faecium,,Cefamandole,-1,0,,,,,
-Listeria monocytogenes,,Cefamandole,-1,0,,,,,4_11
-Citrobacter freundii,,Cefazolin,-1,0,,,,,1_2
-Citrobacter braakii,,Cefazolin,-1,0,,,,,1_2
-Citrobacter murliniae,,Cefazolin,-1,0,,,,,1_2
-Citrobacter werkmanii,,Cefazolin,-1,0,,,,,1_2
-Citrobacter youngae,,Cefazolin,-1,0,,,,,1_2
-Enterobacter cloacae complex,,Cefazolin,-1,0,,,,,1_3
-Klebsiella aerogenes,,Cefazolin,-1,0,,,,,1_4
-Hafnia alvei,,Cefazolin,-1,0,,,,,1_6
-Morganella morganii,,Cefazolin,-1,0,,,,,1_9
-Proteus penneri,,Cefazolin,-1,0,,,,,1_11
-Proteus vulgaris,,Cefazolin,-1,0,,,,,1_12
-Providencia rettgeri,,Cefazolin,-1,0,,,,,1_13
-Providencia stuartii,,Cefazolin,-1,0,,,,,1_14
-Serratia marcescens,,Cefazolin,-1,0,,,,,1_16
-Yersinia enterocolitica,,Cefazolin,-1,0,,,,,1_17
-Acinetobacter baumannii,,Cefazolin,-1,0,,,,,2_1
-Acinetobacter pittii,,Cefazolin,-1,0,,,,,2_1
-Acinetobacter nosocomialis,,Cefazolin,-1,0,,,,,2_1
-Acinetobacter calcoaceticus,,Cefazolin,-1,0,,,,,2_1
-Achromobacter xylosoxidans,,Cefazolin,-1,0,,,,,2_2
-Burkholderia cepacia complex,,Cefazolin,-1,0,,,,,2_3
-Elizabethkingia meningoseptica,,Cefazolin,-1,0,,,,,2_4
-Ochrobactrum anthropi,,Cefazolin,-1,0,,,,,2_5
-Pseudomonas aeruginosa,,Cefazolin,-1,0,,,,,2_6
-Stenotrophomonas maltophilia,,Cefazolin,-1,0,,,,,2_7
-Acinetobacter,,Cefazolin,-1,0,,,,,2_0
-Bordetella,,Cefazolin,-1,0,,,,,2_0
-Burkholderia,,Cefazolin,-1,0,,,,,2_0
-Legionella,,Cefazolin,-1,0,,,,,2_0
-Moraxella,,Cefazolin,-1,0,,,,,2_0
-Pseudomonas,,Cefazolin,-1,0,,,,,2_0
-Stenotrophomonas,,Cefazolin,-1,0,,,,,2_0
-Enterococcus faecalis,,Cefazolin,-1,0,,,,,
-Enterococcus gallinarum,,Cefazolin,-1,0,,,,,
-Enterococcus casseliflavus,,Cefazolin,-1,0,,,,,
-Enterococcus faecium,,Cefazolin,-1,0,,,,,
-Listeria monocytogenes,,Cefazolin,-1,0,,,,,4_11
-Enterococcus faecalis,,Cefdinir,-1,0,,,,,
-Enterococcus gallinarum,,Cefdinir,-1,0,,,,,
-Enterococcus casseliflavus,,Cefdinir,-1,0,,,,,
-Enterococcus faecium,,Cefdinir,-1,0,,,,,
-Listeria monocytogenes,,Cefdinir,-1,0,,,,,4_11
-Elizabethkingia meningoseptica,,Cefepime,-1,0,,,,,2_4
-Ochrobactrum anthropi,,Cefepime,-1,0,,,,,2_5
-Enterococcus faecalis,,Cefepime,-1,0,,,,,
-Enterococcus gallinarum,,Cefepime,-1,0,,,,,
-Enterococcus casseliflavus,,Cefepime,-1,0,,,,,
-Enterococcus faecium,,Cefepime,-1,0,,,,,
-Listeria monocytogenes,,Cefepime,-1,0,,,,,4_11
-Enterococcus faecalis,,Cefetamet,-1,0,,,,,
-Enterococcus gallinarum,,Cefetamet,-1,0,,,,,
-Enterococcus casseliflavus,,Cefetamet,-1,0,,,,,
-Enterococcus faecium,,Cefetamet,-1,0,,,,,
-Listeria monocytogenes,,Cefetamet,-1,0,,,,,4_11
-Enterococcus faecalis,,Cefixime,-1,0,,,,,
-Enterococcus gallinarum,,Cefixime,-1,0,,,,,
-Enterococcus casseliflavus,,Cefixime,-1,0,,,,,
-Enterococcus faecium,,Cefixime,-1,0,,,,,
-Listeria monocytogenes,,Cefixime,-1,0,,,,,4_11
-Acinetobacter,,Cefmetazole,-1,0,,,,,2_0
-Bordetella,,Cefmetazole,-1,0,,,,,2_0
-Burkholderia,,Cefmetazole,-1,0,,,,,2_0
-Legionella,,Cefmetazole,-1,0,,,,,2_0
-Moraxella,,Cefmetazole,-1,0,,,,,2_0
-Pseudomonas,,Cefmetazole,-1,0,,,,,2_0
-Stenotrophomonas,,Cefmetazole,-1,0,,,,,2_0
-Enterococcus faecalis,,Cefmetazole,-1,0,,,,,
-Enterococcus gallinarum,,Cefmetazole,-1,0,,,,,
-Enterococcus casseliflavus,,Cefmetazole,-1,0,,,,,
-Enterococcus faecium,,Cefmetazole,-1,0,,,,,
-Listeria monocytogenes,,Cefmetazole,-1,0,,,,,4_11
-Acinetobacter,,Cefonicid,-1,0,,,,,2_0
-Bordetella,,Cefonicid,-1,0,,,,,2_0
-Burkholderia,,Cefonicid,-1,0,,,,,2_0
-Legionella,,Cefonicid,-1,0,,,,,2_0
-Moraxella,,Cefonicid,-1,0,,,,,2_0
-Pseudomonas,,Cefonicid,-1,0,,,,,2_0
-Stenotrophomonas,,Cefonicid,-1,0,,,,,2_0
-Enterococcus faecalis,,Cefonicid,-1,0,,,,,
-Enterococcus gallinarum,,Cefonicid,-1,0,,,,,
-Enterococcus casseliflavus,,Cefonicid,-1,0,,,,,
-Enterococcus faecium,,Cefonicid,-1,0,,,,,
-Listeria monocytogenes,,Cefonicid,-1,0,,,,,4_11
-Enterococcus faecalis,,Cefoperazone,-1,0,,,,,
-Enterococcus gallinarum,,Cefoperazone,-1,0,,,,,
-Enterococcus casseliflavus,,Cefoperazone,-1,0,,,,,
-Enterococcus faecium,,Cefoperazone,-1,0,,,,,
-Listeria monocytogenes,,Cefoperazone,-1,0,,,,,4_11
-Acinetobacter baumannii,,Cefotaxime,-1,0,,,,,2_1
-Acinetobacter pittii,,Cefotaxime,-1,0,,,,,2_1
-Acinetobacter nosocomialis,,Cefotaxime,-1,0,,,,,2_1
-Acinetobacter calcoaceticus,,Cefotaxime,-1,0,,,,,2_1
-Achromobacter xylosoxidans,,Cefotaxime,-1,0,,,,,2_2
-Burkholderia cepacia complex,,Cefotaxime,-1,0,,,,,2_3
-Elizabethkingia meningoseptica,,Cefotaxime,-1,0,,,,,2_4
-Ochrobactrum anthropi,,Cefotaxime,-1,0,,,,,2_5
-Pseudomonas aeruginosa,,Cefotaxime,-1,0,,,,,2_6
-Stenotrophomonas maltophilia,,Cefotaxime,-1,0,,,,,2_7
-Enterococcus faecalis,,Cefotaxime,-1,0,,,,,
-Enterococcus gallinarum,,Cefotaxime,-1,0,,,,,
-Enterococcus casseliflavus,,Cefotaxime,-1,0,,,,,
-Enterococcus faecium,,Cefotaxime,-1,0,,,,,
-Listeria monocytogenes,,Cefotaxime,-1,0,,,,,4_11
-Acinetobacter,,Cefotetan,-1,0,,,,,2_0
-Bordetella,,Cefotetan,-1,0,,,,,2_0
-Burkholderia,,Cefotetan,-1,0,,,,,2_0
-Legionella,,Cefotetan,-1,0,,,,,2_0
-Moraxella,,Cefotetan,-1,0,,,,,2_0
-Pseudomonas,,Cefotetan,-1,0,,,,,2_0
-Stenotrophomonas,,Cefotetan,-1,0,,,,,2_0
-Enterococcus faecalis,,Cefotetan,-1,0,,,,,
-Enterococcus gallinarum,,Cefotetan,-1,0,,,,,
-Enterococcus casseliflavus,,Cefotetan,-1,0,,,,,
-Enterococcus faecium,,Cefotetan,-1,0,,,,,
-Listeria monocytogenes,,Cefotetan,-1,0,,,,,4_11
-Citrobacter freundii,,Cefoxitin,-1,0,,,,,1_2
-Citrobacter braakii,,Cefoxitin,-1,0,,,,,1_2
-Citrobacter murliniae,,Cefoxitin,-1,0,,,,,1_2
-Citrobacter werkmanii,,Cefoxitin,-1,0,,,,,1_2
-Citrobacter youngae,,Cefoxitin,-1,0,,,,,1_2
-Enterobacter cloacae complex,,Cefoxitin,-1,0,,,,,1_3
-Klebsiella aerogenes,,Cefoxitin,-1,0,,,,,1_4
-Hafnia alvei,,Cefoxitin,-1,0,,,,,1_6
-Serratia marcescens,,Cefoxitin,-1,0,,,,,1_16
-Yersinia enterocolitica,,Cefoxitin,-1,0,,,,,1_17
-Enterococcus faecalis,,Cefpodoxime,-1,0,,,,,
-Enterococcus gallinarum,,Cefpodoxime,-1,0,,,,,
-Enterococcus casseliflavus,,Cefpodoxime,-1,0,,,,,
-Enterococcus faecium,,Cefpodoxime,-1,0,,,,,
-Listeria monocytogenes,,Cefpodoxime,-1,0,,,,,4_11
-Acinetobacter,,Cefprozil,-1,0,,,,,2_0
-Bordetella,,Cefprozil,-1,0,,,,,2_0
-Burkholderia,,Cefprozil,-1,0,,,,,2_0
-Legionella,,Cefprozil,-1,0,,,,,2_0
-Moraxella,,Cefprozil,-1,0,,,,,2_0
-Pseudomonas,,Cefprozil,-1,0,,,,,2_0
-Stenotrophomonas,,Cefprozil,-1,0,,,,,2_0
-Enterococcus faecalis,,Cefprozil,-1,0,,,,,
-Enterococcus gallinarum,,Cefprozil,-1,0,,,,,
-Enterococcus casseliflavus,,Cefprozil,-1,0,,,,,
-Enterococcus faecium,,Cefprozil,-1,0,,,,,
-Listeria monocytogenes,,Cefprozil,-1,0,,,,,4_11
-Enterococcus faecalis,,Ceftaroline,-1,0,,,,,
-Enterococcus gallinarum,,Ceftaroline,-1,0,,,,,
-Enterococcus casseliflavus,,Ceftaroline,-1,0,,,,,
-Enterococcus faecium,,Ceftaroline,-1,0,,,,,
-Listeria monocytogenes,,Ceftaroline,-1,0,,,,,4_11
-Elizabethkingia meningoseptica,,Ceftazidime,-1,0,,,,,2_4
-Ochrobactrum anthropi,,Ceftazidime,-1,0,,,,,2_5
-Stenotrophomonas maltophilia,,Ceftazidime,-1,0,,,,,2_7
-Staphylococcus saprophyticus,,Ceftazidime,-1,0,,,,,4_1
-Staphylococcus cohnii,,Ceftazidime,-1,0,,,,,4_2
-Staphylococcus xylosus,,Ceftazidime,-1,0,,,,,4_3
-Staphylococcus capitis,,Ceftazidime,-1,0,,,,,4_4
-Staphylococcus epidermidis,,Ceftazidime,-1,0,,,,,4_5
-Staphylococcus haemolyticus,,Ceftazidime,-1,0,,,,,4_5
-Staphylococcus hominis,,Ceftazidime,-1,0,,,,,4_5
-Staphylococcus caprae,,Ceftazidime,-1,0,,,,,4_5
-Staphylococcus auricularis,,Ceftazidime,-1,0,,,,,4_5
-Staphylococcus saccharolyticus,,Ceftazidime,-1,0,,,,,4_5
-Staphylococcus warneri,,Ceftazidime,-1,0,,,,,4_5
-Staphylococcus pasteuri,,Ceftazidime,-1,0,,,,,4_5
-Staphylococcus arlettae,,Ceftazidime,-1,0,,,,,4_5
-Staphylococcus equorum,,Ceftazidime,-1,0,,,,,4_5
-Staphylococcus gallinarum,,Ceftazidime,-1,0,,,,,4_5
-Staphylococcus kloosii,,Ceftazidime,-1,0,,,,,4_5
-Staphylococcus simulans,,Ceftazidime,-1,0,,,,,4_5
-Staphylococcus carnosus,,Ceftazidime,-1,0,,,,,4_5
-Staphylococcus schleiferi subsp. schleiferi,,Ceftazidime,-1,0,,,,,4_5
-Staphylococcus sciuri,,Ceftazidime,-1,0,,,,,4_5
-Staphylococcus lentus,,Ceftazidime,-1,0,,,,,4_5
-Staphylococcus vitulinus,,Ceftazidime,-1,0,,,,,4_5
-Staphylococcus chromogenes,,Ceftazidime,-1,0,,,,,4_5
-Macrococcus caseolyticus,,Ceftazidime,-1,0,,,,,4_5
-Staphylococcus felis,,Ceftazidime,-1,0,,,,,4_5
-Staphylococcus hyicus,,Ceftazidime,-1,0,,,,,4_5
-Staphylococcus lugdunensis,,Ceftazidime,-1,0,,,,,4_5
-Staphylococcus muscae,,Ceftazidime,-1,0,,,,,4_5
-Staphylococcus aureus,,Ceftazidime,-1,0,,,,,4_5
-Streptococcus,,Ceftazidime,-1,0,,,,,4_6
-Enterococcus faecalis,,Ceftazidime,-1,0,,,,,4_7
-Enterococcus gallinarum,,Ceftazidime,-1,0,,,,,4_8
-Enterococcus casseliflavus,,Ceftazidime,-1,0,,,,,4_8
-Enterococcus faecium,,Ceftazidime,-1,0,,,,,4_9
-Listeria monocytogenes,,Ceftazidime,-1,0,,,,,4_11
-Enterococcus faecalis,,Ceftibuten,-1,0,,,,,
-Enterococcus gallinarum,,Ceftibuten,-1,0,,,,,
-Enterococcus casseliflavus,,Ceftibuten,-1,0,,,,,
-Enterococcus faecium,,Ceftibuten,-1,0,,,,,
-Listeria monocytogenes,,Ceftibuten,-1,0,,,,,4_11
-Enterococcus faecalis,,Ceftizoxime,-1,0,,,,,
-Enterococcus gallinarum,,Ceftizoxime,-1,0,,,,,
-Enterococcus casseliflavus,,Ceftizoxime,-1,0,,,,,
-Enterococcus faecium,,Ceftizoxime,-1,0,,,,,
-Listeria monocytogenes,,Ceftizoxime,-1,0,,,,,4_11
-Enterococcus faecalis,,Ceftobiprole,-1,0,,,,,
-Enterococcus gallinarum,,Ceftobiprole,-1,0,,,,,
-Enterococcus casseliflavus,,Ceftobiprole,-1,0,,,,,
-Enterococcus faecium,,Ceftobiprole,-1,0,,,,,
-Listeria monocytogenes,,Ceftobiprole,-1,0,,,,,4_11
-Enterococcus faecalis,,Ceftolozane-tazobactam,-1,0,,,,,
-Enterococcus gallinarum,,Ceftolozane-tazobactam,-1,0,,,,,
-Enterococcus casseliflavus,,Ceftolozane-tazobactam,-1,0,,,,,
-Enterococcus faecium,,Ceftolozane-tazobactam,-1,0,,,,,
-Listeria monocytogenes,,Ceftolozane-tazobactam,-1,0,,,,,4_11
-Acinetobacter baumannii,,Ceftriaxone,-1,0,,,,,2_1
-Acinetobacter pittii,,Ceftriaxone,-1,0,,,,,2_1
-Acinetobacter nosocomialis,,Ceftriaxone,-1,0,,,,,2_1
-Acinetobacter calcoaceticus,,Ceftriaxone,-1,0,,,,,2_1
-Achromobacter xylosoxidans,,Ceftriaxone,-1,0,,,,,2_2
-Burkholderia cepacia complex,,Ceftriaxone,-1,0,,,,,2_3
-Elizabethkingia meningoseptica,,Ceftriaxone,-1,0,,,,,2_4
-Ochrobactrum anthropi,,Ceftriaxone,-1,0,,,,,2_5
-Pseudomonas aeruginosa,,Ceftriaxone,-1,0,,,,,2_6
-Stenotrophomonas maltophilia,,Ceftriaxone,-1,0,,,,,2_7
-Enterococcus faecalis,,Ceftriaxone,-1,0,,,,,
-Enterococcus gallinarum,,Ceftriaxone,-1,0,,,,,
-Enterococcus casseliflavus,,Ceftriaxone,-1,0,,,,,
-Enterococcus faecium,,Ceftriaxone,-1,0,,,,,
-Listeria monocytogenes,,Ceftriaxone,-1,0,,,,,4_11
-Proteus penneri,,Cefuroxime,-1,0,,,,,1_11
-Proteus vulgaris,,Cefuroxime,-1,0,,,,,1_12
-Providencia rettgeri,,Cefuroxime,-1,0,,,,,1_13
-Providencia stuartii,,Cefuroxime,-1,0,,,,,1_14
-Serratia marcescens,,Cefuroxime,-1,0,,,,,1_16
-Acinetobacter,,Cefuroxime,-1,0,,,,,2_0
-Bordetella,,Cefuroxime,-1,0,,,,,2_0
-Burkholderia,,Cefuroxime,-1,0,,,,,2_0
-Legionella,,Cefuroxime,-1,0,,,,,2_0
-Moraxella,,Cefuroxime,-1,0,,,,,2_0
-Pseudomonas,,Cefuroxime,-1,0,,,,,2_0
-Stenotrophomonas,,Cefuroxime,-1,0,,,,,2_0
-Enterococcus faecalis,,Cefuroxime,-1,0,,,,,
-Enterococcus gallinarum,,Cefuroxime,-1,0,,,,,
-Enterococcus casseliflavus,,Cefuroxime,-1,0,,,,,
-Enterococcus faecium,,Cefuroxime,-1,0,,,,,
-Listeria monocytogenes,,Cefuroxime,-1,0,,,,,4_11
-Citrobacter freundii,,Cephalexin,-1,0,,,,,1_2
-Citrobacter braakii,,Cephalexin,-1,0,,,,,1_2
-Citrobacter murliniae,,Cephalexin,-1,0,,,,,1_2
-Citrobacter werkmanii,,Cephalexin,-1,0,,,,,1_2
-Citrobacter youngae,,Cephalexin,-1,0,,,,,1_2
-Enterobacter cloacae complex,,Cephalexin,-1,0,,,,,1_3
-Klebsiella aerogenes,,Cephalexin,-1,0,,,,,1_4
-Hafnia alvei,,Cephalexin,-1,0,,,,,1_6
-Morganella morganii,,Cephalexin,-1,0,,,,,1_9
-Proteus penneri,,Cephalexin,-1,0,,,,,1_11
-Proteus vulgaris,,Cephalexin,-1,0,,,,,1_12
-Providencia rettgeri,,Cephalexin,-1,0,,,,,1_13
-Providencia stuartii,,Cephalexin,-1,0,,,,,1_14
-Serratia marcescens,,Cephalexin,-1,0,,,,,1_16
-Yersinia enterocolitica,,Cephalexin,-1,0,,,,,1_17
-Acinetobacter baumannii,,Cephalexin,-1,0,,,,,2_1
-Acinetobacter pittii,,Cephalexin,-1,0,,,,,2_1
-Acinetobacter nosocomialis,,Cephalexin,-1,0,,,,,2_1
-Acinetobacter calcoaceticus,,Cephalexin,-1,0,,,,,2_1
-Achromobacter xylosoxidans,,Cephalexin,-1,0,,,,,2_2
-Burkholderia cepacia complex,,Cephalexin,-1,0,,,,,2_3
-Elizabethkingia meningoseptica,,Cephalexin,-1,0,,,,,2_4
-Ochrobactrum anthropi,,Cephalexin,-1,0,,,,,2_5
-Pseudomonas aeruginosa,,Cephalexin,-1,0,,,,,2_6
-Stenotrophomonas maltophilia,,Cephalexin,-1,0,,,,,2_7
-Acinetobacter,,Cephalexin,-1,0,,,,,2_0
-Bordetella,,Cephalexin,-1,0,,,,,2_0
-Burkholderia,,Cephalexin,-1,0,,,,,2_0
-Legionella,,Cephalexin,-1,0,,,,,2_0
-Moraxella,,Cephalexin,-1,0,,,,,2_0
-Pseudomonas,,Cephalexin,-1,0,,,,,2_0
-Stenotrophomonas,,Cephalexin,-1,0,,,,,2_0
-Enterococcus faecalis,,Cephalexin,-1,0,,,,,
-Enterococcus gallinarum,,Cephalexin,-1,0,,,,,
-Enterococcus casseliflavus,,Cephalexin,-1,0,,,,,
-Enterococcus faecium,,Cephalexin,-1,0,,,,,
-Listeria monocytogenes,,Cephalexin,-1,0,,,,,4_11
-Citrobacter freundii,,Cefalotin,-1,0,,,,,1_2
-Citrobacter braakii,,Cefalotin,-1,0,,,,,1_2
-Citrobacter murliniae,,Cefalotin,-1,0,,,,,1_2
-Citrobacter werkmanii,,Cefalotin,-1,0,,,,,1_2
-Citrobacter youngae,,Cefalotin,-1,0,,,,,1_2
-Enterobacter cloacae complex,,Cefalotin,-1,0,,,,,1_3
-Klebsiella aerogenes,,Cefalotin,-1,0,,,,,1_4
-Hafnia alvei,,Cefalotin,-1,0,,,,,1_6
-Morganella morganii,,Cefalotin,-1,0,,,,,1_9
-Proteus penneri,,Cefalotin,-1,0,,,,,1_11
-Proteus vulgaris,,Cefalotin,-1,0,,,,,1_12
-Providencia rettgeri,,Cefalotin,-1,0,,,,,1_13
-Providencia stuartii,,Cefalotin,-1,0,,,,,1_14
-Serratia marcescens,,Cefalotin,-1,0,,,,,1_16
-Yersinia enterocolitica,,Cefalotin,-1,0,,,,,1_17
-Acinetobacter baumannii,,Cefalotin,-1,0,,,,,2_1
-Acinetobacter pittii,,Cefalotin,-1,0,,,,,2_1
-Acinetobacter nosocomialis,,Cefalotin,-1,0,,,,,2_1
-Acinetobacter calcoaceticus,,Cefalotin,-1,0,,,,,2_1
-Achromobacter xylosoxidans,,Cefalotin,-1,0,,,,,2_2
-Burkholderia cepacia complex,,Cefalotin,-1,0,,,,,2_3
-Elizabethkingia meningoseptica,,Cefalotin,-1,0,,,,,2_4
-Ochrobactrum anthropi,,Cefalotin,-1,0,,,,,2_5
-Pseudomonas aeruginosa,,Cefalotin,-1,0,,,,,2_6
-Stenotrophomonas maltophilia,,Cefalotin,-1,0,,,,,2_7
-Acinetobacter,,Cefalotin,-1,0,,,,,2_0
-Bordetella,,Cefalotin,-1,0,,,,,2_0
-Burkholderia,,Cefalotin,-1,0,,,,,2_0
-Legionella,,Cefalotin,-1,0,,,,,2_0
-Moraxella,,Cefalotin,-1,0,,,,,2_0
-Pseudomonas,,Cefalotin,-1,0,,,,,2_0
-Stenotrophomonas,,Cefalotin,-1,0,,,,,2_0
-Enterococcus faecalis,,Cefalotin,-1,0,,,,,
-Enterococcus gallinarum,,Cefalotin,-1,0,,,,,
-Enterococcus casseliflavus,,Cefalotin,-1,0,,,,,
-Enterococcus faecium,,Cefalotin,-1,0,,,,,
-Listeria monocytogenes,,Cefalotin,-1,0,,,,,4_11
-Burkholderia cepacia complex,,Chloramphenicol,-1,0,,,,,2_3
-Pseudomonas aeruginosa,,Chloramphenicol,-1,0,,,,,2_6
-Burkholderia cepacia complex,,Ciprofloxacin,-1,0,,,,,2_3
-Acinetobacter,,Clarithromycin,-1,0,,,,,2_0
-Bordetella,,Clarithromycin,-1,0,,,,,2_0
-Burkholderia,,Clarithromycin,-1,0,,,,,2_0
-Legionella,,Clarithromycin,-1,0,,,,,2_0
-Moraxella,,Clarithromycin,-1,0,,,,,2_0
-Pseudomonas,,Clarithromycin,-1,0,,,,,2_0
-Stenotrophomonas,,Clarithromycin,-1,0,,,,,2_0
-Enterobacterales,,Clarithromycin,-1,0,,,,,1_0
-Enterococcus faecalis,,Clarithromycin,-1,0,,,,,4_7
-Enterococcus gallinarum,,Clarithromycin,-1,0,,,,,4_8
-Enterococcus casseliflavus,,Clarithromycin,-1,0,,,,,4_8
-Enterococcus faecium,,Clarithromycin,-1,0,,,,,4_9
-Enterococcus faecalis,,Clindamycin,-1,0,,,,,4_7
-Enterococcus gallinarum,,Clindamycin,-1,0,,,,,4_8
-Enterococcus casseliflavus,,Clindamycin,-1,0,,,,,4_8
-Acinetobacter,,Clindamycin,-1,0,,,,,3_0
-Actinobacillus,,Clindamycin,-1,0,,,,,3_0
-Bordetella,,Clindamycin,-1,0,,,,,3_0
-Brucella,,Clindamycin,-1,0,,,,,3_0
-Campylobacter,,Clindamycin,-1,0,,,,,3_0
-Cyanobacteria,,Clindamycin,-1,0,,,,,3_0
-Enterobacter,,Clindamycin,-1,0,,,,,3_0
-Erwinia,,Clindamycin,-1,0,,,,,3_0
-Escherichia coli,,Clindamycin,-1,0,,,,,3_0
-Francisella,,Clindamycin,-1,0,,,,,3_0
-Helicobacter,,Clindamycin,-1,0,,,,,3_0
-Haemophilus,,Clindamycin,-1,0,,,,,3_0
-Klebsiella,,Clindamycin,-1,0,,,,,3_0
-Legionella,,Clindamycin,-1,0,,,,,3_0
-Moraxella,,Clindamycin,-1,0,,,,,3_0
-Neisseria,,Clindamycin,-1,0,,,,,3_0
-Pasteurella,,Clindamycin,-1,0,,,,,3_0
-Proteus,,Clindamycin,-1,0,,,,,3_0
-Pseudomonas,,Clindamycin,-1,0,,,,,3_0
-Salmonella,,Clindamycin,-1,0,,,,,3_0
-Serratia,,Clindamycin,-1,0,,,,,3_0
-Shigella,,Clindamycin,-1,0,,,,,3_0
-Treponema,,Clindamycin,-1,0,,,,,3_0
-Vibrio,,Clindamycin,-1,0,,,,,3_0
-Yersinia,,Clindamycin,-1,0,,,,,3_0
-Morganella morganii,,Colistin,-1,0,,,,,1_9
-Proteus mirabilis,,Colistin,-1,0,,,,,1_10
-Proteus penneri,,Colistin,-1,0,,,,,1_11
-Proteus vulgaris,,Colistin,-1,0,,,,,1_12
-Providencia rettgeri,,Colistin,-1,0,,,,,1_13
-Providencia stuartii,,Colistin,-1,0,,,,,1_14
-Serratia marcescens,,Colistin,-1,0,,,,,1_16
-Yersinia pseudotuberculosis,,Colistin,-1,0,,,,,1_18
-Burkholderia cepacia complex,,Colistin,-1,0,,,,,2_3
-Elizabethkingia meningoseptica,,Colistin,-1,0,,,,,2_4
-Actinomyces,,Colistin,-1,0,,,,,4_0
-Arthrobacter,,Colistin,-1,0,,,,,4_0
-Bifidobacterium,,Colistin,-1,0,,,,,4_0
-Corynebacterium,,Colistin,-1,0,,,,,4_0
-Frankia,,Colistin,-1,0,,,,,4_0
-Micrococcus,,Colistin,-1,0,,,,,4_0
-Micromonospora,,Colistin,-1,0,,,,,4_0
-Mycobacterium,,Colistin,-1,0,,,,,4_0
-Nocardia,,Colistin,-1,0,,,,,4_0
-Propionibacterium,,Colistin,-1,0,,,,,4_0
-Streptomyces,,Colistin,-1,0,,,,,4_0
-Bacillus,,Colistin,-1,0,,,,,4_0
-Listeria,,Colistin,-1,0,,,,,4_0
-Staphylococcus,,Colistin,-1,0,,,,,4_0
-Enterococcus,,Colistin,-1,0,,,,,4_0
-Lactobacillus,,Colistin,-1,0,,,,,4_0
-Lactococcus,,Colistin,-1,0,,,,,4_0
-Leuconostoc,,Colistin,-1,0,,,,,4_0
-Pediococcus,,Colistin,-1,0,,,,,4_0
-Streptococcus,,Colistin,-1,0,,,,,4_0
-Acetobacterium,,Colistin,-1,0,,,,,4_0
-Clostridium,,Colistin,-1,0,,,,,4_0
-Eubacterium,,Colistin,-1,0,,,,,4_0
-Heliobacterium,,Colistin,-1,0,,,,,4_0
-Megasphaera,,Colistin,-1,0,,,,,4_0
-Pectinatus,,Colistin,-1,0,,,,,4_0
-Selenomonas,,Colistin,-1,0,,,,,4_0
-Propionispira,,Colistin,-1,0,,,,,4_0
-Sporomusa,,Colistin,-1,0,,,,,4_0
-Mollicutes,,Colistin,-1,0,,,,,4_0
-Mycoplasma,,Colistin,-1,0,,,,,4_0
-Spiroplasma,,Colistin,-1,0,,,,,4_0
-Ureaplasma,,Colistin,-1,0,,,,,4_0
-Erysipelothrix,,Colistin,-1,0,,,,,4_0
-Bacillales,,Colistin,-1,0,,,,,4_0
-Acinetobacter,,Daptomycin,-1,0,,,,,3_0
-Actinobacillus,,Daptomycin,-1,0,,,,,3_0
-Bordetella,,Daptomycin,-1,0,,,,,3_0
-Brucella,,Daptomycin,-1,0,,,,,3_0
-Campylobacter,,Daptomycin,-1,0,,,,,3_0
-Cyanobacteria,,Daptomycin,-1,0,,,,,3_0
-Enterobacter,,Daptomycin,-1,0,,,,,3_0
-Erwinia,,Daptomycin,-1,0,,,,,3_0
-Escherichia coli,,Daptomycin,-1,0,,,,,3_0
-Francisella,,Daptomycin,-1,0,,,,,3_0
-Helicobacter,,Daptomycin,-1,0,,,,,3_0
-Haemophilus,,Daptomycin,-1,0,,,,,3_0
-Klebsiella,,Daptomycin,-1,0,,,,,3_0
-Legionella,,Daptomycin,-1,0,,,,,3_0
-Moraxella,,Daptomycin,-1,0,,,,,3_0
-Neisseria,,Daptomycin,-1,0,,,,,3_0
-Pasteurella,,Daptomycin,-1,0,,,,,3_0
-Proteus,,Daptomycin,-1,0,,,,,3_0
-Pseudomonas,,Daptomycin,-1,0,,,,,3_0
-Salmonella,,Daptomycin,-1,0,,,,,3_0
-Serratia,,Daptomycin,-1,0,,,,,3_0
-Shigella,,Daptomycin,-1,0,,,,,3_0
-Treponema,,Daptomycin,-1,0,,,,,3_0
-Vibrio,,Daptomycin,-1,0,,,,,3_0
-Yersinia,,Daptomycin,-1,0,,,,,3_0
-Acinetobacter,,Dirithromycin,-1,0,,,,,2_0
-Bordetella,,Dirithromycin,-1,0,,,,,2_0
-Burkholderia,,Dirithromycin,-1,0,,,,,2_0
-Legionella,,Dirithromycin,-1,0,,,,,2_0
-Moraxella,,Dirithromycin,-1,0,,,,,2_0
-Pseudomonas,,Dirithromycin,-1,0,,,,,2_0
-Stenotrophomonas,,Dirithromycin,-1,0,,,,,2_0
-Enterobacterales,,Dirithromycin,-1,0,,,,,1_0
-Enterococcus faecalis,,Dirithromycin,-1,0,,,,,4_7
-Enterococcus gallinarum,,Dirithromycin,-1,0,,,,,4_8
-Enterococcus casseliflavus,,Dirithromycin,-1,0,,,,,4_8
-Enterococcus faecium,,Dirithromycin,-1,0,,,,,4_9
-Serratia marcescens,,Doxycycline,-1,0,,,,,1_16
-Acinetobacter,,Doxycycline,-1,0,,,,,2_1
-Morganella morganii,,Doxycycline,-1,0,,,,,1_9
-Proteus mirabilis,,Doxycycline,-1,0,,,,,1_10
-Proteus penneri,,Doxycycline,-1,0,,,,,1_11
-Proteus vulgaris,,Doxycycline,-1,0,,,,,1_12
-Providencia rettgeri,,Doxycycline,-1,0,,,,,1_13
-Providencia stuartii,,Doxycycline,-1,0,,,,,1_14
-Pseudomonas aeruginosa,,Doxycycline,-1,0,,,,,2_6
-Acinetobacter baumannii,,Ertapenem,-1,0,,,,,2_1
-Acinetobacter pittii,,Ertapenem,-1,0,,,,,2_1
-Acinetobacter nosocomialis,,Ertapenem,-1,0,,,,,2_1
-Acinetobacter calcoaceticus,,Ertapenem,-1,0,,,,,2_1
-Achromobacter xylosoxidans,,Ertapenem,-1,0,,,,,2_2
-Burkholderia cepacia complex,,Ertapenem,-1,0,,,,,2_3
-Elizabethkingia meningoseptica,,Ertapenem,-1,0,,,,,2_4
-Ochrobactrum anthropi,,Ertapenem,-1,0,,,,,2_5
-Pseudomonas aeruginosa,,Ertapenem,-1,0,,,,,2_6
-Stenotrophomonas maltophilia,,Ertapenem,-1,0,,,,,2_7
-Acinetobacter,,Erythromycin,-1,0,,,,,2_0
-Bordetella,,Erythromycin,-1,0,,,,,2_0
-Burkholderia,,Erythromycin,-1,0,,,,,2_0
-Legionella,,Erythromycin,-1,0,,,,,2_0
-Moraxella,,Erythromycin,-1,0,,,,,2_0
-Pseudomonas,,Erythromycin,-1,0,,,,,2_0
-Stenotrophomonas,,Erythromycin,-1,0,,,,,2_0
-Enterococcus faecalis,,Erythromycin,-1,0,,,,,4_7
-Enterococcus gallinarum,,Erythromycin,-1,0,,,,,4_8
-Enterococcus casseliflavus,,Erythromycin,-1,0,,,,,4_8
-Enterococcus faecium,,Erythromycin,-1,0,,,,,4_9
-Acinetobacter baumannii,,Fosfomycin,-1,0,,,,,2_1
-Acinetobacter pittii,,Fosfomycin,-1,0,,,,,2_1
-Acinetobacter nosocomialis,,Fosfomycin,-1,0,,,,,2_1
-Acinetobacter calcoaceticus,,Fosfomycin,-1,0,,,,,2_1
-Burkholderia cepacia complex,,Fosfomycin,-1,0,,,,,2_3
-Staphylococcus saprophyticus,,Fosfomycin,-1,0,,,,,4_1
-Staphylococcus capitis,,Fosfomycin,-1,0,,,,,4_4
-Corynebacterium,,Fosfomycin,-1,0,,,,,4_10
-Haemophilus influenzae,,Fusidic acid,-1,0,,,,,3_1
-Campylobacter fetus,,Fusidic acid,-1,0,,,,,3_4
-Campylobacter jejuni,,Fusidic acid,-1,0,,,,,3_5
-Campylobacter coli,,Fusidic acid,-1,0,,,,,3_5
-Staphylococcus saprophyticus,,Fusidic acid,-1,0,,,,,4_1
-Streptococcus,,Fusidic acid,-1,0,,,,,4_6
-Enterococcus faecalis,,Fusidic acid,-1,0,,,,,4_7
-Enterococcus gallinarum,,Fusidic acid,-1,0,,,,,4_8
-Enterococcus casseliflavus,,Fusidic acid,-1,0,,,,,4_8
-Enterococcus faecium,,Fusidic acid,-1,0,,,,,4_9
-Enterobacterales,,Fusidic acid,-1,0,,,,,1_0
-Acinetobacter,,Fusidic acid,-1,0,,,,,2_0
-Bordetella,,Fusidic acid,-1,0,,,,,2_0
-Burkholderia,,Fusidic acid,-1,0,,,,,2_0
-Legionella,,Fusidic acid,-1,0,,,,,2_0
-Moraxella,,Fusidic acid,-1,0,,,,,2_0
-Pseudomonas,,Fusidic acid,-1,0,,,,,2_0
-Stenotrophomonas,,Fusidic acid,-1,0,,,,,2_0
-Burkholderia cepacia complex,,Gentamicin,-1,0,,,,,2_3
-Stenotrophomonas maltophilia,,Gentamicin,-1,0,,,,,2_7
-Streptococcus,,Gentamicin,-1,0,,,,,4_6
-Enterococcus faecalis,,Gentamicin,-1,0,,,,,4_7
-Enterococcus gallinarum,,Gentamicin,-1,0,,,,,4_8
-Enterococcus casseliflavus,,Gentamicin,-1,0,,,,,4_8
-Enterococcus faecium,,Gentamicin,-1,0,,,,,4_9
-Elizabethkingia meningoseptica,,Imipenem,-1,0,,,,,2_4
-Stenotrophomonas maltophilia,,Imipenem,-1,0,,,,,2_7
-Pseudomonas aeruginosa,,Kanamycin,-1,0,,,,,2_6
-Burkholderia cepacia complex,,Kanamycin,-1,0,,,,,2_3
-Stenotrophomonas maltophilia,,Kanamycin,-1,0,,,,,2_7
-Streptococcus,,Kanamycin,-1,0,,,,,4_6
-Enterococcus faecalis,,Kanamycin,-1,0,,,,,4_7
-Enterococcus gallinarum,,Kanamycin,-1,0,,,,,4_8
-Enterococcus casseliflavus,,Kanamycin,-1,0,,,,,4_8
-Enterococcus faecium,,Kanamycin,-1,0,,,,,4_9
-Acinetobacter,,Linezolid,-1,0,,,,,3_0
-Actinobacillus,,Linezolid,-1,0,,,,,3_0
-Bordetella,,Linezolid,-1,0,,,,,3_0
-Brucella,,Linezolid,-1,0,,,,,3_0
-Campylobacter,,Linezolid,-1,0,,,,,3_0
-Cyanobacteria,,Linezolid,-1,0,,,,,3_0
-Enterobacter,,Linezolid,-1,0,,,,,3_0
-Erwinia,,Linezolid,-1,0,,,,,3_0
-Escherichia coli,,Linezolid,-1,0,,,,,3_0
-Francisella,,Linezolid,-1,0,,,,,3_0
-Helicobacter,,Linezolid,-1,0,,,,,3_0
-Haemophilus,,Linezolid,-1,0,,,,,3_0
-Klebsiella,,Linezolid,-1,0,,,,,3_0
-Legionella,,Linezolid,-1,0,,,,,3_0
-Moraxella,,Linezolid,-1,0,,,,,3_0
-Neisseria,,Linezolid,-1,0,,,,,3_0
-Pasteurella,,Linezolid,-1,0,,,,,3_0
-Proteus,,Linezolid,-1,0,,,,,3_0
-Pseudomonas,,Linezolid,-1,0,,,,,3_0
-Salmonella,,Linezolid,-1,0,,,,,3_0
-Serratia,,Linezolid,-1,0,,,,,3_0
-Shigella,,Linezolid,-1,0,,,,,3_0
-Treponema,,Linezolid,-1,0,,,,,3_0
-Vibrio,,Linezolid,-1,0,,,,,3_0
-Yersinia,,Linezolid,-1,0,,,,,3_0
-Elizabethkingia meningoseptica,,Meropenem,-1,0,,,,,2_4
-Stenotrophomonas maltophilia,,Meropenem,-1,0,,,,,2_7
-Morganella morganii,,Minocycline,-1,0,,,,,1_9
-Proteus mirabilis,,Minocycline,-1,0,,,,,1_10
-Proteus penneri,,Minocycline,-1,0,,,,,1_11
-Proteus vulgaris,,Minocycline,-1,0,,,,,1_12
-Providencia rettgeri,,Minocycline,-1,0,,,,,1_13
-Providencia stuartii,,Minocycline,-1,0,,,,,1_14
-Pseudomonas aeruginosa,,Minocycline,-1,0,,,,,2_6
-Campylobacter fetus,,Nalidixic acid,-1,0,,,,,3_4
-Actinomyces,,Nalidixic acid,-1,0,,,,,4_0
-Arthrobacter,,Nalidixic acid,-1,0,,,,,4_0
-Bifidobacterium,,Nalidixic acid,-1,0,,,,,4_0
-Corynebacterium,,Nalidixic acid,-1,0,,,,,4_0
-Frankia,,Nalidixic acid,-1,0,,,,,4_0
-Micrococcus,,Nalidixic acid,-1,0,,,,,4_0
-Micromonospora,,Nalidixic acid,-1,0,,,,,4_0
-Mycobacterium,,Nalidixic acid,-1,0,,,,,4_0
-Nocardia,,Nalidixic acid,-1,0,,,,,4_0
-Propionibacterium,,Nalidixic acid,-1,0,,,,,4_0
-Streptomyces,,Nalidixic acid,-1,0,,,,,4_0
-Bacillus,,Nalidixic acid,-1,0,,,,,4_0
-Listeria,,Nalidixic acid,-1,0,,,,,4_0
-Staphylococcus,,Nalidixic acid,-1,0,,,,,4_0
-Enterococcus,,Nalidixic acid,-1,0,,,,,4_0
-Lactobacillus,,Nalidixic acid,-1,0,,,,,4_0
-Lactococcus,,Nalidixic acid,-1,0,,,,,4_0
-Leuconostoc,,Nalidixic acid,-1,0,,,,,4_0
-Pediococcus,,Nalidixic acid,-1,0,,,,,4_0
-Streptococcus,,Nalidixic acid,-1,0,,,,,4_0
-Acetobacterium,,Nalidixic acid,-1,0,,,,,4_0
-Clostridium,,Nalidixic acid,-1,0,,,,,4_0
-Eubacterium,,Nalidixic acid,-1,0,,,,,4_0
-Heliobacterium,,Nalidixic acid,-1,0,,,,,4_0
-Megasphaera,,Nalidixic acid,-1,0,,,,,4_0
-Pectinatus,,Nalidixic acid,-1,0,,,,,4_0
-Selenomonas,,Nalidixic acid,-1,0,,,,,4_0
-Propionispira,,Nalidixic acid,-1,0,,,,,4_0
-Sporomusa,,Nalidixic acid,-1,0,,,,,4_0
-Mollicutes,,Nalidixic acid,-1,0,,,,,4_0
-Mycoplasma,,Nalidixic acid,-1,0,,,,,4_0
-Spiroplasma,,Nalidixic acid,-1,0,,,,,4_0
-Ureaplasma,,Nalidixic acid,-1,0,,,,,4_0
-Erysipelothrix,,Nalidixic acid,-1,0,,,,,4_0
-Bacillales,,Nalidixic acid,-1,0,,,,,4_0
-Pseudomonas aeruginosa,,Neomycin,-1,0,,,,,2_6
-Burkholderia cepacia complex,,Neomycin,-1,0,,,,,2_3
-Stenotrophomonas maltophilia,,Neomycin,-1,0,,,,,2_7
-Streptococcus,,Neomycin,-1,0,,,,,4_6
-Enterococcus faecalis,,Neomycin,-1,0,,,,,4_7
-Enterococcus gallinarum,,Neomycin,-1,0,,,,,4_8
-Enterococcus casseliflavus,,Neomycin,-1,0,,,,,4_8
-Enterococcus faecium,,Neomycin,-1,0,,,,,4_9
-Burkholderia cepacia complex,,Netilmicin,-1,0,,,,,2_3
-Stenotrophomonas maltophilia,,Netilmicin,-1,0,,,,,2_7
-Streptococcus,,Netilmicin,-1,0,,,,,4_6
-Enterococcus faecalis,,Netilmicin,-1,0,,,,,4_7
-Enterococcus gallinarum,,Netilmicin,-1,0,,,,,4_8
-Enterococcus casseliflavus,,Netilmicin,-1,0,,,,,4_8
-Enterococcus faecium,,Netilmicin,-1,0,,,,,4_9
-Morganella morganii,,Nitrofurantoin,-1,0,,,,,1_9
-Proteus mirabilis,,Nitrofurantoin,-1,0,,,,,1_10
-Proteus penneri,,Nitrofurantoin,-1,0,,,,,1_11
-Proteus vulgaris,,Nitrofurantoin,-1,0,,,,,1_12
-Providencia rettgeri,,Nitrofurantoin,-1,0,,,,,1_13
-Providencia stuartii,,Nitrofurantoin,-1,0,,,,,1_14
-Serratia marcescens,,Nitrofurantoin,-1,0,,,,,1_16
-Staphylococcus saprophyticus,,Novobiocin,-1,0,,,,,4_1
-Staphylococcus cohnii,,Novobiocin,-1,0,,,,,4_2
-Staphylococcus xylosus,,Novobiocin,-1,0,,,,,4_3
-Burkholderia cepacia complex,,Piperacillin,-1,0,,,,,2_3
-Elizabethkingia meningoseptica,,Piperacillin,-1,0,,,,,2_4
-Ochrobactrum anthropi,,Piperacillin,-1,0,,,,,2_5
-Stenotrophomonas maltophilia,,Piperacillin,-1,0,,,,,2_7
-Burkholderia cepacia complex,,Piperacillin-tazobactam,-1,0,,,,,2_3
-Ochrobactrum anthropi,,Piperacillin-tazobactam,-1,0,,,,,2_5
-Stenotrophomonas maltophilia,,Piperacillin-tazobactam,-1,0,,,,,2_7
-Morganella morganii,,Polymyxin B,-1,0,,,,,1_9
-Proteus mirabilis,,Polymyxin B,-1,0,,,,,1_10
-Proteus penneri,,Polymyxin B,-1,0,,,,,1_11
-Proteus vulgaris,,Polymyxin B,-1,0,,,,,1_12
-Providencia rettgeri,,Polymyxin B,-1,0,,,,,1_13
-Providencia stuartii,,Polymyxin B,-1,0,,,,,1_14
-Serratia marcescens,,Polymyxin B,-1,0,,,,,1_16
-Yersinia pseudotuberculosis,,Polymyxin B,-1,0,,,,,1_18
-Burkholderia cepacia complex,,Polymyxin B,-1,0,,,,,2_3
-Elizabethkingia meningoseptica,,Polymyxin B,-1,0,,,,,2_4
-Actinomyces,,Polymyxin B,-1,0,,,,,4_0
-Arthrobacter,,Polymyxin B,-1,0,,,,,4_0
-Bifidobacterium,,Polymyxin B,-1,0,,,,,4_0
-Corynebacterium,,Polymyxin B,-1,0,,,,,4_0
-Frankia,,Polymyxin B,-1,0,,,,,4_0
-Micrococcus,,Polymyxin B,-1,0,,,,,4_0
-Micromonospora,,Polymyxin B,-1,0,,,,,4_0
-Mycobacterium,,Polymyxin B,-1,0,,,,,4_0
-Nocardia,,Polymyxin B,-1,0,,,,,4_0
-Propionibacterium,,Polymyxin B,-1,0,,,,,4_0
-Streptomyces,,Polymyxin B,-1,0,,,,,4_0
-Bacillus,,Polymyxin B,-1,0,,,,,4_0
-Listeria,,Polymyxin B,-1,0,,,,,4_0
-Staphylococcus,,Polymyxin B,-1,0,,,,,4_0
-Enterococcus,,Polymyxin B,-1,0,,,,,4_0
-Lactobacillus,,Polymyxin B,-1,0,,,,,4_0
-Lactococcus,,Polymyxin B,-1,0,,,,,4_0
-Leuconostoc,,Polymyxin B,-1,0,,,,,4_0
-Pediococcus,,Polymyxin B,-1,0,,,,,4_0
-Streptococcus,,Polymyxin B,-1,0,,,,,4_0
-Acetobacterium,,Polymyxin B,-1,0,,,,,4_0
-Clostridium,,Polymyxin B,-1,0,,,,,4_0
-Eubacterium,,Polymyxin B,-1,0,,,,,4_0
-Heliobacterium,,Polymyxin B,-1,0,,,,,4_0
-Megasphaera,,Polymyxin B,-1,0,,,,,4_0
-Pectinatus,,Polymyxin B,-1,0,,,,,4_0
-Selenomonas,,Polymyxin B,-1,0,,,,,4_0
-Propionispira,,Polymyxin B,-1,0,,,,,4_0
-Sporomusa,,Polymyxin B,-1,0,,,,,4_0
-Mollicutes,,Polymyxin B,-1,0,,,,,4_0
-Mycoplasma,,Polymyxin B,-1,0,,,,,4_0
-Spiroplasma,,Polymyxin B,-1,0,,,,,4_0
-Ureaplasma,,Polymyxin B,-1,0,,,,,4_0
-Erysipelothrix,,Polymyxin B,-1,0,,,,,4_0
-Bacillales,,Polymyxin B,-1,0,,,,,4_0
-Enterococcus faecalis,,Quinupristin-dalfopristin,-1,0,,,,,4_7
-Enterococcus gallinarum,,Quinupristin-dalfopristin,-1,0,,,,,4_8
-Enterococcus casseliflavus,,Quinupristin-dalfopristin,-1,0,,,,,4_8
-Acinetobacter,,Quinupristin-dalfopristin,-1,0,,,,,2_0
-Bordetella,,Quinupristin-dalfopristin,-1,0,,,,,2_0
-Burkholderia,,Quinupristin-dalfopristin,-1,0,,,,,2_0
-Legionella,,Quinupristin-dalfopristin,-1,0,,,,,2_0
-Moraxella,,Quinupristin-dalfopristin,-1,0,,,,,2_0
-Pseudomonas,,Quinupristin-dalfopristin,-1,0,,,,,2_0
-Stenotrophomonas,,Quinupristin-dalfopristin,-1,0,,,,,2_0
-Haemophilus influenzae,,Quinupristin-dalfopristin,-1,0,,,,,3_1
-Campylobacter fetus,,Quinupristin-dalfopristin,-1,0,,,,,3_4
-Campylobacter jejuni,,Quinupristin-dalfopristin,-1,0,,,,,3_5
-Campylobacter coli,,Quinupristin-dalfopristin,-1,0,,,,,3_5
-Enterobacterales,,Quinupristin-dalfopristin,-1,0,,,,,1_0
-Enterobacterales,,Rifampicin,-1,0,,,,,1_0
-Acinetobacter,,Rifampicin,-1,0,,,,,2_0
-Bordetella,,Rifampicin,-1,0,,,,,2_0
-Burkholderia,,Rifampicin,-1,0,,,,,2_0
-Legionella,,Rifampicin,-1,0,,,,,2_0
-Moraxella,,Rifampicin,-1,0,,,,,2_0
-Pseudomonas,,Rifampicin,-1,0,,,,,2_0
-Stenotrophomonas,,Rifampicin,-1,0,,,,,2_0
-Acinetobacter,,Roxithromycin,-1,0,,,,,2_0
-Bordetella,,Roxithromycin,-1,0,,,,,2_0
-Burkholderia,,Roxithromycin,-1,0,,,,,2_0
-Legionella,,Roxithromycin,-1,0,,,,,2_0
-Moraxella,,Roxithromycin,-1,0,,,,,2_0
-Pseudomonas,,Roxithromycin,-1,0,,,,,2_0
-Stenotrophomonas,,Roxithromycin,-1,0,,,,,2_0
-Enterobacterales,,Roxithromycin,-1,0,,,,,1_0
-Enterococcus faecalis,,Roxithromycin,-1,0,,,,,4_7
-Enterococcus gallinarum,,Roxithromycin,-1,0,,,,,4_8
-Enterococcus casseliflavus,,Roxithromycin,-1,0,,,,,4_8
-Enterococcus faecium,,Roxithromycin,-1,0,,,,,4_9
-Burkholderia cepacia complex,,Streptomycin,-1,0,,,,,2_3
-Stenotrophomonas maltophilia,,Streptomycin,-1,0,,,,,2_7
-Streptococcus,,Streptomycin,-1,0,,,,,4_6
-Enterococcus faecalis,,Streptomycin,-1,0,,,,,4_7
-Enterococcus gallinarum,,Streptomycin,-1,0,,,,,4_8
-Enterococcus casseliflavus,,Streptomycin,-1,0,,,,,4_8
-Enterococcus faecium,,Streptomycin,-1,0,,,,,4_9
-Enterococcus faecalis,,Sulfisoxazole,-1,0,,,,,4_7
-Enterococcus gallinarum,,Sulfisoxazole,-1,0,,,,,4_8
-Enterococcus casseliflavus,,Sulfisoxazole,-1,0,,,,,4_8
-Enterococcus faecium,,Sulfisoxazole,-1,0,,,,,4_9
-Enterococcus faecalis,,Sulfonamides,-1,0,,,,,4_7
-Enterococcus gallinarum,,Sulfonamides,-1,0,,,,,4_8
-Enterococcus casseliflavus,,Sulfonamides,-1,0,,,,,4_8
-Enterococcus faecium,,Sulfonamides,-1,0,,,,,4_9
-Leuconostoc,,Teicoplanin,-1,0,,,,,4_12
-Pediococcus,,Teicoplanin,-1,0,,,,,4_12
-Lactobacillus rhamnosus,,Teicoplanin,-1,0,,,,,4_13
-Acinetobacter,,Teicoplanin,-1,0,,,,,3_0
-Actinobacillus,,Teicoplanin,-1,0,,,,,3_0
-Bordetella,,Teicoplanin,-1,0,,,,,3_0
-Brucella,,Teicoplanin,-1,0,,,,,3_0
-Campylobacter,,Teicoplanin,-1,0,,,,,3_0
-Cyanobacteria,,Teicoplanin,-1,0,,,,,3_0
-Enterobacter,,Teicoplanin,-1,0,,,,,3_0
-Erwinia,,Teicoplanin,-1,0,,,,,3_0
-Escherichia coli,,Teicoplanin,-1,0,,,,,3_0
-Francisella,,Teicoplanin,-1,0,,,,,3_0
-Helicobacter,,Teicoplanin,-1,0,,,,,3_0
-Haemophilus,,Teicoplanin,-1,0,,,,,3_0
-Klebsiella,,Teicoplanin,-1,0,,,,,3_0
-Legionella,,Teicoplanin,-1,0,,,,,3_0
-Moraxella,,Teicoplanin,-1,0,,,,,3_0
-Neisseria,,Teicoplanin,-1,0,,,,,3_0
-Pasteurella,,Teicoplanin,-1,0,,,,,3_0
-Proteus,,Teicoplanin,-1,0,,,,,3_0
-Pseudomonas,,Teicoplanin,-1,0,,,,,3_0
-Salmonella,,Teicoplanin,-1,0,,,,,3_0
-Serratia,,Teicoplanin,-1,0,,,,,3_0
-Shigella,,Teicoplanin,-1,0,,,,,3_0
-Treponema,,Teicoplanin,-1,0,,,,,3_0
-Vibrio,,Teicoplanin,-1,0,,,,,3_0
-Yersinia,,Teicoplanin,-1,0,,,,,3_0
-Acinetobacter,,Telithromycin,-1,0,,,,,2_0
-Bordetella,,Telithromycin,-1,0,,,,,2_0
-Burkholderia,,Telithromycin,-1,0,,,,,2_0
-Legionella,,Telithromycin,-1,0,,,,,2_0
-Moraxella,,Telithromycin,-1,0,,,,,2_0
-Pseudomonas,,Telithromycin,-1,0,,,,,2_0
-Stenotrophomonas,,Telithromycin,-1,0,,,,,2_0
-Enterobacterales,,Telithromycin,-1,0,,,,,1_0
-Enterococcus faecalis,,Telithromycin,-1,0,,,,,4_7
-Enterococcus gallinarum,,Telithromycin,-1,0,,,,,4_8
-Enterococcus casseliflavus,,Telithromycin,-1,0,,,,,4_8
-Enterococcus faecium,,Telithromycin,-1,0,,,,,4_9
-Actinomyces,,Temocillin,-1,0,,,,,4_0
-Arthrobacter,,Temocillin,-1,0,,,,,4_0
-Bifidobacterium,,Temocillin,-1,0,,,,,4_0
-Corynebacterium,,Temocillin,-1,0,,,,,4_0
-Frankia,,Temocillin,-1,0,,,,,4_0
-Micrococcus,,Temocillin,-1,0,,,,,4_0
-Micromonospora,,Temocillin,-1,0,,,,,4_0
-Mycobacterium,,Temocillin,-1,0,,,,,4_0
-Nocardia,,Temocillin,-1,0,,,,,4_0
-Propionibacterium,,Temocillin,-1,0,,,,,4_0
-Streptomyces,,Temocillin,-1,0,,,,,4_0
-Bacillus,,Temocillin,-1,0,,,,,4_0
-Listeria,,Temocillin,-1,0,,,,,4_0
-Staphylococcus,,Temocillin,-1,0,,,,,4_0
-Enterococcus,,Temocillin,-1,0,,,,,4_0
-Lactobacillus,,Temocillin,-1,0,,,,,4_0
-Lactococcus,,Temocillin,-1,0,,,,,4_0
-Leuconostoc,,Temocillin,-1,0,,,,,4_0
-Pediococcus,,Temocillin,-1,0,,,,,4_0
-Streptococcus,,Temocillin,-1,0,,,,,4_0
-Acetobacterium,,Temocillin,-1,0,,,,,4_0
-Clostridium,,Temocillin,-1,0,,,,,4_0
-Eubacterium,,Temocillin,-1,0,,,,,4_0
-Heliobacterium,,Temocillin,-1,0,,,,,4_0
-Megasphaera,,Temocillin,-1,0,,,,,4_0
-Pectinatus,,Temocillin,-1,0,,,,,4_0
-Selenomonas,,Temocillin,-1,0,,,,,4_0
-Propionispira,,Temocillin,-1,0,,,,,4_0
-Sporomusa,,Temocillin,-1,0,,,,,4_0
-Mollicutes,,Temocillin,-1,0,,,,,4_0
-Mycoplasma,,Temocillin,-1,0,,,,,4_0
-Spiroplasma,,Temocillin,-1,0,,,,,4_0
-Ureaplasma,,Temocillin,-1,0,,,,,4_0
-Erysipelothrix,,Temocillin,-1,0,,,,,4_0
-Bacillales,,Temocillin,-1,0,,,,,4_0
-Serratia marcescens,,Tetracycline,-1,0,,,,,1_16
-Acinetobacter,,Tetracycline,-1,0,,,,,2_1
-Stenotrophomonas maltophilia,,Tetracycline,-1,0,,,,,2_7
-Morganella morganii,,Tetracycline,-1,0,,,,,1_9
-Proteus mirabilis,,Tetracycline,-1,0,,,,,1_10
-Proteus penneri,,Tetracycline,-1,0,,,,,1_11
-Proteus vulgaris,,Tetracycline,-1,0,,,,,1_12
-Providencia rettgeri,,Tetracycline,-1,0,,,,,1_13
-Providencia stuartii,,Tetracycline,-1,0,,,,,1_14
-Pseudomonas aeruginosa,,Tetracycline,-1,0,,,,,2_6
-Citrobacter koseri,,Ticarcillin,-1,0,,,,,1_1
-Citrobacter amalonaticus,,Ticarcillin,-1,0,,,,,1_1
-Citrobacter sedlakii,,Ticarcillin,-1,0,,,,,1_1
-Citrobacter farmeri,,Ticarcillin,-1,0,,,,,1_1
-Citrobacter rodentium,,Ticarcillin,-1,0,,,,,1_1
-Atlantibacter hermannii,,Ticarcillin,-1,0,,,,,1_5
-Klebsiella pneumoniae,,Ticarcillin,-1,0,,,,,1_7
-Klebsiella oxytoca,,Ticarcillin,-1,0,,,,,1_8
-Raoultella,,Ticarcillin,-1,0,,,,,1_15
-Yersinia enterocolitica,,Ticarcillin,-1,0,,,,,1_17
-Burkholderia cepacia complex,,Ticarcillin,-1,0,,,,,2_3
-Elizabethkingia meningoseptica,,Ticarcillin,-1,0,,,,,2_4
-Ochrobactrum anthropi,,Ticarcillin,-1,0,,,,,2_5
-Stenotrophomonas maltophilia,,Ticarcillin,-1,0,,,,,2_7
-Burkholderia cepacia complex,,Ticarcillin-clavulanic acid,-1,0,,,,,2_3
-Elizabethkingia meningoseptica,,Ticarcillin-clavulanic acid,-1,0,,,,,2_4
-Ochrobactrum anthropi,,Ticarcillin-clavulanic acid,-1,0,,,,,2_5
-Proteus mirabilis,,Tigecycline,-1,0,,,,,1_10
-Proteus penneri,,Tigecycline,-1,0,,,,,1_11
-Proteus vulgaris,,Tigecycline,-1,0,,,,,1_12
-Providencia rettgeri,,Tigecycline,-1,0,,,,,1_13
-Providencia stuartii,,Tigecycline,-1,0,,,,,1_14
-Pseudomonas aeruginosa,,Tigecycline,-1,0,,,,,2_6
-Burkholderia cepacia complex,,Tobramycin,-1,0,,,,,2_3
-Stenotrophomonas maltophilia,,Tobramycin,-1,0,,,,,2_7
-Streptococcus,,Tobramycin,-1,0,,,,,4_6
-Enterococcus faecalis,,Tobramycin,-1,0,,,,,4_7
-Enterococcus gallinarum,,Tobramycin,-1,0,,,,,4_8
-Enterococcus casseliflavus,,Tobramycin,-1,0,,,,,4_8
-Enterococcus faecium,,Tobramycin,-1,0,,,,,4_9
-Acinetobacter baumannii,,Trimethoprim,-1,0,,,,,2_1
-Acinetobacter pittii,,Trimethoprim,-1,0,,,,,2_1
-Acinetobacter nosocomialis,,Trimethoprim,-1,0,,,,,2_1
-Acinetobacter calcoaceticus,,Trimethoprim,-1,0,,,,,2_1
-Burkholderia cepacia complex,,Trimethoprim,-1,0,,,,,2_3
-Pseudomonas aeruginosa,,Trimethoprim,-1,0,,,,,2_6
-Stenotrophomonas maltophilia,,Trimethoprim,-1,0,,,,,2_7
-Moraxella catarrhalis,,Trimethoprim,-1,0,,,,,3_2
-Neisseria,,Trimethoprim,-1,0,,,,,3_3
-Campylobacter fetus,,Trimethoprim,-1,0,,,,,3_4
-Campylobacter jejuni,,Trimethoprim,-1,0,,,,,3_5
-Campylobacter coli,,Trimethoprim,-1,0,,,,,3_5
-Enterococcus gallinarum,,Vancomycin,-1,0,,,,,4_8
-Enterococcus casseliflavus,,Vancomycin,-1,0,,,,,4_8
-Leuconostoc,,Vancomycin,-1,0,,,,,4_12
-Pediococcus,,Vancomycin,-1,0,,,,,4_12
-Lactobacillus casei,,Vancomycin,-1,0,,,,,4_13
-Erysipelatoclostridium ramosum,,Vancomycin,-1,0,,,,,4_14
-[Clostridium] innocuum,,Vancomycin,-1,0,,,,,4_14
-Acinetobacter,,Vancomycin,-1,0,,,,,3_0
-Actinobacillus,,Vancomycin,-1,0,,,,,3_0
-Bordetella,,Vancomycin,-1,0,,,,,3_0
-Brucella,,Vancomycin,-1,0,,,,,3_0
-Campylobacter,,Vancomycin,-1,0,,,,,3_0
-Cyanobacteria,,Vancomycin,-1,0,,,,,3_0
-Enterobacter,,Vancomycin,-1,0,,,,,3_0
-Erwinia,,Vancomycin,-1,0,,,,,3_0
-Escherichia coli,,Vancomycin,-1,0,,,,,3_0
-Francisella,,Vancomycin,-1,0,,,,,3_0
-Helicobacter,,Vancomycin,-1,0,,,,,3_0
-Haemophilus,,Vancomycin,-1,0,,,,,3_0
-Klebsiella,,Vancomycin,-1,0,,,,,3_0
-Legionella,,Vancomycin,-1,0,,,,,3_0
-Moraxella,,Vancomycin,-1,0,,,,,3_0
-Neisseria,,Vancomycin,-1,0,,,,,3_0
-Pasteurella,,Vancomycin,-1,0,,,,,3_0
-Proteus,,Vancomycin,-1,0,,,,,3_0
-Pseudomonas,,Vancomycin,-1,0,,,,,3_0
-Salmonella,,Vancomycin,-1,0,,,,,3_0
-Serratia,,Vancomycin,-1,0,,,,,3_0
-Shigella,,Vancomycin,-1,0,,,,,3_0
-Treponema,,Vancomycin,-1,0,,,,,3_0
-Vibrio,,Vancomycin,-1,0,,,,,3_0
-Yersinia,,Vancomycin,-1,0,,,,,3_0
+organism,cmp_name,s_value,r_value,exception,roa,indication,identifier
+Burkholderia cepacia complex,Amikacin,-1,0,,,,2_3
+Stenotrophomonas maltophilia,Amikacin,-1,0,,,,2_7
+Streptococcus,Amikacin,-1,0,,,,4_6
+Enterococcus faecalis,Amikacin,-1,0,,,,4_7
+Enterococcus gallinarum,Amikacin,-1,0,,,,4_8
+Enterococcus casseliflavus,Amikacin,-1,0,,,,4_8
+Enterococcus faecium,Amikacin,-1,0,,,,4_9
+Citrobacter freundii,Amoxicillin-clavulanic acid,-1,0,,,,1_2
+Citrobacter braakii,Amoxicillin-clavulanic acid,-1,0,,,,1_2
+Citrobacter murliniae,Amoxicillin-clavulanic acid,-1,0,,,,1_2
+Citrobacter werkmanii,Amoxicillin-clavulanic acid,-1,0,,,,1_2
+Citrobacter youngae,Amoxicillin-clavulanic acid,-1,0,,,,1_2
+Enterobacter cloacae complex,Amoxicillin-clavulanic acid,-1,0,,,,1_3
+Klebsiella aerogenes,Amoxicillin-clavulanic acid,-1,0,,,,1_4
+Hafnia alvei,Amoxicillin-clavulanic acid,-1,0,,,,1_6
+Morganella morganii,Amoxicillin-clavulanic acid,-1,0,,,,1_9
+Providencia rettgeri,Amoxicillin-clavulanic acid,-1,0,,,,1_13
+Providencia stuartii,Amoxicillin-clavulanic acid,-1,0,,,,1_14
+Serratia marcescens,Amoxicillin-clavulanic acid,-1,0,,,,1_16
+Yersinia enterocolitica,Amoxicillin-clavulanic acid,-1,0,,,,1_17
+Acinetobacter baumannii,Amoxicillin-clavulanic acid,-1,0,,,,2_1
+Acinetobacter pittii,Amoxicillin-clavulanic acid,-1,0,,,,2_1
+Acinetobacter nosocomialis,Amoxicillin-clavulanic acid,-1,0,,,,2_1
+Acinetobacter calcoaceticus,Amoxicillin-clavulanic acid,-1,0,,,,2_1
+Burkholderia cepacia complex,Amoxicillin-clavulanic acid,-1,0,,,,2_3
+Elizabethkingia meningoseptica,Amoxicillin-clavulanic acid,-1,0,,,,2_4
+Ochrobactrum anthropi,Amoxicillin-clavulanic acid,-1,0,,,,2_5
+Pseudomonas aeruginosa,Amoxicillin-clavulanic acid,-1,0,,,,2_6
+Stenotrophomonas maltophilia,Amoxicillin-clavulanic acid,-1,0,,,,2_7
+Citrobacter koseri,Ampicillin,-1,0,,,,1_1
+Citrobacter amalonaticus,Ampicillin,-1,0,,,,1_1
+Citrobacter sedlakii,Ampicillin,-1,0,,,,1_1
+Citrobacter farmeri,Ampicillin,-1,0,,,,1_1
+Citrobacter rodentium,Ampicillin,-1,0,,,,1_1
+Citrobacter freundii,Ampicillin,-1,0,,,,1_2
+Citrobacter braakii,Ampicillin,-1,0,,,,1_2
+Citrobacter murliniae,Ampicillin,-1,0,,,,1_2
+Citrobacter werkmanii,Ampicillin,-1,0,,,,1_2
+Citrobacter youngae,Ampicillin,-1,0,,,,1_2
+Enterobacter cloacae complex,Ampicillin,-1,0,,,,1_3
+Klebsiella aerogenes,Ampicillin,-1,0,,,,1_4
+Hafnia alvei,Ampicillin,-1,0,,,,1_6
+Atlantibacter hermannii,Ampicillin,-1,0,,,,1_5
+Klebsiella pneumoniae,Ampicillin,-1,0,,,,1_7
+Klebsiella oxytoca,Ampicillin,-1,0,,,,1_8
+Morganella morganii,Ampicillin,-1,0,,,,1_9
+Proteus penneri,Ampicillin,-1,0,,,,1_11
+Proteus vulgaris,Ampicillin,-1,0,,,,1_12
+Providencia rettgeri,Ampicillin,-1,0,,,,1_13
+Providencia stuartii,Ampicillin,-1,0,,,,1_14
+Raoultella,Ampicillin,-1,0,,,,1_15
+Serratia marcescens,Ampicillin,-1,0,,,,1_16
+Yersinia enterocolitica,Ampicillin,-1,0,,,,1_17
+Acinetobacter baumannii,Ampicillin,-1,0,,,,2_1
+Acinetobacter pittii,Ampicillin,-1,0,,,,2_1
+Acinetobacter nosocomialis,Ampicillin,-1,0,,,,2_1
+Acinetobacter calcoaceticus,Ampicillin,-1,0,,,,2_1
+Achromobacter xylosoxidans,Ampicillin,-1,0,,,,2_2
+Burkholderia cepacia complex,Ampicillin,-1,0,,,,2_3
+Elizabethkingia meningoseptica,Ampicillin,-1,0,,,,2_4
+Ochrobactrum anthropi,Ampicillin,-1,0,,,,2_5
+Pseudomonas aeruginosa,Ampicillin,-1,0,,,,2_6
+Stenotrophomonas maltophilia,Ampicillin,-1,0,,,,2_7
+Citrobacter freundii,Ampicillin-sulbactam,-1,0,,,,1_2
+Citrobacter braakii,Ampicillin-sulbactam,-1,0,,,,1_2
+Citrobacter murliniae,Ampicillin-sulbactam,-1,0,,,,1_2
+Citrobacter werkmanii,Ampicillin-sulbactam,-1,0,,,,1_2
+Citrobacter youngae,Ampicillin-sulbactam,-1,0,,,,1_2
+Enterobacter cloacae complex,Ampicillin-sulbactam,-1,0,,,,1_3
+Klebsiella aerogenes,Ampicillin-sulbactam,-1,0,,,,1_4
+Hafnia alvei,Ampicillin-sulbactam,-1,0,,,,1_6
+Morganella morganii,Ampicillin-sulbactam,-1,0,,,,1_9
+Providencia rettgeri,Ampicillin-sulbactam,-1,0,,,,1_13
+Providencia stuartii,Ampicillin-sulbactam,-1,0,,,,1_14
+Serratia marcescens,Ampicillin-sulbactam,-1,0,,,,1_16
+Yersinia enterocolitica,Ampicillin-sulbactam,-1,0,,,,1_17
+Acinetobacter pittii,Ampicillin-sulbactam,-1,0,,,,2_1
+Acinetobacter nosocomialis,Ampicillin-sulbactam,-1,0,,,,2_1
+Acinetobacter calcoaceticus,Ampicillin-sulbactam,-1,0,,,,2_1
+Burkholderia cepacia complex,Ampicillin-sulbactam,-1,0,,,,2_3
+Elizabethkingia meningoseptica,Ampicillin-sulbactam,-1,0,,,,2_4
+Ochrobactrum anthropi,Ampicillin-sulbactam,-1,0,,,,2_5
+Pseudomonas aeruginosa,Ampicillin-sulbactam,-1,0,,,,2_6
+Stenotrophomonas maltophilia,Ampicillin-sulbactam,-1,0,,,,2_7
+Acinetobacter,Azithromycin,-1,0,,,,2_0
+Bordetella,Azithromycin,-1,0,,,,2_0
+Burkholderia,Azithromycin,-1,0,,,,2_0
+Legionella,Azithromycin,-1,0,,,,2_0
+Moraxella,Azithromycin,-1,0,,,,2_0
+Pseudomonas,Azithromycin,-1,0,,,,2_0
+Stenotrophomonas,Azithromycin,-1,0,,,,2_0
+Enterococcus faecalis,Azithromycin,-1,0,,,,4_7
+Enterococcus gallinarum,Azithromycin,-1,0,,,,4_8
+Enterococcus casseliflavus,Azithromycin,-1,0,,,,4_8
+Enterococcus faecium,Azithromycin,-1,0,,,,4_9
+Acinetobacter baumannii,Aztreonam,-1,0,,,,2_1
+Acinetobacter pittii,Aztreonam,-1,0,,,,2_1
+Acinetobacter nosocomialis,Aztreonam,-1,0,,,,2_1
+Acinetobacter calcoaceticus,Aztreonam,-1,0,,,,2_1
+Burkholderia cepacia complex,Aztreonam,-1,0,,,,2_3
+Elizabethkingia meningoseptica,Aztreonam,-1,0,,,,2_4
+Ochrobactrum anthropi,Aztreonam,-1,0,,,,2_5
+Stenotrophomonas maltophilia,Aztreonam,-1,0,,,,2_7
+Actinomyces,Aztreonam,-1,0,,,,4_0
+Arthrobacter,Aztreonam,-1,0,,,,4_0
+Bifidobacterium,Aztreonam,-1,0,,,,4_0
+Corynebacterium,Aztreonam,-1,0,,,,4_0
+Frankia,Aztreonam,-1,0,,,,4_0
+Micrococcus,Aztreonam,-1,0,,,,4_0
+Micromonospora,Aztreonam,-1,0,,,,4_0
+Mycobacterium,Aztreonam,-1,0,,,,4_0
+Nocardia,Aztreonam,-1,0,,,,4_0
+Propionibacterium,Aztreonam,-1,0,,,,4_0
+Streptomyces,Aztreonam,-1,0,,,,4_0
+Bacillus,Aztreonam,-1,0,,,,4_0
+Listeria,Aztreonam,-1,0,,,,4_0
+Staphylococcus,Aztreonam,-1,0,,,,4_0
+Enterococcus,Aztreonam,-1,0,,,,4_0
+Lactobacillus,Aztreonam,-1,0,,,,4_0
+Lactococcus,Aztreonam,-1,0,,,,4_0
+Leuconostoc,Aztreonam,-1,0,,,,4_0
+Pediococcus,Aztreonam,-1,0,,,,4_0
+Streptococcus,Aztreonam,-1,0,,,,4_0
+Acetobacterium,Aztreonam,-1,0,,,,4_0
+Clostridium,Aztreonam,-1,0,,,,4_0
+Eubacterium,Aztreonam,-1,0,,,,4_0
+Heliobacterium,Aztreonam,-1,0,,,,4_0
+Megasphaera,Aztreonam,-1,0,,,,4_0
+Pectinatus,Aztreonam,-1,0,,,,4_0
+Selenomonas,Aztreonam,-1,0,,,,4_0
+Propionispira,Aztreonam,-1,0,,,,4_0
+Sporomusa,Aztreonam,-1,0,,,,4_0
+Mollicutes,Aztreonam,-1,0,,,,4_0
+Mycoplasma,Aztreonam,-1,0,,,,4_0
+Spiroplasma,Aztreonam,-1,0,,,,4_0
+Ureaplasma,Aztreonam,-1,0,,,,4_0
+Erysipelothrix,Aztreonam,-1,0,,,,4_0
+Bacillales,Aztreonam,-1,0,,,,4_0
+Enterobacterales,Benzylpenicillin,-1,0,,,,1_0
+Acinetobacter,Benzylpenicillin,-1,0,,,,2_0
+Bordetella,Benzylpenicillin,-1,0,,,,2_0
+Burkholderia,Benzylpenicillin,-1,0,,,,2_0
+Legionella,Benzylpenicillin,-1,0,,,,2_0
+Moraxella,Benzylpenicillin,-1,0,,,,2_0
+Pseudomonas,Benzylpenicillin,-1,0,,,,2_0
+Stenotrophomonas,Benzylpenicillin,-1,0,,,,2_0
+Acinetobacter,Cefaclor,-1,0,,,,2_0
+Bordetella,Cefaclor,-1,0,,,,2_0
+Burkholderia,Cefaclor,-1,0,,,,2_0
+Legionella,Cefaclor,-1,0,,,,2_0
+Moraxella,Cefaclor,-1,0,,,,2_0
+Pseudomonas,Cefaclor,-1,0,,,,2_0
+Stenotrophomonas,Cefaclor,-1,0,,,,2_0
+Enterococcus faecalis,Cefaclor,-1,0,,,,
+Enterococcus gallinarum,Cefaclor,-1,0,,,,
+Enterococcus casseliflavus,Cefaclor,-1,0,,,,
+Enterococcus faecium,Cefaclor,-1,0,,,,
+Listeria monocytogenes,Cefaclor,-1,0,,,,4_11
+Citrobacter freundii,Cefadroxil,-1,0,,,,1_2
+Citrobacter braakii,Cefadroxil,-1,0,,,,1_2
+Citrobacter murliniae,Cefadroxil,-1,0,,,,1_2
+Citrobacter werkmanii,Cefadroxil,-1,0,,,,1_2
+Citrobacter youngae,Cefadroxil,-1,0,,,,1_2
+Enterobacter cloacae complex,Cefadroxil,-1,0,,,,1_3
+Klebsiella aerogenes,Cefadroxil,-1,0,,,,1_4
+Hafnia alvei,Cefadroxil,-1,0,,,,1_6
+Morganella morganii,Cefadroxil,-1,0,,,,1_9
+Proteus penneri,Cefadroxil,-1,0,,,,1_11
+Proteus vulgaris,Cefadroxil,-1,0,,,,1_12
+Providencia rettgeri,Cefadroxil,-1,0,,,,1_13
+Providencia stuartii,Cefadroxil,-1,0,,,,1_14
+Serratia marcescens,Cefadroxil,-1,0,,,,1_16
+Yersinia enterocolitica,Cefadroxil,-1,0,,,,1_17
+Acinetobacter baumannii,Cefadroxil,-1,0,,,,2_1
+Acinetobacter pittii,Cefadroxil,-1,0,,,,2_1
+Acinetobacter nosocomialis,Cefadroxil,-1,0,,,,2_1
+Acinetobacter calcoaceticus,Cefadroxil,-1,0,,,,2_1
+Achromobacter xylosoxidans,Cefadroxil,-1,0,,,,2_2
+Burkholderia cepacia complex,Cefadroxil,-1,0,,,,2_3
+Elizabethkingia meningoseptica,Cefadroxil,-1,0,,,,2_4
+Ochrobactrum anthropi,Cefadroxil,-1,0,,,,2_5
+Pseudomonas aeruginosa,Cefadroxil,-1,0,,,,2_6
+Stenotrophomonas maltophilia,Cefadroxil,-1,0,,,,2_7
+Acinetobacter,Cefadroxil,-1,0,,,,2_0
+Bordetella,Cefadroxil,-1,0,,,,2_0
+Burkholderia,Cefadroxil,-1,0,,,,2_0
+Legionella,Cefadroxil,-1,0,,,,2_0
+Moraxella,Cefadroxil,-1,0,,,,2_0
+Pseudomonas,Cefadroxil,-1,0,,,,2_0
+Stenotrophomonas,Cefadroxil,-1,0,,,,2_0
+Enterococcus faecalis,Cefadroxil,-1,0,,,,
+Enterococcus gallinarum,Cefadroxil,-1,0,,,,
+Enterococcus casseliflavus,Cefadroxil,-1,0,,,,
+Enterococcus faecium,Cefadroxil,-1,0,,,,
+Listeria monocytogenes,Cefadroxil,-1,0,,,,4_11
+Acinetobacter,Cefamandole,-1,0,,,,2_0
+Bordetella,Cefamandole,-1,0,,,,2_0
+Burkholderia,Cefamandole,-1,0,,,,2_0
+Legionella,Cefamandole,-1,0,,,,2_0
+Moraxella,Cefamandole,-1,0,,,,2_0
+Pseudomonas,Cefamandole,-1,0,,,,2_0
+Stenotrophomonas,Cefamandole,-1,0,,,,2_0
+Enterococcus faecalis,Cefamandole,-1,0,,,,
+Enterococcus gallinarum,Cefamandole,-1,0,,,,
+Enterococcus casseliflavus,Cefamandole,-1,0,,,,
+Enterococcus faecium,Cefamandole,-1,0,,,,
+Listeria monocytogenes,Cefamandole,-1,0,,,,4_11
+Citrobacter freundii,Cefazolin,-1,0,,,,1_2
+Citrobacter braakii,Cefazolin,-1,0,,,,1_2
+Citrobacter murliniae,Cefazolin,-1,0,,,,1_2
+Citrobacter werkmanii,Cefazolin,-1,0,,,,1_2
+Citrobacter youngae,Cefazolin,-1,0,,,,1_2
+Enterobacter cloacae complex,Cefazolin,-1,0,,,,1_3
+Klebsiella aerogenes,Cefazolin,-1,0,,,,1_4
+Hafnia alvei,Cefazolin,-1,0,,,,1_6
+Morganella morganii,Cefazolin,-1,0,,,,1_9
+Proteus penneri,Cefazolin,-1,0,,,,1_11
+Proteus vulgaris,Cefazolin,-1,0,,,,1_12
+Providencia rettgeri,Cefazolin,-1,0,,,,1_13
+Providencia stuartii,Cefazolin,-1,0,,,,1_14
+Serratia marcescens,Cefazolin,-1,0,,,,1_16
+Yersinia enterocolitica,Cefazolin,-1,0,,,,1_17
+Acinetobacter baumannii,Cefazolin,-1,0,,,,2_1
+Acinetobacter pittii,Cefazolin,-1,0,,,,2_1
+Acinetobacter nosocomialis,Cefazolin,-1,0,,,,2_1
+Acinetobacter calcoaceticus,Cefazolin,-1,0,,,,2_1
+Achromobacter xylosoxidans,Cefazolin,-1,0,,,,2_2
+Burkholderia cepacia complex,Cefazolin,-1,0,,,,2_3
+Elizabethkingia meningoseptica,Cefazolin,-1,0,,,,2_4
+Ochrobactrum anthropi,Cefazolin,-1,0,,,,2_5
+Pseudomonas aeruginosa,Cefazolin,-1,0,,,,2_6
+Stenotrophomonas maltophilia,Cefazolin,-1,0,,,,2_7
+Acinetobacter,Cefazolin,-1,0,,,,2_0
+Bordetella,Cefazolin,-1,0,,,,2_0
+Burkholderia,Cefazolin,-1,0,,,,2_0
+Legionella,Cefazolin,-1,0,,,,2_0
+Moraxella,Cefazolin,-1,0,,,,2_0
+Pseudomonas,Cefazolin,-1,0,,,,2_0
+Stenotrophomonas,Cefazolin,-1,0,,,,2_0
+Enterococcus faecalis,Cefazolin,-1,0,,,,
+Enterococcus gallinarum,Cefazolin,-1,0,,,,
+Enterococcus casseliflavus,Cefazolin,-1,0,,,,
+Enterococcus faecium,Cefazolin,-1,0,,,,
+Listeria monocytogenes,Cefazolin,-1,0,,,,4_11
+Enterococcus faecalis,Cefdinir,-1,0,,,,
+Enterococcus gallinarum,Cefdinir,-1,0,,,,
+Enterococcus casseliflavus,Cefdinir,-1,0,,,,
+Enterococcus faecium,Cefdinir,-1,0,,,,
+Listeria monocytogenes,Cefdinir,-1,0,,,,4_11
+Elizabethkingia meningoseptica,Cefepime,-1,0,,,,2_4
+Ochrobactrum anthropi,Cefepime,-1,0,,,,2_5
+Enterococcus faecalis,Cefepime,-1,0,,,,
+Enterococcus gallinarum,Cefepime,-1,0,,,,
+Enterococcus casseliflavus,Cefepime,-1,0,,,,
+Enterococcus faecium,Cefepime,-1,0,,,,
+Listeria monocytogenes,Cefepime,-1,0,,,,4_11
+Enterococcus faecalis,Cefetamet,-1,0,,,,
+Enterococcus gallinarum,Cefetamet,-1,0,,,,
+Enterococcus casseliflavus,Cefetamet,-1,0,,,,
+Enterococcus faecium,Cefetamet,-1,0,,,,
+Listeria monocytogenes,Cefetamet,-1,0,,,,4_11
+Enterococcus faecalis,Cefixime,-1,0,,,,
+Enterococcus gallinarum,Cefixime,-1,0,,,,
+Enterococcus casseliflavus,Cefixime,-1,0,,,,
+Enterococcus faecium,Cefixime,-1,0,,,,
+Listeria monocytogenes,Cefixime,-1,0,,,,4_11
+Acinetobacter,Cefmetazole,-1,0,,,,2_0
+Bordetella,Cefmetazole,-1,0,,,,2_0
+Burkholderia,Cefmetazole,-1,0,,,,2_0
+Legionella,Cefmetazole,-1,0,,,,2_0
+Moraxella,Cefmetazole,-1,0,,,,2_0
+Pseudomonas,Cefmetazole,-1,0,,,,2_0
+Stenotrophomonas,Cefmetazole,-1,0,,,,2_0
+Enterococcus faecalis,Cefmetazole,-1,0,,,,
+Enterococcus gallinarum,Cefmetazole,-1,0,,,,
+Enterococcus casseliflavus,Cefmetazole,-1,0,,,,
+Enterococcus faecium,Cefmetazole,-1,0,,,,
+Listeria monocytogenes,Cefmetazole,-1,0,,,,4_11
+Acinetobacter,Cefonicid,-1,0,,,,2_0
+Bordetella,Cefonicid,-1,0,,,,2_0
+Burkholderia,Cefonicid,-1,0,,,,2_0
+Legionella,Cefonicid,-1,0,,,,2_0
+Moraxella,Cefonicid,-1,0,,,,2_0
+Pseudomonas,Cefonicid,-1,0,,,,2_0
+Stenotrophomonas,Cefonicid,-1,0,,,,2_0
+Enterococcus faecalis,Cefonicid,-1,0,,,,
+Enterococcus gallinarum,Cefonicid,-1,0,,,,
+Enterococcus casseliflavus,Cefonicid,-1,0,,,,
+Enterococcus faecium,Cefonicid,-1,0,,,,
+Listeria monocytogenes,Cefonicid,-1,0,,,,4_11
+Enterococcus faecalis,Cefoperazone,-1,0,,,,
+Enterococcus gallinarum,Cefoperazone,-1,0,,,,
+Enterococcus casseliflavus,Cefoperazone,-1,0,,,,
+Enterococcus faecium,Cefoperazone,-1,0,,,,
+Listeria monocytogenes,Cefoperazone,-1,0,,,,4_11
+Acinetobacter baumannii,Cefotaxime,-1,0,,,,2_1
+Acinetobacter pittii,Cefotaxime,-1,0,,,,2_1
+Acinetobacter nosocomialis,Cefotaxime,-1,0,,,,2_1
+Acinetobacter calcoaceticus,Cefotaxime,-1,0,,,,2_1
+Achromobacter xylosoxidans,Cefotaxime,-1,0,,,,2_2
+Burkholderia cepacia complex,Cefotaxime,-1,0,,,,2_3
+Elizabethkingia meningoseptica,Cefotaxime,-1,0,,,,2_4
+Ochrobactrum anthropi,Cefotaxime,-1,0,,,,2_5
+Pseudomonas aeruginosa,Cefotaxime,-1,0,,,,2_6
+Stenotrophomonas maltophilia,Cefotaxime,-1,0,,,,2_7
+Enterococcus faecalis,Cefotaxime,-1,0,,,,
+Enterococcus gallinarum,Cefotaxime,-1,0,,,,
+Enterococcus casseliflavus,Cefotaxime,-1,0,,,,
+Enterococcus faecium,Cefotaxime,-1,0,,,,
+Listeria monocytogenes,Cefotaxime,-1,0,,,,4_11
+Acinetobacter,Cefotetan,-1,0,,,,2_0
+Bordetella,Cefotetan,-1,0,,,,2_0
+Burkholderia,Cefotetan,-1,0,,,,2_0
+Legionella,Cefotetan,-1,0,,,,2_0
+Moraxella,Cefotetan,-1,0,,,,2_0
+Pseudomonas,Cefotetan,-1,0,,,,2_0
+Stenotrophomonas,Cefotetan,-1,0,,,,2_0
+Enterococcus faecalis,Cefotetan,-1,0,,,,
+Enterococcus gallinarum,Cefotetan,-1,0,,,,
+Enterococcus casseliflavus,Cefotetan,-1,0,,,,
+Enterococcus faecium,Cefotetan,-1,0,,,,
+Listeria monocytogenes,Cefotetan,-1,0,,,,4_11
+Citrobacter freundii,Cefoxitin,-1,0,,,,1_2
+Citrobacter braakii,Cefoxitin,-1,0,,,,1_2
+Citrobacter murliniae,Cefoxitin,-1,0,,,,1_2
+Citrobacter werkmanii,Cefoxitin,-1,0,,,,1_2
+Citrobacter youngae,Cefoxitin,-1,0,,,,1_2
+Enterobacter cloacae complex,Cefoxitin,-1,0,,,,1_3
+Klebsiella aerogenes,Cefoxitin,-1,0,,,,1_4
+Hafnia alvei,Cefoxitin,-1,0,,,,1_6
+Serratia marcescens,Cefoxitin,-1,0,,,,1_16
+Yersinia enterocolitica,Cefoxitin,-1,0,,,,1_17
+Enterococcus faecalis,Cefpodoxime,-1,0,,,,
+Enterococcus gallinarum,Cefpodoxime,-1,0,,,,
+Enterococcus casseliflavus,Cefpodoxime,-1,0,,,,
+Enterococcus faecium,Cefpodoxime,-1,0,,,,
+Listeria monocytogenes,Cefpodoxime,-1,0,,,,4_11
+Acinetobacter,Cefprozil,-1,0,,,,2_0
+Bordetella,Cefprozil,-1,0,,,,2_0
+Burkholderia,Cefprozil,-1,0,,,,2_0
+Legionella,Cefprozil,-1,0,,,,2_0
+Moraxella,Cefprozil,-1,0,,,,2_0
+Pseudomonas,Cefprozil,-1,0,,,,2_0
+Stenotrophomonas,Cefprozil,-1,0,,,,2_0
+Enterococcus faecalis,Cefprozil,-1,0,,,,
+Enterococcus gallinarum,Cefprozil,-1,0,,,,
+Enterococcus casseliflavus,Cefprozil,-1,0,,,,
+Enterococcus faecium,Cefprozil,-1,0,,,,
+Listeria monocytogenes,Cefprozil,-1,0,,,,4_11
+Enterococcus faecalis,Ceftaroline,-1,0,,,,
+Enterococcus gallinarum,Ceftaroline,-1,0,,,,
+Enterococcus casseliflavus,Ceftaroline,-1,0,,,,
+Enterococcus faecium,Ceftaroline,-1,0,,,,
+Listeria monocytogenes,Ceftaroline,-1,0,,,,4_11
+Elizabethkingia meningoseptica,Ceftazidime,-1,0,,,,2_4
+Ochrobactrum anthropi,Ceftazidime,-1,0,,,,2_5
+Stenotrophomonas maltophilia,Ceftazidime,-1,0,,,,2_7
+Staphylococcus saprophyticus,Ceftazidime,-1,0,,,,4_1
+Staphylococcus cohnii,Ceftazidime,-1,0,,,,4_2
+Staphylococcus xylosus,Ceftazidime,-1,0,,,,4_3
+Staphylococcus capitis,Ceftazidime,-1,0,,,,4_4
+Staphylococcus epidermidis,Ceftazidime,-1,0,,,,4_5
+Staphylococcus haemolyticus,Ceftazidime,-1,0,,,,4_5
+Staphylococcus hominis,Ceftazidime,-1,0,,,,4_5
+Staphylococcus caprae,Ceftazidime,-1,0,,,,4_5
+Staphylococcus auricularis,Ceftazidime,-1,0,,,,4_5
+Staphylococcus saccharolyticus,Ceftazidime,-1,0,,,,4_5
+Staphylococcus warneri,Ceftazidime,-1,0,,,,4_5
+Staphylococcus pasteuri,Ceftazidime,-1,0,,,,4_5
+Staphylococcus arlettae,Ceftazidime,-1,0,,,,4_5
+Staphylococcus equorum,Ceftazidime,-1,0,,,,4_5
+Staphylococcus gallinarum,Ceftazidime,-1,0,,,,4_5
+Staphylococcus kloosii,Ceftazidime,-1,0,,,,4_5
+Staphylococcus simulans,Ceftazidime,-1,0,,,,4_5
+Staphylococcus carnosus,Ceftazidime,-1,0,,,,4_5
+Staphylococcus schleiferi subsp. schleiferi,Ceftazidime,-1,0,,,,4_5
+Staphylococcus sciuri,Ceftazidime,-1,0,,,,4_5
+Staphylococcus lentus,Ceftazidime,-1,0,,,,4_5
+Staphylococcus vitulinus,Ceftazidime,-1,0,,,,4_5
+Staphylococcus chromogenes,Ceftazidime,-1,0,,,,4_5
+Macrococcus caseolyticus,Ceftazidime,-1,0,,,,4_5
+Staphylococcus felis,Ceftazidime,-1,0,,,,4_5
+Staphylococcus hyicus,Ceftazidime,-1,0,,,,4_5
+Staphylococcus lugdunensis,Ceftazidime,-1,0,,,,4_5
+Staphylococcus muscae,Ceftazidime,-1,0,,,,4_5
+Staphylococcus aureus,Ceftazidime,-1,0,,,,4_5
+Streptococcus,Ceftazidime,-1,0,,,,4_6
+Enterococcus faecalis,Ceftazidime,-1,0,,,,4_7
+Enterococcus gallinarum,Ceftazidime,-1,0,,,,4_8
+Enterococcus casseliflavus,Ceftazidime,-1,0,,,,4_8
+Enterococcus faecium,Ceftazidime,-1,0,,,,4_9
+Listeria monocytogenes,Ceftazidime,-1,0,,,,4_11
+Enterococcus faecalis,Ceftibuten,-1,0,,,,
+Enterococcus gallinarum,Ceftibuten,-1,0,,,,
+Enterococcus casseliflavus,Ceftibuten,-1,0,,,,
+Enterococcus faecium,Ceftibuten,-1,0,,,,
+Listeria monocytogenes,Ceftibuten,-1,0,,,,4_11
+Enterococcus faecalis,Ceftizoxime,-1,0,,,,
+Enterococcus gallinarum,Ceftizoxime,-1,0,,,,
+Enterococcus casseliflavus,Ceftizoxime,-1,0,,,,
+Enterococcus faecium,Ceftizoxime,-1,0,,,,
+Listeria monocytogenes,Ceftizoxime,-1,0,,,,4_11
+Enterococcus faecalis,Ceftobiprole,-1,0,,,,
+Enterococcus gallinarum,Ceftobiprole,-1,0,,,,
+Enterococcus casseliflavus,Ceftobiprole,-1,0,,,,
+Enterococcus faecium,Ceftobiprole,-1,0,,,,
+Listeria monocytogenes,Ceftobiprole,-1,0,,,,4_11
+Enterococcus faecalis,Ceftolozane-tazobactam,-1,0,,,,
+Enterococcus gallinarum,Ceftolozane-tazobactam,-1,0,,,,
+Enterococcus casseliflavus,Ceftolozane-tazobactam,-1,0,,,,
+Enterococcus faecium,Ceftolozane-tazobactam,-1,0,,,,
+Listeria monocytogenes,Ceftolozane-tazobactam,-1,0,,,,4_11
+Acinetobacter baumannii,Ceftriaxone,-1,0,,,,2_1
+Acinetobacter pittii,Ceftriaxone,-1,0,,,,2_1
+Acinetobacter nosocomialis,Ceftriaxone,-1,0,,,,2_1
+Acinetobacter calcoaceticus,Ceftriaxone,-1,0,,,,2_1
+Achromobacter xylosoxidans,Ceftriaxone,-1,0,,,,2_2
+Burkholderia cepacia complex,Ceftriaxone,-1,0,,,,2_3
+Elizabethkingia meningoseptica,Ceftriaxone,-1,0,,,,2_4
+Ochrobactrum anthropi,Ceftriaxone,-1,0,,,,2_5
+Pseudomonas aeruginosa,Ceftriaxone,-1,0,,,,2_6
+Stenotrophomonas maltophilia,Ceftriaxone,-1,0,,,,2_7
+Enterococcus faecalis,Ceftriaxone,-1,0,,,,
+Enterococcus gallinarum,Ceftriaxone,-1,0,,,,
+Enterococcus casseliflavus,Ceftriaxone,-1,0,,,,
+Enterococcus faecium,Ceftriaxone,-1,0,,,,
+Listeria monocytogenes,Ceftriaxone,-1,0,,,,4_11
+Proteus penneri,Cefuroxime,-1,0,,,,1_11
+Proteus vulgaris,Cefuroxime,-1,0,,,,1_12
+Providencia rettgeri,Cefuroxime,-1,0,,,,1_13
+Providencia stuartii,Cefuroxime,-1,0,,,,1_14
+Serratia marcescens,Cefuroxime,-1,0,,,,1_16
+Acinetobacter,Cefuroxime,-1,0,,,,2_0
+Bordetella,Cefuroxime,-1,0,,,,2_0
+Burkholderia,Cefuroxime,-1,0,,,,2_0
+Legionella,Cefuroxime,-1,0,,,,2_0
+Moraxella,Cefuroxime,-1,0,,,,2_0
+Pseudomonas,Cefuroxime,-1,0,,,,2_0
+Stenotrophomonas,Cefuroxime,-1,0,,,,2_0
+Enterococcus faecalis,Cefuroxime,-1,0,,,,
+Enterococcus gallinarum,Cefuroxime,-1,0,,,,
+Enterococcus casseliflavus,Cefuroxime,-1,0,,,,
+Enterococcus faecium,Cefuroxime,-1,0,,,,
+Listeria monocytogenes,Cefuroxime,-1,0,,,,4_11
+Citrobacter freundii,Cephalexin,-1,0,,,,1_2
+Citrobacter braakii,Cephalexin,-1,0,,,,1_2
+Citrobacter murliniae,Cephalexin,-1,0,,,,1_2
+Citrobacter werkmanii,Cephalexin,-1,0,,,,1_2
+Citrobacter youngae,Cephalexin,-1,0,,,,1_2
+Enterobacter cloacae complex,Cephalexin,-1,0,,,,1_3
+Klebsiella aerogenes,Cephalexin,-1,0,,,,1_4
+Hafnia alvei,Cephalexin,-1,0,,,,1_6
+Morganella morganii,Cephalexin,-1,0,,,,1_9
+Proteus penneri,Cephalexin,-1,0,,,,1_11
+Proteus vulgaris,Cephalexin,-1,0,,,,1_12
+Providencia rettgeri,Cephalexin,-1,0,,,,1_13
+Providencia stuartii,Cephalexin,-1,0,,,,1_14
+Serratia marcescens,Cephalexin,-1,0,,,,1_16
+Yersinia enterocolitica,Cephalexin,-1,0,,,,1_17
+Acinetobacter baumannii,Cephalexin,-1,0,,,,2_1
+Acinetobacter pittii,Cephalexin,-1,0,,,,2_1
+Acinetobacter nosocomialis,Cephalexin,-1,0,,,,2_1
+Acinetobacter calcoaceticus,Cephalexin,-1,0,,,,2_1
+Achromobacter xylosoxidans,Cephalexin,-1,0,,,,2_2
+Burkholderia cepacia complex,Cephalexin,-1,0,,,,2_3
+Elizabethkingia meningoseptica,Cephalexin,-1,0,,,,2_4
+Ochrobactrum anthropi,Cephalexin,-1,0,,,,2_5
+Pseudomonas aeruginosa,Cephalexin,-1,0,,,,2_6
+Stenotrophomonas maltophilia,Cephalexin,-1,0,,,,2_7
+Acinetobacter,Cephalexin,-1,0,,,,2_0
+Bordetella,Cephalexin,-1,0,,,,2_0
+Burkholderia,Cephalexin,-1,0,,,,2_0
+Legionella,Cephalexin,-1,0,,,,2_0
+Moraxella,Cephalexin,-1,0,,,,2_0
+Pseudomonas,Cephalexin,-1,0,,,,2_0
+Stenotrophomonas,Cephalexin,-1,0,,,,2_0
+Enterococcus faecalis,Cephalexin,-1,0,,,,
+Enterococcus gallinarum,Cephalexin,-1,0,,,,
+Enterococcus casseliflavus,Cephalexin,-1,0,,,,
+Enterococcus faecium,Cephalexin,-1,0,,,,
+Listeria monocytogenes,Cephalexin,-1,0,,,,4_11
+Citrobacter freundii,Cefalotin,-1,0,,,,1_2
+Citrobacter braakii,Cefalotin,-1,0,,,,1_2
+Citrobacter murliniae,Cefalotin,-1,0,,,,1_2
+Citrobacter werkmanii,Cefalotin,-1,0,,,,1_2
+Citrobacter youngae,Cefalotin,-1,0,,,,1_2
+Enterobacter cloacae complex,Cefalotin,-1,0,,,,1_3
+Klebsiella aerogenes,Cefalotin,-1,0,,,,1_4
+Hafnia alvei,Cefalotin,-1,0,,,,1_6
+Morganella morganii,Cefalotin,-1,0,,,,1_9
+Proteus penneri,Cefalotin,-1,0,,,,1_11
+Proteus vulgaris,Cefalotin,-1,0,,,,1_12
+Providencia rettgeri,Cefalotin,-1,0,,,,1_13
+Providencia stuartii,Cefalotin,-1,0,,,,1_14
+Serratia marcescens,Cefalotin,-1,0,,,,1_16
+Yersinia enterocolitica,Cefalotin,-1,0,,,,1_17
+Acinetobacter baumannii,Cefalotin,-1,0,,,,2_1
+Acinetobacter pittii,Cefalotin,-1,0,,,,2_1
+Acinetobacter nosocomialis,Cefalotin,-1,0,,,,2_1
+Acinetobacter calcoaceticus,Cefalotin,-1,0,,,,2_1
+Achromobacter xylosoxidans,Cefalotin,-1,0,,,,2_2
+Burkholderia cepacia complex,Cefalotin,-1,0,,,,2_3
+Elizabethkingia meningoseptica,Cefalotin,-1,0,,,,2_4
+Ochrobactrum anthropi,Cefalotin,-1,0,,,,2_5
+Pseudomonas aeruginosa,Cefalotin,-1,0,,,,2_6
+Stenotrophomonas maltophilia,Cefalotin,-1,0,,,,2_7
+Acinetobacter,Cefalotin,-1,0,,,,2_0
+Bordetella,Cefalotin,-1,0,,,,2_0
+Burkholderia,Cefalotin,-1,0,,,,2_0
+Legionella,Cefalotin,-1,0,,,,2_0
+Moraxella,Cefalotin,-1,0,,,,2_0
+Pseudomonas,Cefalotin,-1,0,,,,2_0
+Stenotrophomonas,Cefalotin,-1,0,,,,2_0
+Enterococcus faecalis,Cefalotin,-1,0,,,,
+Enterococcus gallinarum,Cefalotin,-1,0,,,,
+Enterococcus casseliflavus,Cefalotin,-1,0,,,,
+Enterococcus faecium,Cefalotin,-1,0,,,,
+Listeria monocytogenes,Cefalotin,-1,0,,,,4_11
+Burkholderia cepacia complex,Chloramphenicol,-1,0,,,,2_3
+Pseudomonas aeruginosa,Chloramphenicol,-1,0,,,,2_6
+Burkholderia cepacia complex,Ciprofloxacin,-1,0,,,,2_3
+Acinetobacter,Clarithromycin,-1,0,,,,2_0
+Bordetella,Clarithromycin,-1,0,,,,2_0
+Burkholderia,Clarithromycin,-1,0,,,,2_0
+Legionella,Clarithromycin,-1,0,,,,2_0
+Moraxella,Clarithromycin,-1,0,,,,2_0
+Pseudomonas,Clarithromycin,-1,0,,,,2_0
+Stenotrophomonas,Clarithromycin,-1,0,,,,2_0
+Enterobacterales,Clarithromycin,-1,0,,,,1_0
+Enterococcus faecalis,Clarithromycin,-1,0,,,,4_7
+Enterococcus gallinarum,Clarithromycin,-1,0,,,,4_8
+Enterococcus casseliflavus,Clarithromycin,-1,0,,,,4_8
+Enterococcus faecium,Clarithromycin,-1,0,,,,4_9
+Enterococcus faecalis,Clindamycin,-1,0,,,,4_7
+Enterococcus gallinarum,Clindamycin,-1,0,,,,4_8
+Enterococcus casseliflavus,Clindamycin,-1,0,,,,4_8
+Acinetobacter,Clindamycin,-1,0,,,,3_0
+Actinobacillus,Clindamycin,-1,0,,,,3_0
+Bordetella,Clindamycin,-1,0,,,,3_0
+Brucella,Clindamycin,-1,0,,,,3_0
+Campylobacter,Clindamycin,-1,0,,,,3_0
+Cyanobacteria,Clindamycin,-1,0,,,,3_0
+Enterobacter,Clindamycin,-1,0,,,,3_0
+Erwinia,Clindamycin,-1,0,,,,3_0
+Escherichia coli,Clindamycin,-1,0,,,,3_0
+Francisella,Clindamycin,-1,0,,,,3_0
+Helicobacter,Clindamycin,-1,0,,,,3_0
+Haemophilus,Clindamycin,-1,0,,,,3_0
+Klebsiella,Clindamycin,-1,0,,,,3_0
+Legionella,Clindamycin,-1,0,,,,3_0
+Moraxella,Clindamycin,-1,0,,,,3_0
+Neisseria,Clindamycin,-1,0,,,,3_0
+Pasteurella,Clindamycin,-1,0,,,,3_0
+Proteus,Clindamycin,-1,0,,,,3_0
+Pseudomonas,Clindamycin,-1,0,,,,3_0
+Salmonella,Clindamycin,-1,0,,,,3_0
+Serratia,Clindamycin,-1,0,,,,3_0
+Shigella,Clindamycin,-1,0,,,,3_0
+Treponema,Clindamycin,-1,0,,,,3_0
+Vibrio,Clindamycin,-1,0,,,,3_0
+Yersinia,Clindamycin,-1,0,,,,3_0
+Morganella morganii,Colistin,-1,0,,,,1_9
+Proteus mirabilis,Colistin,-1,0,,,,1_10
+Proteus penneri,Colistin,-1,0,,,,1_11
+Proteus vulgaris,Colistin,-1,0,,,,1_12
+Providencia rettgeri,Colistin,-1,0,,,,1_13
+Providencia stuartii,Colistin,-1,0,,,,1_14
+Serratia marcescens,Colistin,-1,0,,,,1_16
+Yersinia pseudotuberculosis,Colistin,-1,0,,,,1_18
+Burkholderia cepacia complex,Colistin,-1,0,,,,2_3
+Elizabethkingia meningoseptica,Colistin,-1,0,,,,2_4
+Actinomyces,Colistin,-1,0,,,,4_0
+Arthrobacter,Colistin,-1,0,,,,4_0
+Bifidobacterium,Colistin,-1,0,,,,4_0
+Corynebacterium,Colistin,-1,0,,,,4_0
+Frankia,Colistin,-1,0,,,,4_0
+Micrococcus,Colistin,-1,0,,,,4_0
+Micromonospora,Colistin,-1,0,,,,4_0
+Mycobacterium,Colistin,-1,0,,,,4_0
+Nocardia,Colistin,-1,0,,,,4_0
+Propionibacterium,Colistin,-1,0,,,,4_0
+Streptomyces,Colistin,-1,0,,,,4_0
+Bacillus,Colistin,-1,0,,,,4_0
+Listeria,Colistin,-1,0,,,,4_0
+Staphylococcus,Colistin,-1,0,,,,4_0
+Enterococcus,Colistin,-1,0,,,,4_0
+Lactobacillus,Colistin,-1,0,,,,4_0
+Lactococcus,Colistin,-1,0,,,,4_0
+Leuconostoc,Colistin,-1,0,,,,4_0
+Pediococcus,Colistin,-1,0,,,,4_0
+Streptococcus,Colistin,-1,0,,,,4_0
+Acetobacterium,Colistin,-1,0,,,,4_0
+Clostridium,Colistin,-1,0,,,,4_0
+Eubacterium,Colistin,-1,0,,,,4_0
+Heliobacterium,Colistin,-1,0,,,,4_0
+Megasphaera,Colistin,-1,0,,,,4_0
+Pectinatus,Colistin,-1,0,,,,4_0
+Selenomonas,Colistin,-1,0,,,,4_0
+Propionispira,Colistin,-1,0,,,,4_0
+Sporomusa,Colistin,-1,0,,,,4_0
+Mollicutes,Colistin,-1,0,,,,4_0
+Mycoplasma,Colistin,-1,0,,,,4_0
+Spiroplasma,Colistin,-1,0,,,,4_0
+Ureaplasma,Colistin,-1,0,,,,4_0
+Erysipelothrix,Colistin,-1,0,,,,4_0
+Bacillales,Colistin,-1,0,,,,4_0
+Acinetobacter,Daptomycin,-1,0,,,,3_0
+Actinobacillus,Daptomycin,-1,0,,,,3_0
+Bordetella,Daptomycin,-1,0,,,,3_0
+Brucella,Daptomycin,-1,0,,,,3_0
+Campylobacter,Daptomycin,-1,0,,,,3_0
+Cyanobacteria,Daptomycin,-1,0,,,,3_0
+Enterobacter,Daptomycin,-1,0,,,,3_0
+Erwinia,Daptomycin,-1,0,,,,3_0
+Escherichia coli,Daptomycin,-1,0,,,,3_0
+Francisella,Daptomycin,-1,0,,,,3_0
+Helicobacter,Daptomycin,-1,0,,,,3_0
+Haemophilus,Daptomycin,-1,0,,,,3_0
+Klebsiella,Daptomycin,-1,0,,,,3_0
+Legionella,Daptomycin,-1,0,,,,3_0
+Moraxella,Daptomycin,-1,0,,,,3_0
+Neisseria,Daptomycin,-1,0,,,,3_0
+Pasteurella,Daptomycin,-1,0,,,,3_0
+Proteus,Daptomycin,-1,0,,,,3_0
+Pseudomonas,Daptomycin,-1,0,,,,3_0
+Salmonella,Daptomycin,-1,0,,,,3_0
+Serratia,Daptomycin,-1,0,,,,3_0
+Shigella,Daptomycin,-1,0,,,,3_0
+Treponema,Daptomycin,-1,0,,,,3_0
+Vibrio,Daptomycin,-1,0,,,,3_0
+Yersinia,Daptomycin,-1,0,,,,3_0
+Acinetobacter,Dirithromycin,-1,0,,,,2_0
+Bordetella,Dirithromycin,-1,0,,,,2_0
+Burkholderia,Dirithromycin,-1,0,,,,2_0
+Legionella,Dirithromycin,-1,0,,,,2_0
+Moraxella,Dirithromycin,-1,0,,,,2_0
+Pseudomonas,Dirithromycin,-1,0,,,,2_0
+Stenotrophomonas,Dirithromycin,-1,0,,,,2_0
+Enterobacterales,Dirithromycin,-1,0,,,,1_0
+Enterococcus faecalis,Dirithromycin,-1,0,,,,4_7
+Enterococcus gallinarum,Dirithromycin,-1,0,,,,4_8
+Enterococcus casseliflavus,Dirithromycin,-1,0,,,,4_8
+Enterococcus faecium,Dirithromycin,-1,0,,,,4_9
+Serratia marcescens,Doxycycline,-1,0,,,,1_16
+Acinetobacter,Doxycycline,-1,0,,,,2_1
+Morganella morganii,Doxycycline,-1,0,,,,1_9
+Proteus mirabilis,Doxycycline,-1,0,,,,1_10
+Proteus penneri,Doxycycline,-1,0,,,,1_11
+Proteus vulgaris,Doxycycline,-1,0,,,,1_12
+Providencia rettgeri,Doxycycline,-1,0,,,,1_13
+Providencia stuartii,Doxycycline,-1,0,,,,1_14
+Pseudomonas aeruginosa,Doxycycline,-1,0,,,,2_6
+Acinetobacter baumannii,Ertapenem,-1,0,,,,2_1
+Acinetobacter pittii,Ertapenem,-1,0,,,,2_1
+Acinetobacter nosocomialis,Ertapenem,-1,0,,,,2_1
+Acinetobacter calcoaceticus,Ertapenem,-1,0,,,,2_1
+Achromobacter xylosoxidans,Ertapenem,-1,0,,,,2_2
+Burkholderia cepacia complex,Ertapenem,-1,0,,,,2_3
+Elizabethkingia meningoseptica,Ertapenem,-1,0,,,,2_4
+Ochrobactrum anthropi,Ertapenem,-1,0,,,,2_5
+Pseudomonas aeruginosa,Ertapenem,-1,0,,,,2_6
+Stenotrophomonas maltophilia,Ertapenem,-1,0,,,,2_7
+Acinetobacter,Erythromycin,-1,0,,,,2_0
+Bordetella,Erythromycin,-1,0,,,,2_0
+Burkholderia,Erythromycin,-1,0,,,,2_0
+Legionella,Erythromycin,-1,0,,,,2_0
+Moraxella,Erythromycin,-1,0,,,,2_0
+Pseudomonas,Erythromycin,-1,0,,,,2_0
+Stenotrophomonas,Erythromycin,-1,0,,,,2_0
+Enterococcus faecalis,Erythromycin,-1,0,,,,4_7
+Enterococcus gallinarum,Erythromycin,-1,0,,,,4_8
+Enterococcus casseliflavus,Erythromycin,-1,0,,,,4_8
+Enterococcus faecium,Erythromycin,-1,0,,,,4_9
+Acinetobacter baumannii,Fosfomycin,-1,0,,,,2_1
+Acinetobacter pittii,Fosfomycin,-1,0,,,,2_1
+Acinetobacter nosocomialis,Fosfomycin,-1,0,,,,2_1
+Acinetobacter calcoaceticus,Fosfomycin,-1,0,,,,2_1
+Burkholderia cepacia complex,Fosfomycin,-1,0,,,,2_3
+Staphylococcus saprophyticus,Fosfomycin,-1,0,,,,4_1
+Staphylococcus capitis,Fosfomycin,-1,0,,,,4_4
+Corynebacterium,Fosfomycin,-1,0,,,,4_10
+Haemophilus influenzae,Fusidic acid,-1,0,,,,3_1
+Campylobacter fetus,Fusidic acid,-1,0,,,,3_4
+Campylobacter jejuni,Fusidic acid,-1,0,,,,3_5
+Campylobacter coli,Fusidic acid,-1,0,,,,3_5
+Staphylococcus saprophyticus,Fusidic acid,-1,0,,,,4_1
+Streptococcus,Fusidic acid,-1,0,,,,4_6
+Enterococcus faecalis,Fusidic acid,-1,0,,,,4_7
+Enterococcus gallinarum,Fusidic acid,-1,0,,,,4_8
+Enterococcus casseliflavus,Fusidic acid,-1,0,,,,4_8
+Enterococcus faecium,Fusidic acid,-1,0,,,,4_9
+Enterobacterales,Fusidic acid,-1,0,,,,1_0
+Acinetobacter,Fusidic acid,-1,0,,,,2_0
+Bordetella,Fusidic acid,-1,0,,,,2_0
+Burkholderia,Fusidic acid,-1,0,,,,2_0
+Legionella,Fusidic acid,-1,0,,,,2_0
+Moraxella,Fusidic acid,-1,0,,,,2_0
+Pseudomonas,Fusidic acid,-1,0,,,,2_0
+Stenotrophomonas,Fusidic acid,-1,0,,,,2_0
+Burkholderia cepacia complex,Gentamicin,-1,0,,,,2_3
+Stenotrophomonas maltophilia,Gentamicin,-1,0,,,,2_7
+Streptococcus,Gentamicin,-1,0,,,,4_6
+Enterococcus faecalis,Gentamicin,-1,0,,,,4_7
+Enterococcus gallinarum,Gentamicin,-1,0,,,,4_8
+Enterococcus casseliflavus,Gentamicin,-1,0,,,,4_8
+Enterococcus faecium,Gentamicin,-1,0,,,,4_9
+Elizabethkingia meningoseptica,Imipenem,-1,0,,,,2_4
+Stenotrophomonas maltophilia,Imipenem,-1,0,,,,2_7
+Pseudomonas aeruginosa,Kanamycin,-1,0,,,,2_6
+Burkholderia cepacia complex,Kanamycin,-1,0,,,,2_3
+Stenotrophomonas maltophilia,Kanamycin,-1,0,,,,2_7
+Streptococcus,Kanamycin,-1,0,,,,4_6
+Enterococcus faecalis,Kanamycin,-1,0,,,,4_7
+Enterococcus gallinarum,Kanamycin,-1,0,,,,4_8
+Enterococcus casseliflavus,Kanamycin,-1,0,,,,4_8
+Enterococcus faecium,Kanamycin,-1,0,,,,4_9
+Acinetobacter,Linezolid,-1,0,,,,3_0
+Actinobacillus,Linezolid,-1,0,,,,3_0
+Bordetella,Linezolid,-1,0,,,,3_0
+Brucella,Linezolid,-1,0,,,,3_0
+Campylobacter,Linezolid,-1,0,,,,3_0
+Cyanobacteria,Linezolid,-1,0,,,,3_0
+Enterobacter,Linezolid,-1,0,,,,3_0
+Erwinia,Linezolid,-1,0,,,,3_0
+Escherichia coli,Linezolid,-1,0,,,,3_0
+Francisella,Linezolid,-1,0,,,,3_0
+Helicobacter,Linezolid,-1,0,,,,3_0
+Haemophilus,Linezolid,-1,0,,,,3_0
+Klebsiella,Linezolid,-1,0,,,,3_0
+Legionella,Linezolid,-1,0,,,,3_0
+Moraxella,Linezolid,-1,0,,,,3_0
+Neisseria,Linezolid,-1,0,,,,3_0
+Pasteurella,Linezolid,-1,0,,,,3_0
+Proteus,Linezolid,-1,0,,,,3_0
+Pseudomonas,Linezolid,-1,0,,,,3_0
+Salmonella,Linezolid,-1,0,,,,3_0
+Serratia,Linezolid,-1,0,,,,3_0
+Shigella,Linezolid,-1,0,,,,3_0
+Treponema,Linezolid,-1,0,,,,3_0
+Vibrio,Linezolid,-1,0,,,,3_0
+Yersinia,Linezolid,-1,0,,,,3_0
+Elizabethkingia meningoseptica,Meropenem,-1,0,,,,2_4
+Stenotrophomonas maltophilia,Meropenem,-1,0,,,,2_7
+Morganella morganii,Minocycline,-1,0,,,,1_9
+Proteus mirabilis,Minocycline,-1,0,,,,1_10
+Proteus penneri,Minocycline,-1,0,,,,1_11
+Proteus vulgaris,Minocycline,-1,0,,,,1_12
+Providencia rettgeri,Minocycline,-1,0,,,,1_13
+Providencia stuartii,Minocycline,-1,0,,,,1_14
+Pseudomonas aeruginosa,Minocycline,-1,0,,,,2_6
+Campylobacter fetus,Nalidixic acid,-1,0,,,,3_4
+Actinomyces,Nalidixic acid,-1,0,,,,4_0
+Arthrobacter,Nalidixic acid,-1,0,,,,4_0
+Bifidobacterium,Nalidixic acid,-1,0,,,,4_0
+Corynebacterium,Nalidixic acid,-1,0,,,,4_0
+Frankia,Nalidixic acid,-1,0,,,,4_0
+Micrococcus,Nalidixic acid,-1,0,,,,4_0
+Micromonospora,Nalidixic acid,-1,0,,,,4_0
+Mycobacterium,Nalidixic acid,-1,0,,,,4_0
+Nocardia,Nalidixic acid,-1,0,,,,4_0
+Propionibacterium,Nalidixic acid,-1,0,,,,4_0
+Streptomyces,Nalidixic acid,-1,0,,,,4_0
+Bacillus,Nalidixic acid,-1,0,,,,4_0
+Listeria,Nalidixic acid,-1,0,,,,4_0
+Staphylococcus,Nalidixic acid,-1,0,,,,4_0
+Enterococcus,Nalidixic acid,-1,0,,,,4_0
+Lactobacillus,Nalidixic acid,-1,0,,,,4_0
+Lactococcus,Nalidixic acid,-1,0,,,,4_0
+Leuconostoc,Nalidixic acid,-1,0,,,,4_0
+Pediococcus,Nalidixic acid,-1,0,,,,4_0
+Streptococcus,Nalidixic acid,-1,0,,,,4_0
+Acetobacterium,Nalidixic acid,-1,0,,,,4_0
+Clostridium,Nalidixic acid,-1,0,,,,4_0
+Eubacterium,Nalidixic acid,-1,0,,,,4_0
+Heliobacterium,Nalidixic acid,-1,0,,,,4_0
+Megasphaera,Nalidixic acid,-1,0,,,,4_0
+Pectinatus,Nalidixic acid,-1,0,,,,4_0
+Selenomonas,Nalidixic acid,-1,0,,,,4_0
+Propionispira,Nalidixic acid,-1,0,,,,4_0
+Sporomusa,Nalidixic acid,-1,0,,,,4_0
+Mollicutes,Nalidixic acid,-1,0,,,,4_0
+Mycoplasma,Nalidixic acid,-1,0,,,,4_0
+Spiroplasma,Nalidixic acid,-1,0,,,,4_0
+Ureaplasma,Nalidixic acid,-1,0,,,,4_0
+Erysipelothrix,Nalidixic acid,-1,0,,,,4_0
+Bacillales,Nalidixic acid,-1,0,,,,4_0
+Pseudomonas aeruginosa,Neomycin,-1,0,,,,2_6
+Burkholderia cepacia complex,Neomycin,-1,0,,,,2_3
+Stenotrophomonas maltophilia,Neomycin,-1,0,,,,2_7
+Streptococcus,Neomycin,-1,0,,,,4_6
+Enterococcus faecalis,Neomycin,-1,0,,,,4_7
+Enterococcus gallinarum,Neomycin,-1,0,,,,4_8
+Enterococcus casseliflavus,Neomycin,-1,0,,,,4_8
+Enterococcus faecium,Neomycin,-1,0,,,,4_9
+Burkholderia cepacia complex,Netilmicin,-1,0,,,,2_3
+Stenotrophomonas maltophilia,Netilmicin,-1,0,,,,2_7
+Streptococcus,Netilmicin,-1,0,,,,4_6
+Enterococcus faecalis,Netilmicin,-1,0,,,,4_7
+Enterococcus gallinarum,Netilmicin,-1,0,,,,4_8
+Enterococcus casseliflavus,Netilmicin,-1,0,,,,4_8
+Enterococcus faecium,Netilmicin,-1,0,,,,4_9
+Morganella morganii,Nitrofurantoin,-1,0,,,,1_9
+Proteus mirabilis,Nitrofurantoin,-1,0,,,,1_10
+Proteus penneri,Nitrofurantoin,-1,0,,,,1_11
+Proteus vulgaris,Nitrofurantoin,-1,0,,,,1_12
+Providencia rettgeri,Nitrofurantoin,-1,0,,,,1_13
+Providencia stuartii,Nitrofurantoin,-1,0,,,,1_14
+Serratia marcescens,Nitrofurantoin,-1,0,,,,1_16
+Staphylococcus saprophyticus,Novobiocin,-1,0,,,,4_1
+Staphylococcus cohnii,Novobiocin,-1,0,,,,4_2
+Staphylococcus xylosus,Novobiocin,-1,0,,,,4_3
+Burkholderia cepacia complex,Piperacillin,-1,0,,,,2_3
+Elizabethkingia meningoseptica,Piperacillin,-1,0,,,,2_4
+Ochrobactrum anthropi,Piperacillin,-1,0,,,,2_5
+Stenotrophomonas maltophilia,Piperacillin,-1,0,,,,2_7
+Burkholderia cepacia complex,Piperacillin-tazobactam,-1,0,,,,2_3
+Ochrobactrum anthropi,Piperacillin-tazobactam,-1,0,,,,2_5
+Stenotrophomonas maltophilia,Piperacillin-tazobactam,-1,0,,,,2_7
+Morganella morganii,Polymyxin B,-1,0,,,,1_9
+Proteus mirabilis,Polymyxin B,-1,0,,,,1_10
+Proteus penneri,Polymyxin B,-1,0,,,,1_11
+Proteus vulgaris,Polymyxin B,-1,0,,,,1_12
+Providencia rettgeri,Polymyxin B,-1,0,,,,1_13
+Providencia stuartii,Polymyxin B,-1,0,,,,1_14
+Serratia marcescens,Polymyxin B,-1,0,,,,1_16
+Yersinia pseudotuberculosis,Polymyxin B,-1,0,,,,1_18
+Burkholderia cepacia complex,Polymyxin B,-1,0,,,,2_3
+Elizabethkingia meningoseptica,Polymyxin B,-1,0,,,,2_4
+Actinomyces,Polymyxin B,-1,0,,,,4_0
+Arthrobacter,Polymyxin B,-1,0,,,,4_0
+Bifidobacterium,Polymyxin B,-1,0,,,,4_0
+Corynebacterium,Polymyxin B,-1,0,,,,4_0
+Frankia,Polymyxin B,-1,0,,,,4_0
+Micrococcus,Polymyxin B,-1,0,,,,4_0
+Micromonospora,Polymyxin B,-1,0,,,,4_0
+Mycobacterium,Polymyxin B,-1,0,,,,4_0
+Nocardia,Polymyxin B,-1,0,,,,4_0
+Propionibacterium,Polymyxin B,-1,0,,,,4_0
+Streptomyces,Polymyxin B,-1,0,,,,4_0
+Bacillus,Polymyxin B,-1,0,,,,4_0
+Listeria,Polymyxin B,-1,0,,,,4_0
+Staphylococcus,Polymyxin B,-1,0,,,,4_0
+Enterococcus,Polymyxin B,-1,0,,,,4_0
+Lactobacillus,Polymyxin B,-1,0,,,,4_0
+Lactococcus,Polymyxin B,-1,0,,,,4_0
+Leuconostoc,Polymyxin B,-1,0,,,,4_0
+Pediococcus,Polymyxin B,-1,0,,,,4_0
+Streptococcus,Polymyxin B,-1,0,,,,4_0
+Acetobacterium,Polymyxin B,-1,0,,,,4_0
+Clostridium,Polymyxin B,-1,0,,,,4_0
+Eubacterium,Polymyxin B,-1,0,,,,4_0
+Heliobacterium,Polymyxin B,-1,0,,,,4_0
+Megasphaera,Polymyxin B,-1,0,,,,4_0
+Pectinatus,Polymyxin B,-1,0,,,,4_0
+Selenomonas,Polymyxin B,-1,0,,,,4_0
+Propionispira,Polymyxin B,-1,0,,,,4_0
+Sporomusa,Polymyxin B,-1,0,,,,4_0
+Mollicutes,Polymyxin B,-1,0,,,,4_0
+Mycoplasma,Polymyxin B,-1,0,,,,4_0
+Spiroplasma,Polymyxin B,-1,0,,,,4_0
+Ureaplasma,Polymyxin B,-1,0,,,,4_0
+Erysipelothrix,Polymyxin B,-1,0,,,,4_0
+Bacillales,Polymyxin B,-1,0,,,,4_0
+Enterococcus faecalis,Quinupristin-dalfopristin,-1,0,,,,4_7
+Enterococcus gallinarum,Quinupristin-dalfopristin,-1,0,,,,4_8
+Enterococcus casseliflavus,Quinupristin-dalfopristin,-1,0,,,,4_8
+Acinetobacter,Quinupristin-dalfopristin,-1,0,,,,2_0
+Bordetella,Quinupristin-dalfopristin,-1,0,,,,2_0
+Burkholderia,Quinupristin-dalfopristin,-1,0,,,,2_0
+Legionella,Quinupristin-dalfopristin,-1,0,,,,2_0
+Moraxella,Quinupristin-dalfopristin,-1,0,,,,2_0
+Pseudomonas,Quinupristin-dalfopristin,-1,0,,,,2_0
+Stenotrophomonas,Quinupristin-dalfopristin,-1,0,,,,2_0
+Haemophilus influenzae,Quinupristin-dalfopristin,-1,0,,,,3_1
+Campylobacter fetus,Quinupristin-dalfopristin,-1,0,,,,3_4
+Campylobacter jejuni,Quinupristin-dalfopristin,-1,0,,,,3_5
+Campylobacter coli,Quinupristin-dalfopristin,-1,0,,,,3_5
+Enterobacterales,Quinupristin-dalfopristin,-1,0,,,,1_0
+Enterobacterales,Rifampicin,-1,0,,,,1_0
+Acinetobacter,Rifampicin,-1,0,,,,2_0
+Bordetella,Rifampicin,-1,0,,,,2_0
+Burkholderia,Rifampicin,-1,0,,,,2_0
+Legionella,Rifampicin,-1,0,,,,2_0
+Moraxella,Rifampicin,-1,0,,,,2_0
+Pseudomonas,Rifampicin,-1,0,,,,2_0
+Stenotrophomonas,Rifampicin,-1,0,,,,2_0
+Acinetobacter,Roxithromycin,-1,0,,,,2_0
+Bordetella,Roxithromycin,-1,0,,,,2_0
+Burkholderia,Roxithromycin,-1,0,,,,2_0
+Legionella,Roxithromycin,-1,0,,,,2_0
+Moraxella,Roxithromycin,-1,0,,,,2_0
+Pseudomonas,Roxithromycin,-1,0,,,,2_0
+Stenotrophomonas,Roxithromycin,-1,0,,,,2_0
+Enterobacterales,Roxithromycin,-1,0,,,,1_0
+Enterococcus faecalis,Roxithromycin,-1,0,,,,4_7
+Enterococcus gallinarum,Roxithromycin,-1,0,,,,4_8
+Enterococcus casseliflavus,Roxithromycin,-1,0,,,,4_8
+Enterococcus faecium,Roxithromycin,-1,0,,,,4_9
+Burkholderia cepacia complex,Streptomycin,-1,0,,,,2_3
+Stenotrophomonas maltophilia,Streptomycin,-1,0,,,,2_7
+Streptococcus,Streptomycin,-1,0,,,,4_6
+Enterococcus faecalis,Streptomycin,-1,0,,,,4_7
+Enterococcus gallinarum,Streptomycin,-1,0,,,,4_8
+Enterococcus casseliflavus,Streptomycin,-1,0,,,,4_8
+Enterococcus faecium,Streptomycin,-1,0,,,,4_9
+Enterococcus faecalis,Sulfisoxazole,-1,0,,,,4_7
+Enterococcus gallinarum,Sulfisoxazole,-1,0,,,,4_8
+Enterococcus casseliflavus,Sulfisoxazole,-1,0,,,,4_8
+Enterococcus faecium,Sulfisoxazole,-1,0,,,,4_9
+Enterococcus faecalis,Sulfonamides,-1,0,,,,4_7
+Enterococcus gallinarum,Sulfonamides,-1,0,,,,4_8
+Enterococcus casseliflavus,Sulfonamides,-1,0,,,,4_8
+Enterococcus faecium,Sulfonamides,-1,0,,,,4_9
+Leuconostoc,Teicoplanin,-1,0,,,,4_12
+Pediococcus,Teicoplanin,-1,0,,,,4_12
+Lactobacillus rhamnosus,Teicoplanin,-1,0,,,,4_13
+Acinetobacter,Teicoplanin,-1,0,,,,3_0
+Actinobacillus,Teicoplanin,-1,0,,,,3_0
+Bordetella,Teicoplanin,-1,0,,,,3_0
+Brucella,Teicoplanin,-1,0,,,,3_0
+Campylobacter,Teicoplanin,-1,0,,,,3_0
+Cyanobacteria,Teicoplanin,-1,0,,,,3_0
+Enterobacter,Teicoplanin,-1,0,,,,3_0
+Erwinia,Teicoplanin,-1,0,,,,3_0
+Escherichia coli,Teicoplanin,-1,0,,,,3_0
+Francisella,Teicoplanin,-1,0,,,,3_0
+Helicobacter,Teicoplanin,-1,0,,,,3_0
+Haemophilus,Teicoplanin,-1,0,,,,3_0
+Klebsiella,Teicoplanin,-1,0,,,,3_0
+Legionella,Teicoplanin,-1,0,,,,3_0
+Moraxella,Teicoplanin,-1,0,,,,3_0
+Neisseria,Teicoplanin,-1,0,,,,3_0
+Pasteurella,Teicoplanin,-1,0,,,,3_0
+Proteus,Teicoplanin,-1,0,,,,3_0
+Pseudomonas,Teicoplanin,-1,0,,,,3_0
+Salmonella,Teicoplanin,-1,0,,,,3_0
+Serratia,Teicoplanin,-1,0,,,,3_0
+Shigella,Teicoplanin,-1,0,,,,3_0
+Treponema,Teicoplanin,-1,0,,,,3_0
+Vibrio,Teicoplanin,-1,0,,,,3_0
+Yersinia,Teicoplanin,-1,0,,,,3_0
+Acinetobacter,Telithromycin,-1,0,,,,2_0
+Bordetella,Telithromycin,-1,0,,,,2_0
+Burkholderia,Telithromycin,-1,0,,,,2_0
+Legionella,Telithromycin,-1,0,,,,2_0
+Moraxella,Telithromycin,-1,0,,,,2_0
+Pseudomonas,Telithromycin,-1,0,,,,2_0
+Stenotrophomonas,Telithromycin,-1,0,,,,2_0
+Enterobacterales,Telithromycin,-1,0,,,,1_0
+Enterococcus faecalis,Telithromycin,-1,0,,,,4_7
+Enterococcus gallinarum,Telithromycin,-1,0,,,,4_8
+Enterococcus casseliflavus,Telithromycin,-1,0,,,,4_8
+Enterococcus faecium,Telithromycin,-1,0,,,,4_9
+Actinomyces,Temocillin,-1,0,,,,4_0
+Arthrobacter,Temocillin,-1,0,,,,4_0
+Bifidobacterium,Temocillin,-1,0,,,,4_0
+Corynebacterium,Temocillin,-1,0,,,,4_0
+Frankia,Temocillin,-1,0,,,,4_0
+Micrococcus,Temocillin,-1,0,,,,4_0
+Micromonospora,Temocillin,-1,0,,,,4_0
+Mycobacterium,Temocillin,-1,0,,,,4_0
+Nocardia,Temocillin,-1,0,,,,4_0
+Propionibacterium,Temocillin,-1,0,,,,4_0
+Streptomyces,Temocillin,-1,0,,,,4_0
+Bacillus,Temocillin,-1,0,,,,4_0
+Listeria,Temocillin,-1,0,,,,4_0
+Staphylococcus,Temocillin,-1,0,,,,4_0
+Enterococcus,Temocillin,-1,0,,,,4_0
+Lactobacillus,Temocillin,-1,0,,,,4_0
+Lactococcus,Temocillin,-1,0,,,,4_0
+Leuconostoc,Temocillin,-1,0,,,,4_0
+Pediococcus,Temocillin,-1,0,,,,4_0
+Streptococcus,Temocillin,-1,0,,,,4_0
+Acetobacterium,Temocillin,-1,0,,,,4_0
+Clostridium,Temocillin,-1,0,,,,4_0
+Eubacterium,Temocillin,-1,0,,,,4_0
+Heliobacterium,Temocillin,-1,0,,,,4_0
+Megasphaera,Temocillin,-1,0,,,,4_0
+Pectinatus,Temocillin,-1,0,,,,4_0
+Selenomonas,Temocillin,-1,0,,,,4_0
+Propionispira,Temocillin,-1,0,,,,4_0
+Sporomusa,Temocillin,-1,0,,,,4_0
+Mollicutes,Temocillin,-1,0,,,,4_0
+Mycoplasma,Temocillin,-1,0,,,,4_0
+Spiroplasma,Temocillin,-1,0,,,,4_0
+Ureaplasma,Temocillin,-1,0,,,,4_0
+Erysipelothrix,Temocillin,-1,0,,,,4_0
+Bacillales,Temocillin,-1,0,,,,4_0
+Serratia marcescens,Tetracycline,-1,0,,,,1_16
+Acinetobacter,Tetracycline,-1,0,,,,2_1
+Stenotrophomonas maltophilia,Tetracycline,-1,0,,,,2_7
+Morganella morganii,Tetracycline,-1,0,,,,1_9
+Proteus mirabilis,Tetracycline,-1,0,,,,1_10
+Proteus penneri,Tetracycline,-1,0,,,,1_11
+Proteus vulgaris,Tetracycline,-1,0,,,,1_12
+Providencia rettgeri,Tetracycline,-1,0,,,,1_13
+Providencia stuartii,Tetracycline,-1,0,,,,1_14
+Pseudomonas aeruginosa,Tetracycline,-1,0,,,,2_6
+Citrobacter koseri,Ticarcillin,-1,0,,,,1_1
+Citrobacter amalonaticus,Ticarcillin,-1,0,,,,1_1
+Citrobacter sedlakii,Ticarcillin,-1,0,,,,1_1
+Citrobacter farmeri,Ticarcillin,-1,0,,,,1_1
+Citrobacter rodentium,Ticarcillin,-1,0,,,,1_1
+Atlantibacter hermannii,Ticarcillin,-1,0,,,,1_5
+Klebsiella pneumoniae,Ticarcillin,-1,0,,,,1_7
+Klebsiella oxytoca,Ticarcillin,-1,0,,,,1_8
+Raoultella,Ticarcillin,-1,0,,,,1_15
+Yersinia enterocolitica,Ticarcillin,-1,0,,,,1_17
+Burkholderia cepacia complex,Ticarcillin,-1,0,,,,2_3
+Elizabethkingia meningoseptica,Ticarcillin,-1,0,,,,2_4
+Ochrobactrum anthropi,Ticarcillin,-1,0,,,,2_5
+Stenotrophomonas maltophilia,Ticarcillin,-1,0,,,,2_7
+Burkholderia cepacia complex,Ticarcillin-clavulanic acid,-1,0,,,,2_3
+Elizabethkingia meningoseptica,Ticarcillin-clavulanic acid,-1,0,,,,2_4
+Ochrobactrum anthropi,Ticarcillin-clavulanic acid,-1,0,,,,2_5
+Proteus mirabilis,Tigecycline,-1,0,,,,1_10
+Proteus penneri,Tigecycline,-1,0,,,,1_11
+Proteus vulgaris,Tigecycline,-1,0,,,,1_12
+Providencia rettgeri,Tigecycline,-1,0,,,,1_13
+Providencia stuartii,Tigecycline,-1,0,,,,1_14
+Pseudomonas aeruginosa,Tigecycline,-1,0,,,,2_6
+Burkholderia cepacia complex,Tobramycin,-1,0,,,,2_3
+Stenotrophomonas maltophilia,Tobramycin,-1,0,,,,2_7
+Streptococcus,Tobramycin,-1,0,,,,4_6
+Enterococcus faecalis,Tobramycin,-1,0,,,,4_7
+Enterococcus gallinarum,Tobramycin,-1,0,,,,4_8
+Enterococcus casseliflavus,Tobramycin,-1,0,,,,4_8
+Enterococcus faecium,Tobramycin,-1,0,,,,4_9
+Acinetobacter baumannii,Trimethoprim,-1,0,,,,2_1
+Acinetobacter pittii,Trimethoprim,-1,0,,,,2_1
+Acinetobacter nosocomialis,Trimethoprim,-1,0,,,,2_1
+Acinetobacter calcoaceticus,Trimethoprim,-1,0,,,,2_1
+Burkholderia cepacia complex,Trimethoprim,-1,0,,,,2_3
+Pseudomonas aeruginosa,Trimethoprim,-1,0,,,,2_6
+Stenotrophomonas maltophilia,Trimethoprim,-1,0,,,,2_7
+Moraxella catarrhalis,Trimethoprim,-1,0,,,,3_2
+Neisseria,Trimethoprim,-1,0,,,,3_3
+Campylobacter fetus,Trimethoprim,-1,0,,,,3_4
+Campylobacter jejuni,Trimethoprim,-1,0,,,,3_5
+Campylobacter coli,Trimethoprim,-1,0,,,,3_5
+Enterococcus gallinarum,Vancomycin,-1,0,,,,4_8
+Enterococcus casseliflavus,Vancomycin,-1,0,,,,4_8
+Leuconostoc,Vancomycin,-1,0,,,,4_12
+Pediococcus,Vancomycin,-1,0,,,,4_12
+Lactobacillus casei,Vancomycin,-1,0,,,,4_13
+Erysipelatoclostridium ramosum,Vancomycin,-1,0,,,,4_14
+[Clostridium] innocuum,Vancomycin,-1,0,,,,4_14
+Acinetobacter,Vancomycin,-1,0,,,,3_0
+Actinobacillus,Vancomycin,-1,0,,,,3_0
+Bordetella,Vancomycin,-1,0,,,,3_0
+Brucella,Vancomycin,-1,0,,,,3_0
+Campylobacter,Vancomycin,-1,0,,,,3_0
+Cyanobacteria,Vancomycin,-1,0,,,,3_0
+Enterobacter,Vancomycin,-1,0,,,,3_0
+Erwinia,Vancomycin,-1,0,,,,3_0
+Escherichia coli,Vancomycin,-1,0,,,,3_0
+Francisella,Vancomycin,-1,0,,,,3_0
+Helicobacter,Vancomycin,-1,0,,,,3_0
+Haemophilus,Vancomycin,-1,0,,,,3_0
+Klebsiella,Vancomycin,-1,0,,,,3_0
+Legionella,Vancomycin,-1,0,,,,3_0
+Moraxella,Vancomycin,-1,0,,,,3_0
+Neisseria,Vancomycin,-1,0,,,,3_0
+Pasteurella,Vancomycin,-1,0,,,,3_0
+Proteus,Vancomycin,-1,0,,,,3_0
+Pseudomonas,Vancomycin,-1,0,,,,3_0
+Salmonella,Vancomycin,-1,0,,,,3_0
+Serratia,Vancomycin,-1,0,,,,3_0
+Shigella,Vancomycin,-1,0,,,,3_0
+Treponema,Vancomycin,-1,0,,,,3_0
+Vibrio,Vancomycin,-1,0,,,,3_0
+Yersinia,Vancomycin,-1,0,,,,3_0
