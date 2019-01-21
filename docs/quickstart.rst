@@ -95,7 +95,7 @@ The pre-processed EUCAST Breakpoint Tables can be parsed into a dataframe of org
    from pymicruler.bp.BpRuler import BpRuler
    import pandas as pd
 
-   path_to_mics = os.path.join('demp_resources', 'mic_demo_table.xlsx')
+   path_to_mics = os.path.join('demo_resources', 'mic_demo_table.xlsx')
    mics_df = pd.read_excel(path_to_mics)
 
 
